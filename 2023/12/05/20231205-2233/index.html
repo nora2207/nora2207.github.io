@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Nora">
+    
+    <title>
+        
+            DOM 網頁元素 |
+        
+        Nora&#39;s 小筆記
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/flower-icon.ico">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"style":{"primary_color":"#FF6699","logo":"/images/flower-icon.svg","favicon":"/images/flower-icon.ico","avatar":"/images/flower-icon.jpg","first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Two roads diverged in a wood, and I took the one less traveled by, || And that has made all the difference.","hitokoto":false},"scroll":{"progress_bar":true,"percent":false}},"local_search":{"enable":true,"preload":true},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"comment":{"enable":true,"use":"gitalk","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false}},"post":{"author_label":{"enable":false,"auto":false,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":false,"copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"version":"3.8.4"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original article title","author":"Original article author","link":"Original article link"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+<main class="page-container border-box">
+
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/flower-icon.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Nora&#39;s 小筆記
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+
+                
+
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+
+        <div class="article-content-container border-box">
+
+            
+
+            <div class="article-content-bottom border-box">
+                
+                    <div class="article-title">
+                        DOM 網頁元素
+                    </div>
+                
+
+                
+                    <div class="article-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/flower-icon.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author">
+                                <span class="name">Nora</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="article-meta-info-container border-box post">
+    <div class="article-meta-info border-box">
+        
+
+
+        
+            <span class="meta-info-item article-create-date">
+                <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
+                <span class="pc">2023-12-05 22:33:48</span>
+                <span class="mobile">2023-12-05 22:33</span>
+            </span>
+
+            <span class="meta-info-item article-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="pc" data-updated="Wed Apr 24 2024 21:41:02 GMT+0800">2024-04-24 21:41:02</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="article-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item article-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="article-content keep-markdown-body">
+                    
+
+                    <h2 id="querySelector-選擇單一元素"><a href="#querySelector-選擇單一元素" class="headerlink" title="querySelector 選擇單一元素"></a>querySelector 選擇單一元素</h2><p>可以選取網頁元素</p>
+<br>
+
+<p>選取 html 元素</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> el = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;h1&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>選取 class 元素</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> el = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.box&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>選取 id 元素</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> el = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;#box&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>也可以選取節點的內容</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">&quot;title&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> el = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.title .box&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="querySelectorAll-選取多個元素"><a href="#querySelectorAll-選取多個元素" class="headerlink" title="querySelectorAll 選取多個元素"></a>querySelectorAll 選取多個元素</h2><p>可以一次選取多個元素</p>
+<p>這樣就一次把全部的 p 都選到了</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> el = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.title p&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="textContent-動態修改文字"><a href="#textContent-動態修改文字" class="headerlink" title="textContent 動態修改文字"></a>textContent 動態修改文字</h2><p>可以動態修改裡面的 text 文字內容</p>
+<p>像這裡就把原本 <code>P</code> 段落裡的 1 2 3，改成 <code>i 和 13579</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">&quot;title&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>&gt;</span>1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;box2&quot;</span>&gt;</span>2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;box3&quot;</span>&gt;</span>3<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> el = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.title p&#x27;</span>);</span><br><span class="line"><span class="keyword">let</span> elLen = el.<span class="property">length</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;elLen;i++) &#123;</span><br><span class="line">  el[i].<span class="property">textContent</span> = i + <span class="string">&#x27; 13579&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/QWYrazV?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="innerHTML-增加HTML網頁結構"><a href="#innerHTML-增加HTML網頁結構" class="headerlink" title="innerHTML 增加HTML網頁結構"></a>innerHTML 增加HTML網頁結構</h2><p>可以增加 HTML 的網頁結構</p>
+<p>組完字串後，用語法渲染到網頁上</p>
+<p>原本的東西會被刪除掉，網頁上會顯示新的內容</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">&quot;title&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>&gt;</span>1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;box2&quot;</span>&gt;</span>2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;box3&quot;</span>&gt;</span>3<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> content = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.box2&#x27;</span>);</span><br><span class="line">content.<span class="property">innerHTML</span> = <span class="string">`&lt;h4 class=&quot;title&quot;&gt;這是內容&lt;/h4&gt;`</span>;</span><br><span class="line"><span class="keyword">const</span> link = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.box3&#x27;</span>);</span><br><span class="line"><span class="keyword">let</span> google = <span class="string">&quot;https://www.google.com.tw/&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> linkName = <span class="string">`&lt;p&gt;&lt;a href=&quot;<span class="subst">$&#123;google&#125;</span>&quot;&gt;連結&lt;/a&gt;&lt;/p&gt;`</span></span><br><span class="line">link.<span class="property">innerHTML</span> = linkName;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/PoVeQwR?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<p>也可以和 for 搭配使用</p>
+<p>這裡用<a class="link"   target="_blank" rel="noopener" href="https://www.nmns.edu.tw/backend/opendata/Exhibition/list?key=571fe588-7dae-4cab-8805-8143f910d88a" >國立自然科學博物館特展JSON資料<i class="fas fa-external-link-alt"></i></a>來練習</p>
+<br>
+
+<p><code>ul</code> 裡面沒有寫東西</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;list&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>js 則是先用 <code>querySelector</code> 選取這個 <code>ul</code></p>
+<p>然後算出資料的長度</p>
+<p>接著先寫一個空字串，等等組字串時會用到</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> list = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.list&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> len = itemList.<span class="property">length</span>;</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">&#x27;&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>接下來是跑 <code>for</code> 迴圈，在裡面寫下 <code>li</code> 的內容</p>
+<p>有圖片、展覽名稱、地點和展出的期間，依序放到 <code>li</code> 裡面</p>
+<p>最重要的是 <code>str += content;</code> </p>
+<p>如果沒有這樣寫，<code>innerHTML</code> 每跑一次會蓋掉前面的資料</p>
+<p>最後網頁上只會有最後一筆資料而已</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">  <span class="keyword">let</span> content = <span class="string">`</span></span><br><span class="line"><span class="string">  &lt;img class=&quot;pic&quot; src=&quot;<span class="subst">$&#123;itemList[i].mainImage&#125;</span>&quot; height=&quot;280&quot; alt=&quot;&quot;&gt;</span></span><br><span class="line"><span class="string">  &lt;li&gt;&lt;h2 class=&quot;title&quot;&gt;<span class="subst">$&#123;itemList[i].title&#125;</span>&lt;/h2&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">  &lt;li&gt;&lt;i class=&quot;fa-solid fa-location-dot&quot;&gt;&lt;/i&gt; &lt;span class=&quot;place&quot;&gt;<span class="subst">$&#123;itemList[i].location&#125;</span>&lt;/span&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">  &lt;li class=&quot;period&quot;&gt;&lt;i class=&quot;fa-solid fa-clock&quot;&gt;&lt;/i&gt; &lt;span class=&quot;date&quot;&gt;<span class="subst">$&#123;itemList[i].dateStart&#125;</span> ~ <span class="subst">$&#123;itemList[i].dateEnd&#125;</span>&lt;/span&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">  `</span>;</span><br><span class="line">  str += content;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>最後用 <code>innerHTML</code> 渲染到網頁上就完成了</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list.<span class="property">innerHTML</span> = str;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/poGVaRM?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="createElement-增加HTML網頁結構"><a href="#createElement-增加HTML網頁結構" class="headerlink" title="createElement 增加HTML網頁結構"></a>createElement 增加HTML網頁結構</h2><p>用 DOM 節點的方式來新增</p>
+<p>和 <code>innerHTML</code> 的差別是會保留原本的內容</p>
+<p>新增的東西會依序加在後面</p>
+<br>
+
+<p><code>HTML</code> 中原本有一個 P段落</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">&quot;title&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>23<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>用 <code>createElement</code> 增加 <code>HTML</code> 標籤的元素，然後在 JS 中動態增加</p>
+<p>接著用 <code>appendChild</code> 把剛剛的節點掛在 <code>.title</code> 中</p>
+<p>新增的東西會排在原本的往內容的後面</p>
+<p>所以粉紅色的 13579 會在原本網頁內容 123 的後面</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> el = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;em&#x27;</span>);</span><br><span class="line">el.<span class="property">textContent</span> = <span class="string">&#x27;13579&#x27;</span>;</span><br><span class="line">el.<span class="title function_">setAttribute</span>(<span class="string">&#x27;class&#x27;</span>,<span class="string">&#x27;pink&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.title&#x27;</span>).<span class="title function_">appendChild</span>(el);</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/YzBjqdr?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<br>
+
+<p>也可以和 for 搭配使用</p>
+<p>這裡用<a class="link"   target="_blank" rel="noopener" href="https://www.nmns.edu.tw/backend/opendata/Exhibition/list?key=571fe588-7dae-4cab-8805-8143f910d88a" >國立自然科學博物館特展JSON資料<i class="fas fa-external-link-alt"></i></a>來練習</p>
+<br>
+
+<p><code>ul</code> 裡面沒有寫東西</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>展覽名稱<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;list&quot;</span>&gt;</span></span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>js 則是先用 <code>querySelector</code> 選取這個 <code>ul</code></p>
+<p>然後算出資料的長度</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> list = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;.list&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> len = itemList.<span class="property">length</span>;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>接下來是跑 <code>for</code> 迴圈</p>
+<p>先增加 <code>li</code> 這個元素</p>
+<p>然後新增展覽的標題放到 <code>li</code> 裡面</p>
+<p>接著用 <code>appendChild</code> 在 <code>list</code> 中加入剛剛組好的內容</p>
+<p>每跑一次都會在最後面加上新的內容</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">  <span class="keyword">let</span> str = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;li&#x27;</span>);</span><br><span class="line">  str.<span class="property">textContent</span> = itemList[i].<span class="property">title</span>;</span><br><span class="line">  list.<span class="title function_">appendChild</span>(str);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/wvNxWwN?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="setAttribute-增加標籤屬性"><a href="#setAttribute-增加標籤屬性" class="headerlink" title="setAttribute 增加標籤屬性"></a>setAttribute 增加標籤屬性</h2><p>可以設定指定元素上的屬性</p>
+<br>
+
+<p>下面這個的 HTML 上只有連結2個字，點了也沒反應</p>
+<p>透過 <code>querySelector</code> 來設定 <code>href</code> 和 <code>class</code> 屬性</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span>連結<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>先用 <code>querySelector</code> 選取 a 這個元素</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> link = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//設定 href 屬性</span></span><br><span class="line">link.<span class="title function_">setAttribute</span>(<span class="string">&quot;href&quot;</span>,<span class="string">&quot;https://getbootstrap.com/&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//設定 class 屬性</span></span><br><span class="line">link.<span class="title function_">setAttribute</span>(<span class="string">&quot;class&quot;</span>,<span class="string">&quot;pink&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/RwvyQjy?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="getAttribute-取得標籤屬性"><a href="#getAttribute-取得標籤屬性" class="headerlink" title="getAttribute 取得標籤屬性"></a>getAttribute 取得標籤屬性</h2><p>可以取出指定元素上的屬性</p>
+<br>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://getbootstrap.com/&quot;</span> <span class="attr">class</span>=<span class="string">&quot;pink&quot;</span>&gt;</span>連結<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> link = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(link.<span class="title function_">getAttribute</span>(<span class="string">&quot;href&quot;</span>)); <span class="comment">// &quot;https://getbootstrap.com/&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(link.<span class="title function_">getAttribute</span>(<span class="string">&quot;class&quot;</span>)); <span class="comment">// &quot;pink&quot;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="article-nav">
+                        
+                            <div class="article-prev">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2023/12/17/20231217-2129/"
+                                   title="event (事件)"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                      <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                            <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">event (事件)</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="article-next">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2023/11/19/20231119-1927/"
+                                   title="函式 (function)"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">函式 (function)</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                            <span class="right arrow-icon flex-center">
+                                      <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        
+            
+
+    <div class="error-tips">Please fill in Gitalk complete configuration items.</div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#querySelector-%E9%81%B8%E6%93%87%E5%96%AE%E4%B8%80%E5%85%83%E7%B4%A0"><span class="nav-number">1.</span> <span class="nav-text">querySelector 選擇單一元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#querySelectorAll-%E9%81%B8%E5%8F%96%E5%A4%9A%E5%80%8B%E5%85%83%E7%B4%A0"><span class="nav-number">2.</span> <span class="nav-text">querySelectorAll 選取多個元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#textContent-%E5%8B%95%E6%85%8B%E4%BF%AE%E6%94%B9%E6%96%87%E5%AD%97"><span class="nav-number">3.</span> <span class="nav-text">textContent 動態修改文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#innerHTML-%E5%A2%9E%E5%8A%A0HTML%E7%B6%B2%E9%A0%81%E7%B5%90%E6%A7%8B"><span class="nav-number">4.</span> <span class="nav-text">innerHTML 增加HTML網頁結構</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#createElement-%E5%A2%9E%E5%8A%A0HTML%E7%B6%B2%E9%A0%81%E7%B5%90%E6%A7%8B"><span class="nav-number">5.</span> <span class="nav-text">createElement 增加HTML網頁結構</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setAttribute-%E5%A2%9E%E5%8A%A0%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7"><span class="nav-number">6.</span> <span class="nav-text">setAttribute 增加標籤屬性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getAttribute-%E5%8F%96%E5%BE%97%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7"><span class="nav-number">7.</span> <span class="nav-text">getAttribute 取得標籤屬性</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2024
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
+        
+
+        <div class="count-item info-item default">
+            
+
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-box border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#querySelector-%E9%81%B8%E6%93%87%E5%96%AE%E4%B8%80%E5%85%83%E7%B4%A0"><span class="nav-number">1.</span> <span class="nav-text">querySelector 選擇單一元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#querySelectorAll-%E9%81%B8%E5%8F%96%E5%A4%9A%E5%80%8B%E5%85%83%E7%B4%A0"><span class="nav-number">2.</span> <span class="nav-text">querySelectorAll 選取多個元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#textContent-%E5%8B%95%E6%85%8B%E4%BF%AE%E6%94%B9%E6%96%87%E5%AD%97"><span class="nav-number">3.</span> <span class="nav-text">textContent 動態修改文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#innerHTML-%E5%A2%9E%E5%8A%A0HTML%E7%B6%B2%E9%A0%81%E7%B5%90%E6%A7%8B"><span class="nav-number">4.</span> <span class="nav-text">innerHTML 增加HTML網頁結構</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#createElement-%E5%A2%9E%E5%8A%A0HTML%E7%B6%B2%E9%A0%81%E7%B5%90%E6%A7%8B"><span class="nav-number">5.</span> <span class="nav-text">createElement 增加HTML網頁結構</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setAttribute-%E5%A2%9E%E5%8A%A0%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7"><span class="nav-number">6.</span> <span class="nav-text">setAttribute 增加標籤屬性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getAttribute-%E5%8F%96%E5%BE%97%E6%A8%99%E7%B1%A4%E5%B1%AC%E6%80%A7"><span class="nav-number">7.</span> <span class="nav-text">getAttribute 取得標籤屬性</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+<!-- common -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local-search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- code-block -->
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="pjax">
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- category-page -->
+    
+
+    <!-- links-page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
