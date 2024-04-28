@@ -9,7 +9,7 @@
     
     <title>
         
-            箭頭函式 |
+            VS Code 設定 |
         
         Nora&#39;s 小筆記
     </title>
@@ -195,7 +195,7 @@
             <div class="article-content-bottom border-box">
                 
                     <div class="article-title">
-                        箭頭函式
+                        VS Code 設定
                     </div>
                 
 
@@ -222,13 +222,13 @@
         
             <span class="meta-info-item article-create-date">
                 <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
-                <span class="pc">2024-03-25 22:03:00</span>
-                <span class="mobile">2024-03-25 22:03</span>
+                <span class="pc">2024-04-19 22:22:00</span>
+                <span class="mobile">2024-04-19 22:22</span>
             </span>
 
             <span class="meta-info-item article-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="pc" data-updated="Sun Apr 28 2024 22:03:41 GMT+0800">2024-04-28 22:03:41</span>
+                <span class="pc" data-updated="Sun Apr 28 2024 22:01:10 GMT+0800">2024-04-28 22:01:10</span>
             </span>
         
 
@@ -236,7 +236,7 @@
             <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="article-category-ul">
                     
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                            <li class="category-item"><a href="/categories/%E5%85%B6%E4%BB%96/">其他</a></li>
                         
                     
                 </ul>
@@ -266,35 +266,157 @@
                 <div class="article-content keep-markdown-body">
                     
 
-                    <p>箭頭函式可以讓程式碼更簡單一些</p>
-<p>像原本的寫法是</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> total = <span class="keyword">function</span> (<span class="params">a, b</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> a * b;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">total</span>(<span class="number">3</span>, <span class="number">2</span>)); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
-
+                    <h2 id="tab-空格大小"><a href="#tab-空格大小" class="headerlink" title="tab 空格大小"></a>tab 空格大小</h2><blockquote>
+<p>tabsize</p>
+</blockquote>
+<p>原本預設是 4，可以改成 2</p>
 <br>
 
-<p>箭頭函式的寫法會變成去掉 function 後面加上 &#x3D;&gt;</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">total</span> = (<span class="params">a, b</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> a * b;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">total</span>(<span class="number">3</span>, <span class="number">2</span>)); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
 
+<h2 id="顯示-tab-空格"><a href="#顯示-tab-空格" class="headerlink" title="顯示 tab 空格"></a>顯示 tab 空格</h2><blockquote>
+<p>renderWhitespace</p>
+</blockquote>
+<p>改成 all</p>
+<p>編輯器畫面中的空格會顯示點點</p>
 <br>
 
-<p>也可以再精簡把 {} 也去掉</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">total</span> = (<span class="params">a, b</span>) =&gt; a * b;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">total</span>(<span class="number">3</span>, <span class="number">2</span>)); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
 
+<h2 id="預設行尾字元"><a href="#預設行尾字元" class="headerlink" title="預設行尾字元"></a>預設行尾字元</h2><blockquote>
+<p>eol</p>
+</blockquote>
+<blockquote>
+<p>\n 表示 LF，\r\n 表示 CRLF</p>
+</blockquote>
+<p>建議使用 LF</p>
 <br>
 
-<p>如果只有一個參數時，也可以不加 ()</p>
-<p>像上面的例子如果只有 (a) 也可以只寫 a</p>
-<p>如果沒有參數或有很多個參數時，還是要寫 () 才可以</p>
+
+<h2 id="字型大小"><a href="#字型大小" class="headerlink" title="字型大小"></a>字型大小</h2><h3 id="終端機的字型大小"><a href="#終端機的字型大小" class="headerlink" title="終端機的字型大小"></a>終端機的字型大小</h3><blockquote>
+<p>terminal.integrated.fontSize</p>
+</blockquote>
 <br>
 
-<p>下面是之前的範例改成箭頭函式的寫法</p>
+<h3 id="編輯器的字型大小"><a href="#編輯器的字型大小" class="headerlink" title="編輯器的字型大小"></a>編輯器的字型大小</h3><blockquote>
+<p>editor.fontSize</p>
+</blockquote>
 <br>
 
-<iframe src="https://codepen.io/Nora2207/embed/BabNEpx?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
-
+<h2 id="佈景主題"><a href="#佈景主題" class="headerlink" title="佈景主題"></a>佈景主題</h2><blockquote>
+<p>設定 &gt; 主題 &gt; 色彩佈景主題 可以設定佈景主題</p>
+</blockquote>
+<p>其他主題從左邊的延伸模組去尋找</p>
+<p>這裡分享幾個我喜歡的主題</p>
 <br>
 
-<br>
+<ul>
+<li>One Dark Pro</li>
+</ul>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/S2yNzKYk/1714014215296.jpg"
+                      alt="One Dark Pro"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/S2yNzKYk/1714014215296.jpg"
+                      alt="One Dark Pro"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/S2yNzKYk/1714014215296.jpg"
+                      alt="One Dark Pro"
+                ></p>
+<hr>
+<ul>
+<li>Pink-Cat-Boo Theme</li>
+</ul>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/BtBnsHyb/1714014118926.jpg"
+                      alt="Pink-Cat-Boo"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/Xp2NB3n0/1714014135069.jpg"
+                      alt="Pink-Cat-Boo"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/68yWdSQ4/1714014145197.jpg"
+                      alt="Pink-Cat-Boo"
+                ></p>
+<hr>
+<ul>
+<li>Dracula Official</li>
+</ul>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/WqqRDR8s/1714014309001.jpg"
+                      alt="Dracula"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/WqqRDR8s/1714014309001.jpg"
+                      alt="Dracula"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/WqqRDR8s/1714014309001.jpg"
+                      alt="Dracula"
+                ></p>
+<hr>
+<ul>
+<li>Horizon</li>
+</ul>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/G8Z754P1/1714014539171.jpg"
+                      alt="Horizon"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/G8Z754P1/1714014539171.jpg"
+                      alt="Horizon"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/G8Z754P1/1714014539171.jpg"
+                      alt="Horizon"
+                ></p>
+<hr>
+<ul>
+<li>Fall Theme</li>
+</ul>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/56tgSqWF/1714015122435.jpg"
+                      alt="Fall"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/56tgSqWF/1714015122435.jpg"
+                      alt="Fall"
+                ></p>
+<p><img  
+                     lazyload
+                     alt="image"
+                     data-src="https://i.postimg.cc/6ySrVkhD/1714015142710.jpg"
+                      alt="Fall"
+                ></p>
 
                 </div>
 
@@ -317,14 +439,14 @@
                             <div class="article-prev">
                                 <a class="prev"
                                    rel="prev"
-                                   href="/2024/04/01/20240401-1047/"
-                                   title="Date 物件取得日期和時間"
+                                   href="/2024/04/25/20240425-2201/"
+                                   title="findIndex() 找索引值"
                                 >
                                     <span class="left arrow-icon flex-center">
                                       <i class="fas fa-chevron-left"></i>
                                     </span>
                                             <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">Date 物件取得日期和時間</span>
+                                        <span class="post-nav-title-item text-ellipsis">findIndex() 找索引值</span>
                                         <span class="post-nav-item">Prev posts</span>
                                     </span>
                                 </a>
@@ -334,11 +456,11 @@
                             <div class="article-next">
                                 <a class="next"
                                    rel="next"
-                                   href="/2024/03/22/20240322-2025/"
-                                   title="data- 屬性"
+                                   href="/2024/04/17/20240417-2306/"
+                                   title="To Do List 待辦事項"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">data- 屬性</span>
+                                        <span class="post-nav-title-item text-ellipsis">To Do List 待辦事項</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
                                             <span class="right arrow-icon flex-center">
@@ -379,7 +501,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tab-%E7%A9%BA%E6%A0%BC%E5%A4%A7%E5%B0%8F"><span class="nav-number">1.</span> <span class="nav-text">tab 空格大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%AF%E7%A4%BA-tab-%E7%A9%BA%E6%A0%BC"><span class="nav-number">2.</span> <span class="nav-text">顯示 tab 空格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A0%90%E8%A8%AD%E8%A1%8C%E5%B0%BE%E5%AD%97%E5%85%83"><span class="nav-number">3.</span> <span class="nav-text">預設行尾字元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E5%9E%8B%E5%A4%A7%E5%B0%8F"><span class="nav-number">4.</span> <span class="nav-text">字型大小</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%9A%84%E5%AD%97%E5%9E%8B%E5%A4%A7%E5%B0%8F"><span class="nav-number">4.1.</span> <span class="nav-text">終端機的字型大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B7%A8%E8%BC%AF%E5%99%A8%E7%9A%84%E5%AD%97%E5%9E%8B%E5%A4%A7%E5%B0%8F"><span class="nav-number">4.2.</span> <span class="nav-text">編輯器的字型大小</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%88%E6%99%AF%E4%B8%BB%E9%A1%8C"><span class="nav-number">5.</span> <span class="nav-text">佈景主題</span></a></li></ol>
     </div>
 </div>
 
@@ -557,7 +679,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tab-%E7%A9%BA%E6%A0%BC%E5%A4%A7%E5%B0%8F"><span class="nav-number">1.</span> <span class="nav-text">tab 空格大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%AF%E7%A4%BA-tab-%E7%A9%BA%E6%A0%BC"><span class="nav-number">2.</span> <span class="nav-text">顯示 tab 空格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A0%90%E8%A8%AD%E8%A1%8C%E5%B0%BE%E5%AD%97%E5%85%83"><span class="nav-number">3.</span> <span class="nav-text">預設行尾字元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E5%9E%8B%E5%A4%A7%E5%B0%8F"><span class="nav-number">4.</span> <span class="nav-text">字型大小</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B5%82%E7%AB%AF%E6%A9%9F%E7%9A%84%E5%AD%97%E5%9E%8B%E5%A4%A7%E5%B0%8F"><span class="nav-number">4.1.</span> <span class="nav-text">終端機的字型大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B7%A8%E8%BC%AF%E5%99%A8%E7%9A%84%E5%AD%97%E5%9E%8B%E5%A4%A7%E5%B0%8F"><span class="nav-number">4.2.</span> <span class="nav-text">編輯器的字型大小</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%88%E6%99%AF%E4%B8%BB%E9%A1%8C"><span class="nav-number">5.</span> <span class="nav-text">佈景主題</span></a></li></ol>
     </div>
 </div>
 

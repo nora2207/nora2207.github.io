@@ -9,7 +9,7 @@
     
     <title>
         
-            箭頭函式 |
+            用 classList 操控 class |
         
         Nora&#39;s 小筆記
     </title>
@@ -195,7 +195,7 @@
             <div class="article-content-bottom border-box">
                 
                     <div class="article-title">
-                        箭頭函式
+                        用 classList 操控 class
                     </div>
                 
 
@@ -222,13 +222,13 @@
         
             <span class="meta-info-item article-create-date">
                 <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
-                <span class="pc">2024-03-25 22:03:00</span>
-                <span class="mobile">2024-03-25 22:03</span>
+                <span class="pc">2024-04-28 21:09:00</span>
+                <span class="mobile">2024-04-28 21:09</span>
             </span>
 
             <span class="meta-info-item article-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="pc" data-updated="Sun Apr 28 2024 22:03:41 GMT+0800">2024-04-28 22:03:41</span>
+                <span class="pc" data-updated="Sun Apr 28 2024 22:11:38 GMT+0800">2024-04-28 22:11:38</span>
             </span>
         
 
@@ -243,6 +243,19 @@
             </span>
         
 
+        
+            <span class="article-tag meta-info-item border-box">
+                <i class="icon fas fa-tags"></i>&nbsp;
+                <ul class="article-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/class/">class</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/getAttribute/">getAttribute</a></li>
+                        
+                    
+                </ul>
+            </span>
         
 
         
@@ -266,42 +279,107 @@
                 <div class="article-content keep-markdown-body">
                     
 
-                    <p>箭頭函式可以讓程式碼更簡單一些</p>
-<p>像原本的寫法是</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> total = <span class="keyword">function</span> (<span class="params">a, b</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> a * b;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">total</span>(<span class="number">3</span>, <span class="number">2</span>)); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
+                    <h2 id="add-新增-class"><a href="#add-新增-class" class="headerlink" title="add() 新增 class"></a>add() 新增 class</h2><p><code>classList.add()</code> 可以新增 class</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> link2 = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.link2&#x27;</span>);</span><br><span class="line">link2.<span class="property">classList</span>.<span class="title function_">add</span>(<span class="string">&#x27;big&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>這裡有二個連結</p>
+<p>連結1 是原本的樣子，連結2 新增了 big 這個 class</p>
+<p>所以字就變大了</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.big</span> &#123;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <br>
 
-<p>箭頭函式的寫法會變成去掉 function 後面加上 &#x3D;&gt;</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">total</span> = (<span class="params">a, b</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> a * b;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">total</span>(<span class="number">3</span>, <span class="number">2</span>)); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-<p>也可以再精簡把 {} 也去掉</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">total</span> = (<span class="params">a, b</span>) =&gt; a * b;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">total</span>(<span class="number">3</span>, <span class="number">2</span>)); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-<p>如果只有一個參數時，也可以不加 ()</p>
-<p>像上面的例子如果只有 (a) 也可以只寫 a</p>
-<p>如果沒有參數或有很多個參數時，還是要寫 () 才可以</p>
-<br>
-
-<p>下面是之前的範例改成箭頭函式的寫法</p>
-<br>
-
-<iframe src="https://codepen.io/Nora2207/embed/BabNEpx?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+<iframe src="https://codepen.io/Nora2207/embed/MWRxvgO?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
 
 <br>
 
 <br>
 
+
+<h2 id="remove-刪除-class"><a href="#remove-刪除-class" class="headerlink" title="remove() 刪除 class"></a>remove() 刪除 class</h2><p><code>classList.remove()</code> 可以刪除 class</p>
+<p>這裡有二個連結，一起把字變大、顏色變橘色</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.link</span> &#123;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">25px</span>;</span><br><span class="line"><span class="attribute">color</span>: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>但是連結2 刪除了 link 這個 class</p>
+<p>所以就變回原本預設的樣式了</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> link2 = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.link2&#x27;</span>);</span><br><span class="line">link2.<span class="property">classList</span>.<span class="title function_">remove</span>(<span class="string">&#x27;link&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/rNbRzxv?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+
+<h2 id="toggle-切換-class"><a href="#toggle-切換-class" class="headerlink" title="toggle() 切換 class"></a>toggle() 切換 class</h2><p>如果原本有這個 class 就會移除，如果沒有就會新增</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span> <span class="attr">class</span>=<span class="string">&quot;link1&quot;</span>&gt;</span>連結1<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span> <span class="attr">class</span>=<span class="string">&quot;link2&quot;</span>&gt;</span>連結2<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span> <span class="attr">class</span>=<span class="string">&quot;link3 big&quot;</span>&gt;</span>連結3<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>這三個連結中，第三個有 big 這個 class</p>
+<p>所以字會比較大</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.big</span> &#123;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">35px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>但是現在連結2 和連結3 用了 <code>classList.toggle()</code> 之後</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> link2 = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.link2&#x27;</span>);</span><br><span class="line">link2.<span class="property">classList</span>.<span class="title function_">toggle</span>(<span class="string">&#x27;big&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> link3 = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.link3&#x27;</span>);</span><br><span class="line">link3.<span class="property">classList</span>.<span class="title function_">toggle</span>(<span class="string">&#x27;big&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>連結2 多了 big 這個 class，字就變大了</p>
+<p>而連結3 移除了 big 這個 class，字就變回原本的大小了</p>
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/RwOdZGN?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+
+
+<h2 id="contains-尋找-class"><a href="#contains-尋找-class" class="headerlink" title="contains() 尋找 class"></a>contains() 尋找 class</h2><p><code>classList.contains()</code> 可以取得元素的 class</p>
+<p><code>getAttribute</code> 也可以取得，但是有點不太一樣</p>
+<p>如果設定的條件是判斷某一個 class 是否存在</p>
+<p>像是按鈕1 只設定一個 class</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">class</span>=<span class="string">&quot;btn1&quot;</span>&gt;</span>按鈕1 (class為btn1)<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>這個時候 <code>classList</code> 和 <code>getAttribute</code> 都可以選取到</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> btn1 = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.btn1&#x27;</span>);</span><br><span class="line">btn1.<span class="title function_">addEventListener</span>(<span class="string">&#x27;click&#x27;</span>,<span class="function">(<span class="params">e</span>)=&gt;</span>&#123;</span><br><span class="line"><span class="keyword">if</span> (e.<span class="property">target</span>.<span class="title function_">getAttribute</span>(<span class="string">&quot;class&quot;</span>) === <span class="string">&quot;btn1&quot;</span>) &#123;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;getAttribute 點到按鈕1了&quot;</span>); <span class="comment">// &quot;getAttribute 點到按鈕1了&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(e.<span class="property">target</span>.<span class="property">classList</span>.<span class="title function_">contains</span>(<span class="string">&quot;btn1&quot;</span>))&#123;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;classList.contains 點到按鈕1了&#x27;</span>) <span class="comment">// &quot;classList.contains 點到按鈕1了&quot;</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>但是如果設定了2個 class</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">class</span>=<span class="string">&quot;btn2 box&quot;</span>&gt;</span>按鈕2 (class為btn2和box)<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>這時就只有 <code>classList</code> 可以選取到</p>
+<p>因為 <code>classList</code> 只要有包含某一個特定樣式就可以了</p>
+<p>但是 <code>getAttribute</code> 需要完全符合</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> btn2 = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.btn2&#x27;</span>);</span><br><span class="line">btn2.<span class="title function_">addEventListener</span>(<span class="string">&#x27;click&#x27;</span>,<span class="function">(<span class="params">e</span>)=&gt;</span>&#123;</span><br><span class="line"><span class="keyword">if</span> (e.<span class="property">target</span>.<span class="title function_">getAttribute</span>(<span class="string">&quot;class&quot;</span>) === <span class="string">&quot;btn2&quot;</span>) &#123;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;getAttribute 點到按鈕2了&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//如果點擊到的元素 classList 內有包含 btn</span></span><br><span class="line"><span class="keyword">if</span>(e.<span class="property">target</span>.<span class="property">classList</span>.<span class="title function_">contains</span>(<span class="string">&quot;btn2&quot;</span>))&#123;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;classList.contains 點到按鈕2了&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/vYMPmgZ?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
                 </div>
 
                 
 
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/class/">class</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/getAttribute/">getAttribute</a>
+                                    </li>
+                                
+                            </ul>
                         
                     </div>
                     <div>
@@ -314,31 +392,15 @@
                 
                     <div class="article-nav">
                         
-                            <div class="article-prev">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/2024/04/01/20240401-1047/"
-                                   title="Date 物件取得日期和時間"
-                                >
-                                    <span class="left arrow-icon flex-center">
-                                      <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                            <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">Date 物件取得日期和時間</span>
-                                        <span class="post-nav-item">Prev posts</span>
-                                    </span>
-                                </a>
-                            </div>
-                        
                         
                             <div class="article-next">
                                 <a class="next"
                                    rel="next"
-                                   href="/2024/03/22/20240322-2025/"
-                                   title="data- 屬性"
+                                   href="/2024/04/27/20240427-2205/"
+                                   title="splice() 修改陣列方法"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">data- 屬性</span>
+                                        <span class="post-nav-title-item text-ellipsis">splice() 修改陣列方法</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
                                             <span class="right arrow-icon flex-center">
@@ -379,7 +441,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#add-%E6%96%B0%E5%A2%9E-class"><span class="nav-number">1.</span> <span class="nav-text">add() 新增 class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#remove-%E5%88%AA%E9%99%A4-class"><span class="nav-number">2.</span> <span class="nav-text">remove() 刪除 class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toggle-%E5%88%87%E6%8F%9B-class"><span class="nav-number">3.</span> <span class="nav-text">toggle() 切換 class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#contains-%E5%B0%8B%E6%89%BE-class"><span class="nav-number">4.</span> <span class="nav-text">contains() 尋找 class</span></a></li></ol>
     </div>
 </div>
 
@@ -557,7 +619,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#add-%E6%96%B0%E5%A2%9E-class"><span class="nav-number">1.</span> <span class="nav-text">add() 新增 class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#remove-%E5%88%AA%E9%99%A4-class"><span class="nav-number">2.</span> <span class="nav-text">remove() 刪除 class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toggle-%E5%88%87%E6%8F%9B-class"><span class="nav-number">3.</span> <span class="nav-text">toggle() 切換 class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#contains-%E5%B0%8B%E6%89%BE-class"><span class="nav-number">4.</span> <span class="nav-text">contains() 尋找 class</span></a></li></ol>
     </div>
 </div>
 
