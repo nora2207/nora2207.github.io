@@ -33,10 +33,10 @@
     <script class="keep-theme-configurations">
     const KEEP = window.KEEP || {}
     KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
-    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"style":{"primary_color":"#FF6699","logo":"/images/flower-icon.svg","favicon":"/images/flower-icon.ico","avatar":"/images/flower-icon.jpg","first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Two roads diverged in a wood, and I took the one less traveled by, || And that has made all the difference.","hitokoto":false},"scroll":{"progress_bar":true,"percent":false}},"local_search":{"enable":true,"preload":true},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"comment":{"enable":true,"use":"gitalk","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false}},"post":{"author_label":{"enable":false,"auto":false,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":false,"copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"version":"3.8.4"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#FF6699","title":"Nora's 小筆記","author":"Nora","avatar":"/images/flower-icon.jpg","logo":"/images/flower-icon.svg","favicon":"/images/flower-icon.ico"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":false,"copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":"nora2207/nora2207.github.io","repo_id":"R_kgDOLyqPRA","category":"Announcements","category_id":"DIC_kwDOLyqPRM4Ch6no","reactions_enabled":false,"theme":"light_high_contrast","lang":"zh-TW","mapping":"title"},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2023,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.2.2"}
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
     KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
-    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original article title","author":"Original article author","link":"Original article link"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
   </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
@@ -48,14 +48,11 @@
     
 
     
-        <span class="pjax-progress-bar"></span>
-        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
-    
 </div>
 
 
-<main class="page-container border-box">
 
+<main class="page-container border-box">
     <!-- home first screen  -->
     
 
@@ -66,7 +63,7 @@
 <header class="header-wrapper">
 
     <div class="border-box header-content">
-        <div class="left border-box">
+        <div class="left flex-start border-box">
             
                 <a class="logo-image border-box" href="/">
                     <img src="/images/flower-icon.svg">
@@ -78,57 +75,67 @@
         </div>
 
         <div class="right border-box">
-            <div class="pc">
-                <ul class="menu-list">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
                     
-                        <li class="menu-item">
-                            <a class="active"
-                               href="/"
-                            >
+                        
+                        <li class="menu-item flex-start border-box active">
+                            <a class="menu-text-color border-box" href="/">
+                                
                                 HOME
+                                
                             </a>
+                            
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/archives"
-                            >
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
                                 ARCHIVES
+                                
                             </a>
+                            
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/tags"
-                            >
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
                                 TAGS
+                                
                             </a>
+                            
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/categories"
-                            >
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
                                 CATEGORIES
+                                
                             </a>
+                            
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/about"
-                            >
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
                                 ABOUT
+                                
                             </a>
+                            
                         </li>
                     
                     
                         <li class="menu-item search search-popup-trigger">
-                            <i class="fas fa-search"></i>
+                            <i class="menu-text-color fas search fa-search"></i>
                         </li>
                     
                 </ul>
             </div>
-            <div class="mobile">
+            <div class="mobile border-box flex-start">
                 
                     <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
@@ -140,31 +147,66 @@
     </div>
 
     <div class="header-drawer">
-        <ul class="drawer-menu-list">
+        <ul class="drawer-menu-list border-box">
             
-                <li class="drawer-menu-item flex-center">
-                    <a class="active"
-                       href="/">HOME</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu active">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/archives">ARCHIVES</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/tags">TAGS</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/categories">CATEGORIES</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/about">ABOUT</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
         </ul>
@@ -180,47 +222,59 @@
         <div class="page-main-content-middle border-box">
 
             <div class="main-content border-box">
-
                 
 
                     <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list border-box">
+    
+    <ul class="home-post-list border-box">
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <div class="home-article-item-bottom border-box">
+                <div class="home-post-item-bottom border-box">
                     
-                    <h3 class="home-article-title border-box">
-                        <a href="/2024/04/28/20240428-2109/">
-                            用 classList 操控 class
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/05/18/20240518-1325/">
+                            closest() 選取到最近的目標
                         </a>
                     </h3>
 
-                    <div class="home-article-content keep-markdown-body">
+                    <div class="home-post-content keep-markdown-body">
                         
-                            add() 新增 classclassList.add() 可以新增 class
-12const link2 = document.querySelector(&#x27;.link2&#x27;);link2.classList.add(&#x27...
+                            可以用 closest 直接選取到自己想要的元素
+像是下面這個例子
+
+
+
+
+
+
+
+
+如果單純使用 e.target
+點 input 時會顯示 &lt;input type=&quot;text&quot;&gt;
+點按鈕會顯示 &lt;button ...
                         
                     </div>
 
                     
 
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
             <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun Apr 28 2024 22:11:38 GMT+0800">2024-04-28 22:11:38</span>
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sat Jun 01 2024 16:32:22 GMT+0800"
+                >2024-06-01 16:32:22</span>
             </span>
         
 
-
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
@@ -230,9 +284,68 @@
         
 
         
-            <span class="article-tag meta-info-item border-box">
-                <i class="icon fas fa-tags"></i>&nbsp;
-                <ul class="article-tag-ul">
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/05/18/20240518-1325/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/04/28/20240428-2109/">
+                            用 classList 操控 class
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            add() 新增 classclassList.add() 可以新增 class
+12const link2 = document.querySelector(&#x27;.link2&#x27;);link2.classList.add(&#x27...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sun Apr 28 2024 22:11:38 GMT+0800"
+                >2024-04-28 22:11:38</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
                     
                             <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/class/">class</a></li>
                         
@@ -251,26 +364,26 @@
     </div>
 
     
-        <a class="home-read-more" href="/2024/04/28/20240428-2109/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+        <a class="home-read-more" href="/2024/04/28/20240428-2109/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
                 </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <div class="home-article-item-bottom border-box">
+                <div class="home-post-item-bottom border-box">
                     
-                    <h3 class="home-article-title border-box">
+                    <h3 class="home-post-title border-box">
                         <a href="/2024/04/27/20240427-2205/">
                             splice() 修改陣列方法
                         </a>
                     </h3>
 
-                    <div class="home-article-content keep-markdown-body">
+                    <div class="home-post-content keep-markdown-body">
                         
                             指定刪除planet.splice(2, 1)
 從第2個索引值的位置開始刪除一筆資料
@@ -282,20 +395,21 @@
 
                     
 
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
             <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun Apr 28 2024 22:07:35 GMT+0800">2024-04-28 22:07:35</span>
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sun Apr 28 2024 22:07:35 GMT+0800"
+                >2024-04-28 22:07:35</span>
             </span>
         
 
-
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
@@ -313,26 +427,26 @@
     </div>
 
     
-        <a class="home-read-more" href="/2024/04/27/20240427-2205/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+        <a class="home-read-more" href="/2024/04/27/20240427-2205/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
                 </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <div class="home-article-item-bottom border-box">
+                <div class="home-post-item-bottom border-box">
                     
-                    <h3 class="home-article-title border-box">
+                    <h3 class="home-post-title border-box">
                         <a href="/2024/04/25/20240425-2201/">
                             findIndex() 找索引值
                         </a>
                     </h3>
 
-                    <div class="home-article-content keep-markdown-body">
+                    <div class="home-post-content keep-markdown-body">
                         
                             陣列方法 findIndex() 裡面放函式，可以找出符合條件的第一個索引值
 如果在第一個會回傳 0，第二個會回傳 1，以此類推
@@ -347,20 +461,21 @@
 
                     
 
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
             <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun Apr 28 2024 22:05:20 GMT+0800">2024-04-28 22:05:20</span>
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sun Apr 28 2024 22:05:20 GMT+0800"
+                >2024-04-28 22:05:20</span>
             </span>
         
 
-
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
@@ -378,26 +493,26 @@
     </div>
 
     
-        <a class="home-read-more" href="/2024/04/25/20240425-2201/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+        <a class="home-read-more" href="/2024/04/25/20240425-2201/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
                 </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <div class="home-article-item-bottom border-box">
+                <div class="home-post-item-bottom border-box">
                     
-                    <h3 class="home-article-title border-box">
+                    <h3 class="home-post-title border-box">
                         <a href="/2024/04/19/20240419-2222/">
                             VS Code 設定
                         </a>
                     </h3>
 
-                    <div class="home-article-content keep-markdown-body">
+                    <div class="home-post-content keep-markdown-body">
                         
                             tab 空格大小
 tabsize
@@ -426,20 +541,21 @@ eol
 
                     
 
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
             <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun Apr 28 2024 22:01:10 GMT+0800">2024-04-28 22:01:10</span>
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sun Apr 28 2024 22:01:10 GMT+0800"
+                >2024-04-28 22:01:10</span>
             </span>
         
 
-
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/%E5%85%B6%E4%BB%96/">其他</a></li>
                         
@@ -457,26 +573,26 @@ eol
     </div>
 
     
-        <a class="home-read-more" href="/2024/04/19/20240419-2222/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+        <a class="home-read-more" href="/2024/04/19/20240419-2222/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
                 </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <div class="home-article-item-bottom border-box">
+                <div class="home-post-item-bottom border-box">
                     
-                    <h3 class="home-article-title border-box">
+                    <h3 class="home-post-title border-box">
                         <a href="/2024/04/17/20240417-2306/">
                             To Do List 待辦事項
                         </a>
                     </h3>
 
-                    <div class="home-article-content keep-markdown-body">
+                    <div class="home-post-content keep-markdown-body">
                         
                             版面介紹這個 TODO LIST 上方可以輸入代辦事項，按右邊的+可以新增
 下面分成三個區塊
@@ -488,20 +604,21 @@ eol
 
                     
 
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
             <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun Apr 28 2024 21:40:38 GMT+0800">2024-04-28 21:40:38</span>
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sun Apr 28 2024 21:40:38 GMT+0800"
+                >2024-04-28 21:40:38</span>
             </span>
         
 
-
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
@@ -519,26 +636,26 @@ eol
     </div>
 
     
-        <a class="home-read-more" href="/2024/04/17/20240417-2306/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+        <a class="home-read-more" href="/2024/04/17/20240417-2306/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
                 </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <div class="home-article-item-bottom border-box">
+                <div class="home-post-item-bottom border-box">
                     
-                    <h3 class="home-article-title border-box">
+                    <h3 class="home-post-title border-box">
                         <a href="/2024/04/01/20240401-1047/">
                             Date 物件取得日期和時間
                         </a>
                     </h3>
 
-                    <div class="home-article-content keep-markdown-body">
+                    <div class="home-post-content keep-markdown-body">
                         
                             Date 物件是基於世界標準時間（UTC） 1970 年 1 月 1 日開始的毫秒數值來儲存時間
 Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 到當下的毫秒數
@@ -548,20 +665,21 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
 
                     
 
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
             <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Wed Apr 24 2024 21:34:14 GMT+0800">2024-04-24 21:34:14</span>
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Wed Apr 24 2024 21:34:14 GMT+0800"
+                >2024-04-24 21:34:14</span>
             </span>
         
 
-
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
@@ -571,9 +689,8 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
         
 
         
-            <span class="article-tag meta-info-item border-box">
-                <i class="icon fas fa-tags"></i>&nbsp;
-                <ul class="article-tag-ul">
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
                     
                             <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/ID/">ID</a></li>
                         
@@ -595,26 +712,26 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
     </div>
 
     
-        <a class="home-read-more" href="/2024/04/01/20240401-1047/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+        <a class="home-read-more" href="/2024/04/01/20240401-1047/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
                 </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <div class="home-article-item-bottom border-box">
+                <div class="home-post-item-bottom border-box">
                     
-                    <h3 class="home-article-title border-box">
+                    <h3 class="home-post-title border-box">
                         <a href="/2024/03/25/20240325-2203/">
                             箭頭函式
                         </a>
                     </h3>
 
-                    <div class="home-article-content keep-markdown-body">
+                    <div class="home-post-content keep-markdown-body">
                         
                             箭頭函式可以讓程式碼更簡單一些
 像原本的寫法是
@@ -628,20 +745,21 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
 
                     
 
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
             <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Sun Apr 28 2024 22:03:41 GMT+0800">2024-04-28 22:03:41</span>
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sun Apr 28 2024 22:03:41 GMT+0800"
+                >2024-04-28 22:03:41</span>
             </span>
         
 
-
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
@@ -659,26 +777,26 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
     </div>
 
     
-        <a class="home-read-more" href="/2024/03/25/20240325-2203/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+        <a class="home-read-more" href="/2024/03/25/20240325-2203/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
                 </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <div class="home-article-item-bottom border-box">
+                <div class="home-post-item-bottom border-box">
                     
-                    <h3 class="home-article-title border-box">
+                    <h3 class="home-post-title border-box">
                         <a href="/2024/03/22/20240322-2025/">
                             data- 屬性
                         </a>
                     </h3>
 
-                    <div class="home-article-content keep-markdown-body">
+                    <div class="home-post-content keep-markdown-body">
                         
                             data 後面可以加上自定義的名稱
 這樣有需要用到時就可以很方便的呼叫
@@ -693,20 +811,21 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
 
                     
 
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
             <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Wed Apr 24 2024 21:35:44 GMT+0800">2024-04-24 21:35:44</span>
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Wed Apr 24 2024 21:35:44 GMT+0800"
+                >2024-04-24 21:35:44</span>
             </span>
         
 
-
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
@@ -716,9 +835,8 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
         
 
         
-            <span class="article-tag meta-info-item border-box">
-                <i class="icon fas fa-tags"></i>&nbsp;
-                <ul class="article-tag-ul">
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
                     
                             <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E4%BB%A3%E8%BE%A6%E6%B8%85%E5%96%AE/">代辦清單</a></li>
                         
@@ -734,26 +852,26 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
     </div>
 
     
-        <a class="home-read-more" href="/2024/03/22/20240322-2025/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+        <a class="home-read-more" href="/2024/03/22/20240322-2025/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
                 </div>
             </li>
         
-            <li class="home-article-item">
+            <li class="home-post-item">
 
                 
 
-                <div class="home-article-item-bottom border-box">
+                <div class="home-post-item-bottom border-box">
                     
-                    <h3 class="home-article-title border-box">
+                    <h3 class="home-post-title border-box">
                         <a href="/2024/03/03/20240303-1537/">
                             實作 axios 註冊、登入功能
                         </a>
                     </h3>
 
-                    <div class="home-article-content keep-markdown-body">
+                    <div class="home-post-content keep-markdown-body">
                         
                             用前面學過的 axios post 來實作帳號的註冊及登入功能
 註冊先在 HTML 上設定帳號和密碼的輸入欄位還有註冊的按鈕
@@ -763,20 +881,21 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
 
                     
 
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
         
             <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Wed Apr 24 2024 21:36:19 GMT+0800">2024-04-24 21:36:19</span>
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Wed Apr 24 2024 21:36:19 GMT+0800"
+                >2024-04-24 21:36:19</span>
             </span>
         
 
-
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
@@ -794,91 +913,7 @@ Date.now() 和 getTime() 毫秒會計算從 1970 年 1 月 1 日 00:00:00 (UTC) 
     </div>
 
     
-        <a class="home-read-more" href="/2024/03/03/20240303-1537/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <div class="home-article-item-bottom border-box">
-                    
-                    <h3 class="home-article-title border-box">
-                        <a href="/2024/02/25/20240205-1922/">
-                            用 axios 串接 get 外部資料
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content keep-markdown-body">
-                        
-                            這裡用農業部林業及自然保育署-最新活動來練習一下
-
-
-
-
-
-
-
-
-html 的地方記得載入 axios 的 CDN (也可以用 NPM 的方式)
-12&lt;script src=&quot;https://cdn.jsdelivr.net/npm/...
-                        
-                    </div>
-
-                    
-
-<div class="article-meta-info-container border-box home">
-    <div class="article-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-article-history" data-updated="Wed Apr 24 2024 21:37:43 GMT+0800">2024-04-24 21:37:43</span>
-            </span>
-        
-
-
-        
-
-        
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-            <span class="article-tag meta-info-item border-box">
-                <i class="icon fas fa-tags"></i>&nbsp;
-                <ul class="article-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/axios/">axios</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/innerHTML/">innerHTML</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E9%9D%9E%E5%90%8C%E6%AD%A5/">非同步</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/02/25/20240205-1922/">Read more&nbsp;<i class="icon fas fa-angles-right"></i></a>
+        <a class="home-read-more" href="/2024/03/03/20240303-1537/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -888,27 +923,35 @@ html 的地方記得載入 axios 的 CDN (也可以用 NPM 的方式)
     </ul>
     
     <div class="paginator border-box flex-center">
-        <div class="btn-wrap">
-            <a class="jump-btn"
+        <div class="border-box first-page paginator-btn not-allow">
+            <a class="border-box"><i class="fa-solid fa-angle-double-left"></i></a>
+        </div>
+
+        <div class="border-box paginator-btn">
+            <a class="border-box"
                href="/"
             ><i class="fa-solid fa-chevron-left"></i></a>
         </div>
 
 
         <div class="page-number-box border-box flex-center">
-            <input class="page-number-input border-box base-color-size"
+            <input class="page-number-input border-box base-style"
                    type="number"
                    value="1"
                    min="1"
                    max="8"
-            ><span class="delimiter base-color-size">/</span><span class="base-color-size">8</span>
+            /><span class="delimiter base-style">/</span><span class="base-style">8</span>
         </div>
 
 
-        <div class="btn-wrap allowed">
-            <a class="jump-btn"
+        <div class="border-box paginator-btn allowed">
+            <a class="border-box"
                href="/page/2/"
             ><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+
+        <div class="border-box last-page paginator-btn allowed">
+            <a class="border-box"><i class="fa-solid fa-angle-double-right"></i></a>
         </div>
     </div>
 
@@ -920,48 +963,45 @@ html 的地方記得載入 axios 的 CDN (也可以用 NPM 的方式)
 
                 
             </div>
-
         </div>
 
         <div class="page-main-content-bottom border-box">
             
 <footer class="footer border-box">
-    <div class="border-box website-info-box default">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2024
         
-            <div class="copyright-info info-item default">
-                &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2024
-                
-                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
-                
-            </div>
-
-            <div class="theme-info info-item default">
-                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
-            </div>
-
-            
-
-            
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
         
+    </div>
 
-        <div class="count-item info-item default">
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+        <div class="count-info info-item">
             
 
             
-                <span class="count-box border-box uv">
+                <span class="count-item border-box uv">
                     <span class="item-type border-box">Unique Visitor</span>
                     <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
                 </span>
             
 
             
-                <span class="count-box border-box pv">
+                <span class="count-item border-box pv">
                     <span class="item-type border-box">Page View</span>
                     <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
                 </span>
             
         </div>
-    </div>
+    
+
+    
 </footer>
 
         </div>
@@ -982,13 +1022,17 @@ html 的地方記得載入 axios 的 CDN (也可以用 NPM 的方式)
             <i class="fas fa-search-minus"></i>
         </li>
 
-        <li class="tools-item tool-dark-light-toggle flex-center">
-            <i class="fas fa-moon"></i>
-        </li>
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
 
         <!-- rss -->
         
 
+        <!-- to bottom -->
         <li class="tools-item tool-scroll-to-bottom flex-center">
             <i class="fas fa-arrow-down"></i>
         </li>
@@ -1057,7 +1101,9 @@ html 的地方記得載入 axios 的 CDN (也可以用 NPM 的方式)
 
 
 
-<!-- common -->
+
+
+<!-- common js -->
 
 <script src="/js/utils.js"></script>
 
@@ -1065,41 +1111,46 @@ html 的地方記得載入 axios 的 CDN (也可以用 NPM 的方式)
 
 <script src="/js/back2top.js"></script>
 
-<script src="/js/dark-light-toggle.js"></script>
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
 
 <script src="/js/main.js"></script>
 
 <script src="/js/libs/anime.min.js"></script>
 
 
-<!-- local-search -->
+<!-- local search -->
 
     
 <script src="/js/local-search.js"></script>
 
 
 
-<!-- code-block -->
-
-    
-<script src="/js/code-block.js"></script>
-
-
-
 <!-- lazyload -->
 
+
+<div class="">
+    <!-- home page -->
     
-<script src="/js/lazyload.js"></script>
+        
+<script src="/js/page/home-page.js"></script>
 
-
-
-<div class="pjax">
-    
-
-    <!-- category-page -->
     
 
-    <!-- links-page -->
+    <!-- post page -->
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
     
 </div>
 
@@ -1107,39 +1158,6 @@ html 的地方記得載入 axios 的 CDN (也可以用 NPM 的方式)
 
 
 <!-- pjax -->
-
-    
-<script src="/js/libs/pjax.min.js"></script>
-
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        window.pjax = new Pjax({
-            selectors: [
-                'head title',
-                '.page-container',
-                '.pjax'
-            ],
-            history: true,
-            debug: false,
-            cacheBust: false,
-            timeout: 0,
-            analytics: false,
-            currentUrlFullReload: false,
-            scrollRestoration: false,
-        });
-
-        document.addEventListener('pjax:send', () => {
-            KEEP.utils.pjaxProgressBarStart()
-        });
-
-        document.addEventListener('pjax:complete', () => {
-            KEEP.utils.pjaxProgressBarEnd()
-            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
-            KEEP.initExecute()
-        });
-    });
-</script>
-
 
 
 

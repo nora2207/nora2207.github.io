@@ -35,10 +35,10 @@
     <script class="keep-theme-configurations">
     const KEEP = window.KEEP || {}
     KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
-    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"style":{"primary_color":"#FF6699","logo":"/images/flower-icon.svg","favicon":"/images/flower-icon.ico","avatar":"/images/flower-icon.jpg","first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Two roads diverged in a wood, and I took the one less traveled by, || And that has made all the difference.","hitokoto":false},"scroll":{"progress_bar":true,"percent":false}},"local_search":{"enable":true,"preload":true},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"comment":{"enable":true,"use":"gitalk","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false}},"post":{"author_label":{"enable":false,"auto":false,"custom_label_list":["Trainee","Engineer","Architect"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":false,"copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"version":"3.8.4"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#FF6699","title":"Nora's 小筆記","author":"Nora","avatar":"/images/flower-icon.jpg","logo":"/images/flower-icon.svg","favicon":"/images/flower-icon.ico"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":false,"copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":"nora2207/nora2207.github.io","repo_id":"R_kgDOLyqPRA","category":"Announcements","category_id":"DIC_kwDOLyqPRM4Ch6no","reactions_enabled":false,"theme":"light_high_contrast","lang":"zh-TW","mapping":"title"},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2023,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.2.2"}
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
     KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
-    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original article title","author":"Original article author","link":"Original article link"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
   </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
@@ -50,14 +50,11 @@
     
 
     
-        <span class="pjax-progress-bar"></span>
-        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
-    
 </div>
 
 
-<main class="page-container border-box">
 
+<main class="page-container border-box">
     <!-- home first screen  -->
     
 
@@ -68,7 +65,7 @@
 <header class="header-wrapper">
 
     <div class="border-box header-content">
-        <div class="left border-box">
+        <div class="left flex-start border-box">
             
                 <a class="logo-image border-box" href="/">
                     <img src="/images/flower-icon.svg">
@@ -80,57 +77,67 @@
         </div>
 
         <div class="right border-box">
-            <div class="pc">
-                <ul class="menu-list">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/"
-                            >
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
                                 HOME
+                                
                             </a>
+                            
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/archives"
-                            >
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
                                 ARCHIVES
+                                
                             </a>
+                            
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/tags"
-                            >
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
                                 TAGS
+                                
                             </a>
+                            
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/categories"
-                            >
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
                                 CATEGORIES
+                                
                             </a>
+                            
                         </li>
                     
-                        <li class="menu-item">
-                            <a class=""
-                               href="/about"
-                            >
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
                                 ABOUT
+                                
                             </a>
+                            
                         </li>
                     
                     
                         <li class="menu-item search search-popup-trigger">
-                            <i class="fas fa-search"></i>
+                            <i class="menu-text-color fas search fa-search"></i>
                         </li>
                     
                 </ul>
             </div>
-            <div class="mobile">
+            <div class="mobile border-box flex-start">
                 
                     <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
@@ -142,31 +149,66 @@
     </div>
 
     <div class="header-drawer">
-        <ul class="drawer-menu-list">
+        <ul class="drawer-menu-list border-box">
             
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/">HOME</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/archives">ARCHIVES</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/tags">TAGS</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/categories">CATEGORIES</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/about">ABOUT</a>
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
                 </li>
             
         </ul>
@@ -182,59 +224,55 @@
         <div class="page-main-content-middle border-box">
 
             <div class="main-content border-box">
-
                 
 
-                    <div class="fade-in-down-animation">
+                    
+<div class="fade-in-down-animation">
     <div class="post-page-container border-box">
-
-        <div class="article-content-container border-box">
-
+        <div class="post-content-container border-box">
             
 
-            <div class="article-content-bottom border-box">
+            <div class="post-content-bottom border-box">
                 
-                    <div class="article-title">
+                    <div class="post-title">
                         event (事件)
                     </div>
                 
 
                 
-                    <div class="article-header border-box">
+                    <div class="post-header border-box">
                         
                             <div class="avatar-box border-box">
                                 <img src="/images/flower-icon.jpg">
                             </div>
                         
                         <div class="info-box">
-                            <div class="author">
+                            <div class="author border-box">
                                 <span class="name">Nora</span>
                                 
                             </div>
                             <div class="meta-info border-box">
                                 
 
-<div class="article-meta-info-container border-box post">
-    <div class="article-meta-info border-box">
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
         
 
-
         
-            <span class="meta-info-item article-create-date">
-                <i class="icon fa-solid fa-calendar-check"></i>&nbsp;
-                <span class="pc">2023-12-17 21:29:03</span>
-                <span class="mobile">2023-12-17 21:29</span>
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2023-12-17 21:29:03</span>
             </span>
 
-            <span class="meta-info-item article-update-date">
+            <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="pc" data-updated="Wed Apr 24 2024 21:41:01 GMT+0800">2024-04-24 21:41:01</span>
+                <span class="datetime" data-updated="Sat Jun 01 2024 16:29:32 GMT+0800">2024-06-01 16:29:32</span>
             </span>
         
 
         
-            <span class="meta-info-item article-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="article-category-ul">
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
                     
                             <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
@@ -249,7 +287,7 @@
         
         
         
-            <span class="meta-info-item article-pv">
+            <span class="meta-info-item post-pv">
                 <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
             </span>
         
@@ -263,10 +301,11 @@
                     </div>
                 
 
-                <div class="article-content keep-markdown-body">
+                <div class="post-content keep-markdown-body ">
                     
 
-                    <h2 id="event-物件"><a href="#event-物件" class="headerlink" title="event 物件"></a>event 物件</h2><p>可以知道當下的元素資訊</p>
+                    
+                         <h2 id="event-物件"><a href="#event-物件" class="headerlink" title="event 物件"></a>event 物件</h2><p>可以知道當下的元素資訊</p>
 <p>使用 <code>function(e)</code> 就可以了解這個事件的詳細資訊</p>
 <br>
 
@@ -320,12 +359,25 @@
 <p>剛剛的 JS 也可以直接放入一個函式</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> el = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.btn&#x27;</span>);</span><br><span class="line">el.<span class="title function_">addEventListener</span>(<span class="string">&#x27;click&#x27;</span>, clickBtn);</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">clickBtn</span>(<span class="params">e</span>)&#123;</span><br><span class="line">  <span class="title function_">alert</span>(<span class="string">&#x27;你剛剛點擊了&#x27;</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<h3 id="keydown-鍵盤事件"><a href="#keydown-鍵盤事件" class="headerlink" title="keydown 鍵盤事件"></a>keydown 鍵盤事件</h3><p>如果要監聽使用者 <code>keydown</code> 鍵盤事件</p>
-<p>把剛剛的 <code>click</code> 改成 <code>keydown</code></p>
-<p>這樣當按鍵盤時就會執行函式內容了</p>
+<h3 id="鍵盤事件"><a href="#鍵盤事件" class="headerlink" title="鍵盤事件"></a>鍵盤事件</h3><br>
+
+<iframe src="https://codepen.io/Nora2207/embed/bGyeYOz?height=265&theme-id=default&default-tab=js,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
 <br>
 
-<h3 id="keyCode-鍵盤代碼"><a href="#keyCode-鍵盤代碼" class="headerlink" title="keyCode 鍵盤代碼"></a>keyCode 鍵盤代碼</h3><p>而 <code>keyCode</code> 則是按下鍵盤時的鍵盤代碼</p>
+<br>
+
+<h4 id="keydown-鍵盤事件"><a href="#keydown-鍵盤事件" class="headerlink" title="keydown 鍵盤事件"></a>keydown 鍵盤事件</h4><p>如果要監聽使用者 <code>keydown</code> 鍵盤事件</p>
+<p>把剛剛的 <code>click</code> 改成 <code>keydown</code></p>
+<p>這樣當按下鍵盤時就會執行函式內容了</p>
+<br>
+
+<h4 id="keyup-鍵盤事件"><a href="#keyup-鍵盤事件" class="headerlink" title="keyup 鍵盤事件"></a>keyup 鍵盤事件</h4><p>和 <code>keydown</code> 有點類似</p>
+<p>只是 <code>keydown</code> 是按下鍵盤時觸發</p>
+<p>而 <code>keyup</code> 則在按下鍵盤又放開時觸發</p>
+<br>
+
+<h4 id="keyCode-鍵盤代碼"><a href="#keyCode-鍵盤代碼" class="headerlink" title="keyCode 鍵盤代碼"></a>keyCode 鍵盤代碼</h4><p>而 <code>keyCode</code> 則是按下鍵盤時的鍵盤代碼</p>
 <p>像空白鍵是 32，enter 則是 13 之類的</p>
 <p>這樣就可以設計當按到什麼鍵盤時會產生什麼效果</p>
 <br>
@@ -388,6 +440,7 @@
 <br>
 
 <br>
+                    
                 </div>
 
                 
@@ -404,18 +457,18 @@
                 
 
                 
-                    <div class="article-nav">
+                    <div class="post-nav border-box">
                         
-                            <div class="article-prev">
+                            <div class="prev-post">
                                 <a class="prev"
                                    rel="prev"
                                    href="/2023/12/29/20231229-2050/"
                                    title="陣列的處理方法"
                                 >
                                     <span class="left arrow-icon flex-center">
-                                      <i class="fas fa-chevron-left"></i>
+                                        <i class="fas fa-chevron-left"></i>
                                     </span>
-                                            <span class="title flex-center">
+                                    <span class="title flex-center">
                                         <span class="post-nav-title-item text-ellipsis">陣列的處理方法</span>
                                         <span class="post-nav-item">Prev posts</span>
                                     </span>
@@ -423,7 +476,7 @@
                             </div>
                         
                         
-                            <div class="article-next">
+                            <div class="next-post">
                                 <a class="next"
                                    rel="next"
                                    href="/2023/12/05/20231205-2233/"
@@ -433,8 +486,8 @@
                                         <span class="post-nav-title-item text-ellipsis">DOM 網頁元素</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
-                                            <span class="right arrow-icon flex-center">
-                                      <i class="fas fa-chevron-right"></i>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
                                     </span>
                                 </a>
                             </div>
@@ -450,10 +503,98 @@
         <div id="comments-anchor" class="comment-area-title border-box">
             <i class="fas fa-comments"></i>&nbsp;Comments
         </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
         
             
 
-    <div class="error-tips">Please fill in Gitalk complete configuration items.</div>
+    <div class="giscus-comments-container">
+        <div class="giscus" id="giscus"></div>
+        <script 
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          if (!window.KeepCommentPlugin?.getGiscusTheme) {
+            window.KeepCommentPlugin.getGiscusTheme = () => {
+              return document.documentElement.classList.contains('dark-mode') ? 'dark_dimmed' : 'light_tritanopia'
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.changeGiscusTheme) {
+            window.KeepCommentPlugin.changeGiscusTheme = () => {
+              const iframe = document.querySelector('iframe.giscus-frame')
+              iframe && iframe.contentWindow.postMessage({
+                giscus: {
+                  setConfig: {
+                    theme: window.KeepCommentPlugin.getGiscusTheme()
+                  }
+                }
+              }, 'https://giscus.app')
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.initGiscus) {
+            window.KeepCommentPlugin.initGiscus = () => {
+              const script = document.createElement('script')
+              script.async = true
+              script.src = 'https://giscus.app/client.js'
+              script.setAttribute('data-repo', 'nora2207/nora2207.github.io')
+              script.setAttribute('data-repo-id', 'R_kgDOLyqPRA')
+              script.setAttribute('data-category', 'Announcements')
+              script.setAttribute('data-category-id', 'DIC_kwDOLyqPRM4Ch6no')
+              script.setAttribute('data-reactions-enabled', '0')
+              script.setAttribute('data-lang', 'en')
+              script.setAttribute('data-mapping', 'pathname')
+              script.setAttribute('data-strict', '0')
+              script.setAttribute('data-emit-metadata', '0')
+              script.setAttribute('data-input-position', 'top')
+              script.setAttribute('crossorigin', 'anonymous')
+              script.setAttribute('loading', 'lazy')
+              script.setAttribute('data-theme', window.KeepCommentPlugin.getGiscusTheme())
+              document.querySelector('.giscus-comments-container').appendChild(script)
+              script.onerror = () => {
+                window.KeepCommentPlugin.loadFailHandle()
+              }
+              script.onload = () => {
+                window.KeepCommentPlugin.hideLoading()
+              }
+              const toggleThemeBtn = document.querySelector('.tool-toggle-theme-mode')
+              toggleThemeBtn && toggleThemeBtn.addEventListener('click', () => {
+                window.KeepCommentPlugin.changeGiscusTheme()
+              })
+            }
+          }
+
+          if ('false' === "true") {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGiscus()
+            }, 1000)
+          } else {
+            window.addEventListener("DOMContentLoaded", window.KeepCommentPlugin.initGiscus)
+          }
+        </script>
+    </div>
 
 
         
@@ -471,7 +612,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#event-%E7%89%A9%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">event 物件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#value"><span class="nav-number">2.</span> <span class="nav-text">value</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E5%80%BC"><span class="nav-number">2.1.</span> <span class="nav-text">取值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B3%A6%E4%BA%88%E5%80%BC"><span class="nav-number">2.2.</span> <span class="nav-text">賦予值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#addeventListener-%E4%BA%8B%E4%BB%B6%E7%9B%A3%E8%81%BD"><span class="nav-number">3.</span> <span class="nav-text">addeventListener 事件監聽</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#click-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.1.</span> <span class="nav-text">click 點擊事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#keydown-%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">keydown 鍵盤事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#keyCode-%E9%8D%B5%E7%9B%A4%E4%BB%A3%E7%A2%BC"><span class="nav-number">3.3.</span> <span class="nav-text">keyCode 鍵盤代碼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#blur-%E9%9B%A2%E9%96%8B%E7%84%A6%E9%BB%9E%E6%99%82%E8%A7%B8%E7%99%BC"><span class="nav-number">3.4.</span> <span class="nav-text">blur 離開焦點時觸發</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mouse-%E6%BB%91%E9%BC%A0%E6%BB%91%E5%85%A5%E8%A7%B8%E7%99%BC"><span class="nav-number">3.5.</span> <span class="nav-text">mouse 滑鼠滑入觸發</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#stopPropagation-%E4%B8%AD%E6%AD%A2%E5%86%92%E6%B3%A1%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">stopPropagation 中止冒泡事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#preventDefault-%E5%8F%96%E6%B6%88%E9%A0%90%E8%A8%AD%E8%A7%B8%E7%99%BC%E8%A1%8C%E7%82%BA"><span class="nav-number">5.</span> <span class="nav-text">preventDefault 取消預設觸發行為</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#target-%E5%92%8C-nodeName-%E4%BA%86%E8%A7%A3%E7%9B%AE%E5%89%8D%E6%89%80%E5%9C%A8%E5%85%83%E7%B4%A0%E4%BD%8D%E7%BD%AE"><span class="nav-number">6.</span> <span class="nav-text">target 和 nodeName 了解目前所在元素位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B6%B2%E9%A0%81%E5%BA%A7%E6%A8%99"><span class="nav-number">7.</span> <span class="nav-text">網頁座標</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#event-%E7%89%A9%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">event 物件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#value"><span class="nav-number">2.</span> <span class="nav-text">value</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E5%80%BC"><span class="nav-number">2.1.</span> <span class="nav-text">取值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B3%A6%E4%BA%88%E5%80%BC"><span class="nav-number">2.2.</span> <span class="nav-text">賦予值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#addeventListener-%E4%BA%8B%E4%BB%B6%E7%9B%A3%E8%81%BD"><span class="nav-number">3.</span> <span class="nav-text">addeventListener 事件監聽</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#click-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.1.</span> <span class="nav-text">click 點擊事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">鍵盤事件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#keydown-%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.2.1.</span> <span class="nav-text">keydown 鍵盤事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#keyup-%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.2.2.</span> <span class="nav-text">keyup 鍵盤事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#keyCode-%E9%8D%B5%E7%9B%A4%E4%BB%A3%E7%A2%BC"><span class="nav-number">3.2.3.</span> <span class="nav-text">keyCode 鍵盤代碼</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#blur-%E9%9B%A2%E9%96%8B%E7%84%A6%E9%BB%9E%E6%99%82%E8%A7%B8%E7%99%BC"><span class="nav-number">3.3.</span> <span class="nav-text">blur 離開焦點時觸發</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mouse-%E6%BB%91%E9%BC%A0%E6%BB%91%E5%85%A5%E8%A7%B8%E7%99%BC"><span class="nav-number">3.4.</span> <span class="nav-text">mouse 滑鼠滑入觸發</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#stopPropagation-%E4%B8%AD%E6%AD%A2%E5%86%92%E6%B3%A1%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">stopPropagation 中止冒泡事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#preventDefault-%E5%8F%96%E6%B6%88%E9%A0%90%E8%A8%AD%E8%A7%B8%E7%99%BC%E8%A1%8C%E7%82%BA"><span class="nav-number">5.</span> <span class="nav-text">preventDefault 取消預設觸發行為</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#target-%E5%92%8C-nodeName-%E4%BA%86%E8%A7%A3%E7%9B%AE%E5%89%8D%E6%89%80%E5%9C%A8%E5%85%83%E7%B4%A0%E4%BD%8D%E7%BD%AE"><span class="nav-number">6.</span> <span class="nav-text">target 和 nodeName 了解目前所在元素位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B6%B2%E9%A0%81%E5%BA%A7%E6%A8%99"><span class="nav-number">7.</span> <span class="nav-text">網頁座標</span></a></li></ol>
     </div>
 </div>
 
@@ -483,48 +624,45 @@
 
                 
             </div>
-
         </div>
 
         <div class="page-main-content-bottom border-box">
             
 <footer class="footer border-box">
-    <div class="border-box website-info-box default">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2024
         
-            <div class="copyright-info info-item default">
-                &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2024
-                
-                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
-                
-            </div>
-
-            <div class="theme-info info-item default">
-                Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
-            </div>
-
-            
-
-            
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
         
+    </div>
 
-        <div class="count-item info-item default">
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+        <div class="count-info info-item">
             
 
             
-                <span class="count-box border-box uv">
+                <span class="count-item border-box uv">
                     <span class="item-type border-box">Unique Visitor</span>
                     <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
                 </span>
             
 
             
-                <span class="count-box border-box pv">
+                <span class="count-item border-box pv">
                     <span class="item-type border-box">Page View</span>
                     <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
                 </span>
             
         </div>
-    </div>
+    
+
+    
 </footer>
 
         </div>
@@ -534,7 +672,10 @@
     
         <div class="post-tools right-toc">
             <div class="post-tools-container border-box">
-    <ul class="tools-list border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
         <!-- PC TOC show toggle -->
         
             <li class="tools-item flex-center toggle-show-toc">
@@ -549,6 +690,11 @@
                 <span class="post-comments-count"></span>
             </li>
         
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
     </ul>
 </div>
 
@@ -567,13 +713,17 @@
             <i class="fas fa-search-minus"></i>
         </li>
 
-        <li class="tools-item tool-dark-light-toggle flex-center">
-            <i class="fas fa-moon"></i>
-        </li>
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
 
         <!-- rss -->
         
 
+        <!-- to bottom -->
         <li class="tools-item tool-scroll-to-bottom flex-center">
             <i class="fas fa-arrow-down"></i>
         </li>
@@ -649,7 +799,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#event-%E7%89%A9%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">event 物件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#value"><span class="nav-number">2.</span> <span class="nav-text">value</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E5%80%BC"><span class="nav-number">2.1.</span> <span class="nav-text">取值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B3%A6%E4%BA%88%E5%80%BC"><span class="nav-number">2.2.</span> <span class="nav-text">賦予值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#addeventListener-%E4%BA%8B%E4%BB%B6%E7%9B%A3%E8%81%BD"><span class="nav-number">3.</span> <span class="nav-text">addeventListener 事件監聽</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#click-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.1.</span> <span class="nav-text">click 點擊事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#keydown-%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">keydown 鍵盤事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#keyCode-%E9%8D%B5%E7%9B%A4%E4%BB%A3%E7%A2%BC"><span class="nav-number">3.3.</span> <span class="nav-text">keyCode 鍵盤代碼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#blur-%E9%9B%A2%E9%96%8B%E7%84%A6%E9%BB%9E%E6%99%82%E8%A7%B8%E7%99%BC"><span class="nav-number">3.4.</span> <span class="nav-text">blur 離開焦點時觸發</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mouse-%E6%BB%91%E9%BC%A0%E6%BB%91%E5%85%A5%E8%A7%B8%E7%99%BC"><span class="nav-number">3.5.</span> <span class="nav-text">mouse 滑鼠滑入觸發</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#stopPropagation-%E4%B8%AD%E6%AD%A2%E5%86%92%E6%B3%A1%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">stopPropagation 中止冒泡事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#preventDefault-%E5%8F%96%E6%B6%88%E9%A0%90%E8%A8%AD%E8%A7%B8%E7%99%BC%E8%A1%8C%E7%82%BA"><span class="nav-number">5.</span> <span class="nav-text">preventDefault 取消預設觸發行為</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#target-%E5%92%8C-nodeName-%E4%BA%86%E8%A7%A3%E7%9B%AE%E5%89%8D%E6%89%80%E5%9C%A8%E5%85%83%E7%B4%A0%E4%BD%8D%E7%BD%AE"><span class="nav-number">6.</span> <span class="nav-text">target 和 nodeName 了解目前所在元素位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B6%B2%E9%A0%81%E5%BA%A7%E6%A8%99"><span class="nav-number">7.</span> <span class="nav-text">網頁座標</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#event-%E7%89%A9%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">event 物件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#value"><span class="nav-number">2.</span> <span class="nav-text">value</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E5%80%BC"><span class="nav-number">2.1.</span> <span class="nav-text">取值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B3%A6%E4%BA%88%E5%80%BC"><span class="nav-number">2.2.</span> <span class="nav-text">賦予值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#addeventListener-%E4%BA%8B%E4%BB%B6%E7%9B%A3%E8%81%BD"><span class="nav-number">3.</span> <span class="nav-text">addeventListener 事件監聽</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#click-%E9%BB%9E%E6%93%8A%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.1.</span> <span class="nav-text">click 點擊事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">鍵盤事件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#keydown-%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.2.1.</span> <span class="nav-text">keydown 鍵盤事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#keyup-%E9%8D%B5%E7%9B%A4%E4%BA%8B%E4%BB%B6"><span class="nav-number">3.2.2.</span> <span class="nav-text">keyup 鍵盤事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#keyCode-%E9%8D%B5%E7%9B%A4%E4%BB%A3%E7%A2%BC"><span class="nav-number">3.2.3.</span> <span class="nav-text">keyCode 鍵盤代碼</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#blur-%E9%9B%A2%E9%96%8B%E7%84%A6%E9%BB%9E%E6%99%82%E8%A7%B8%E7%99%BC"><span class="nav-number">3.3.</span> <span class="nav-text">blur 離開焦點時觸發</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mouse-%E6%BB%91%E9%BC%A0%E6%BB%91%E5%85%A5%E8%A7%B8%E7%99%BC"><span class="nav-number">3.4.</span> <span class="nav-text">mouse 滑鼠滑入觸發</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#stopPropagation-%E4%B8%AD%E6%AD%A2%E5%86%92%E6%B3%A1%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">stopPropagation 中止冒泡事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#preventDefault-%E5%8F%96%E6%B6%88%E9%A0%90%E8%A8%AD%E8%A7%B8%E7%99%BC%E8%A1%8C%E7%82%BA"><span class="nav-number">5.</span> <span class="nav-text">preventDefault 取消預設觸發行為</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#target-%E5%92%8C-nodeName-%E4%BA%86%E8%A7%A3%E7%9B%AE%E5%89%8D%E6%89%80%E5%9C%A8%E5%85%83%E7%B4%A0%E4%BD%8D%E7%BD%AE"><span class="nav-number">6.</span> <span class="nav-text">target 和 nodeName 了解目前所在元素位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B6%B2%E9%A0%81%E5%BA%A7%E6%A8%99"><span class="nav-number">7.</span> <span class="nav-text">網頁座標</span></a></li></ol>
     </div>
 </div>
 
@@ -660,7 +810,9 @@
 
 
 
-<!-- common -->
+
+
+<!-- common js -->
 
 <script src="/js/utils.js"></script>
 
@@ -668,35 +820,30 @@
 
 <script src="/js/back2top.js"></script>
 
-<script src="/js/dark-light-toggle.js"></script>
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
 
 <script src="/js/main.js"></script>
 
 <script src="/js/libs/anime.min.js"></script>
 
 
-<!-- local-search -->
+<!-- local search -->
 
     
 <script src="/js/local-search.js"></script>
 
 
 
-<!-- code-block -->
-
-    
-<script src="/js/code-block.js"></script>
-
-
-
 <!-- lazyload -->
 
+
+<div class="">
+    <!-- home page -->
     
-<script src="/js/lazyload.js"></script>
 
-
-
-<div class="pjax">
+    <!-- post page -->
     
         <!-- post-helper -->
         
@@ -717,10 +864,16 @@
         
     
 
-    <!-- category-page -->
+    <!-- categories page -->
     
 
-    <!-- links-page -->
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
     
 </div>
 
@@ -728,39 +881,6 @@
 
 
 <!-- pjax -->
-
-    
-<script src="/js/libs/pjax.min.js"></script>
-
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        window.pjax = new Pjax({
-            selectors: [
-                'head title',
-                '.page-container',
-                '.pjax'
-            ],
-            history: true,
-            debug: false,
-            cacheBust: false,
-            timeout: 0,
-            analytics: false,
-            currentUrlFullReload: false,
-            scrollRestoration: false,
-        });
-
-        document.addEventListener('pjax:send', () => {
-            KEEP.utils.pjaxProgressBarStart()
-        });
-
-        document.addEventListener('pjax:complete', () => {
-            KEEP.utils.pjaxProgressBarEnd()
-            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
-            KEEP.initExecute()
-        });
-    });
-</script>
-
 
 
 
