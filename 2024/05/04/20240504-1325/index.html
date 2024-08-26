@@ -9,7 +9,7 @@
     
     <title>
         
-            把選單列固定在網頁最上方 |
+            建立內部及外部JS |
         
         Nora&#39;s 小筆記
     </title>
@@ -235,7 +235,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        把選單列固定在網頁最上方
+                        建立內部及外部JS
                     </div>
                 
 
@@ -261,12 +261,12 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2023-08-25 11:26:59</span>
+                <span class="datetime">2024-05-04 13:25:00</span>
             </span>
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Wed Apr 24 2024 21:43:56 GMT+0800">2024-04-24 21:43:56</span>
+                <span class="datetime" data-updated="Mon Aug 26 2024 22:31:00 GMT+0800">2024-08-26 22:31:00</span>
             </span>
         
 
@@ -274,25 +274,13 @@
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
                     
                 </ul>
             </span>
         
 
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/position/">position</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/fixed/">fixed</a></li>
-                        
-                    
-                </ul>
-            </span>
         
 
         
@@ -317,20 +305,45 @@
                     
 
                     
-                         <p>有些時候會希望不管滑鼠滑到哪裡，選單一直都會在網頁的最上方</p>
-<p>這個時候就可以用到這個語法 <code>position: fixed</code></p>
-<p>把這個加到選單的 <code>CSS</code> 中就可以了</p>
+                         <h2 id="內部JS"><a href="#內部JS" class="headerlink" title="內部JS"></a>內部JS</h2><p>在Html中，要直接輸入 JavaScript 語法</p>
+<p>只要放在 <code>&lt;script&gt;</code> 和 <code>&lt;/script&gt;</code> 裡面就可以了</p>
 <br>
 
-<p>不過可能會有下面的內容被擋住的情形</p>
-<p>這個時候在內容區塊加上 <code>padding-top</code> ，讓內容區往下推就不會被擋住了</p>
+<p>至於 <code>&lt;script&gt;&lt;/script&gt;</code> 的位置</p>
+<p>可以放在 <code>&lt;head&gt;&lt;/head&gt;</code> 中</p>
+<p>也可以放在 <code>&lt;body&gt;&lt;/body&gt;</code> 中</p>
+<p>或是放在 <code>&lt;/html&gt;</code> 的後面</p>
 <br>
 
-<iframe src="https://codepen.io/Nora2207/embed/bGzwxrO?height=265&theme-id=default&default-tab=css,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+<p>放的位置跟執行的順序也有關係</p>
+<p>執行順序是從上到下</p>
+<p>所以在 <code>&lt;head&gt;&lt;/head&gt;</code> 中會最先執行</p>
+<p>接著是 <code>&lt;body&gt;&lt;/body&gt;</code> 中</p>
+<p>最後則是在 <code>&lt;/html&gt;</code> 的後面</p>
+<p>所以下面這個例子的彈跳視窗會依序出現 111 222 333</p>
+<p>(點 Result 就會彈出訊息視窗)</p>
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/ExBRWVy?height=265&theme-id=default&default-tab=html" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
 
 <br>
 
 <br>
+
+<p>另外就是如果有使用到頁面的指定標籤元素</p>
+<p>就要特別留意位置的安排</p>
+<p>像這裡選擇了 h1 要把內容改成 HI</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a=<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;h1&quot;</span>).<span class="property">innerHTML</span>=<span class="string">&quot;HI&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>所以 <code>&lt;h1&gt;</code> 必須要在前面</p>
+<p>這樣 JS 才可以找得到 <code>&lt;h1&gt;</code> 去修改內容</p>
+<br>
+
+<h2 id="外部JS"><a href="#外部JS" class="headerlink" title="外部JS"></a>外部JS</h2><p>開一個js檔(檔名.js)來放 JavaScript 的語法</p>
+<p>寫法是</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;檔名.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>位置就放在 <code>&lt;head&gt;&lt;/head&gt;</code> 中就可以了</p>
 
                     
                 </div>
@@ -339,18 +352,6 @@
 
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
-                        
-                            <ul class="post-tags-box border-box">
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/position/">position</a>
-                                    </li>
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/fixed/">fixed</a>
-                                    </li>
-                                
-                            </ul>
                         
                     </div>
                     <div>
@@ -366,14 +367,14 @@
                             <div class="prev-post">
                                 <a class="prev"
                                    rel="prev"
-                                   href="/2023/09/01/20230901-1011/"
-                                   title="用 SASS 來提升寫網頁語法的效率"
+                                   href="/2024/05/08/20240508-1936/"
+                                   title="訊息視窗的種類"
                                 >
                                     <span class="left arrow-icon flex-center">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">用 SASS 來提升寫網頁語法的效率</span>
+                                        <span class="post-nav-title-item text-ellipsis">訊息視窗的種類</span>
                                         <span class="post-nav-item">Prev posts</span>
                                     </span>
                                 </a>
@@ -383,11 +384,11 @@
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/2023/08/20/20230820-1842/"
-                                   title="運算子 (operator)"
+                                   href="/2024/04/28/20240428-2109/"
+                                   title="用 classList 操控 class"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">運算子 (operator)</span>
+                                        <span class="post-nav-title-item text-ellipsis">用 classList 操控 class</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
@@ -516,7 +517,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A7%E9%83%A8JS"><span class="nav-number">1.</span> <span class="nav-text">內部JS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E9%83%A8JS"><span class="nav-number">2.</span> <span class="nav-text">外部JS</span></a></li></ol>
     </div>
 </div>
 
@@ -703,7 +704,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A7%E9%83%A8JS"><span class="nav-number">1.</span> <span class="nav-text">內部JS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E9%83%A8JS"><span class="nav-number">2.</span> <span class="nav-text">外部JS</span></a></li></ol>
     </div>
 </div>
 

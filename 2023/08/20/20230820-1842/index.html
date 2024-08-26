@@ -9,7 +9,7 @@
     
     <title>
         
-            運算子 |
+            運算子 (operator) |
         
         Nora&#39;s 小筆記
     </title>
@@ -235,7 +235,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        運算子
+                        運算子 (operator)
                     </div>
                 
 
@@ -266,7 +266,7 @@
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Wed Apr 24 2024 21:44:20 GMT+0800">2024-04-24 21:44:20</span>
+                <span class="datetime" data-updated="Mon Aug 26 2024 23:04:05 GMT+0800">2024-08-26 23:04:05</span>
             </span>
         
 
@@ -305,7 +305,9 @@
                     
 
                     
-                         <p>運算子像是 <code>+-*/</code> 之類的</p>
+                         <p>運算子可以針對一個或多個元素進行運算</p>
+<p>運算子進行運算的元素稱為運算元</p>
+<p>運算子像是 <code>+-*/</code> 之類的</p>
 <p>前後方的數字則為運算元</p>
 <p>像是 1+2 中間的 <code>+</code> 就是運算子，<code>1 2</code> 則是運算元</p>
 <h2 id="賦值運算子"><a href="#賦值運算子" class="headerlink" title="賦值運算子"></a>賦值運算子</h2><p><code>+=</code></p>
@@ -329,7 +331,27 @@
 <p>就變成 <code>c *= 5</code> 和 <code>d /= 5</code></p>
 <br>
 
-<h2 id="算術運算子"><a href="#算術運算子" class="headerlink" title="算術運算子"></a>算術運算子</h2><p><code>++</code></p>
+<p><code>/=</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> k=<span class="number">12</span>,h=<span class="number">3</span>;</span><br><span class="line">k/=h;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(k); <span class="comment">// 4</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p><code>*=</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> k=<span class="number">4</span>,h=<span class="number">3</span>;</span><br><span class="line">k*=h;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(k); <span class="comment">// 12</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p><code>%=</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> k=<span class="number">12</span>,h=<span class="number">5</span>;</span><br><span class="line">k%=h;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(k); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>另外還有 <code>&amp;=</code> <code>|=</code> <code>^=</code> <code>&lt;&lt;=</code> <code>&gt;&gt;=</code> <code>&gt;&gt;&gt;=</code></p>
+<br>
+
+<h2 id="算術運算子"><a href="#算術運算子" class="headerlink" title="算術運算子"></a>算術運算子</h2><p><code>+</code> <code>-</code> <code>*</code> <code>/</code></p>
+<p>加 減 乘 除</p>
+<h2 id="遞增-遞減運算子"><a href="#遞增-遞減運算子" class="headerlink" title="遞增&amp;遞減運算子"></a>遞增&amp;遞減運算子</h2><p><code>++</code></p>
 <p>假設</p>
 <p><code>let a = 3;</code></p>
 <p><code>a++;</code> </p>
@@ -345,8 +367,8 @@
 <p><code>a--;</code> 會以減 1 的方式減下去</p>
 <br>
 
-<h2 id="比較運算子"><a href="#比較運算子" class="headerlink" title="比較運算子"></a>比較運算子</h2><p><code>==</code> 等於</p>
-<p><code>===</code> 嚴格等於 (型別、內容都要是一樣才可以)</p>
+<h2 id="比較運算子"><a href="#比較運算子" class="headerlink" title="比較運算子"></a>比較運算子</h2><p><code>==</code> 等於 (內容一樣就可以)</p>
+<p><code>===</code> 嚴格等於 (型別、內容都要一樣才可以)</p>
 <p><code>!=</code> 不等於</p>
 <p><code>!==</code> 嚴格不等於</p>
 <p><code>&gt;</code> 大於</p>
@@ -357,6 +379,15 @@
 
 <h2 id="邏輯運算子"><a href="#邏輯運算子" class="headerlink" title="邏輯運算子"></a>邏輯運算子</h2><p><code>&amp;&amp;</code> 就是”和”的意思，所有的條件都要成立才行</p>
 <p><code>||</code> 就是”或”的意思，只要其中一個條件成立就可以了</p>
+<br>
+
+<h2 id="條件運算子"><a href="#條件運算子" class="headerlink" title="條件運算子"></a>條件運算子</h2><p>條件:條件?結果1:結果2;</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a=<span class="number">5</span>,b,c;</span><br><span class="line">b=a+<span class="number">10</span>-<span class="number">1</span>;</span><br><span class="line">c=b&gt;<span class="number">10</span>?<span class="string">&quot;大於10&quot;</span>:<span class="string">&quot;比10小&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(c); <span class="comment">// 大於10</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="型別運算子"><a href="#型別運算子" class="headerlink" title="型別運算子"></a>型別運算子</h2><p><code>typeof()</code> 後面放上要查的東西</p>
+<p>就會出現是什麼型別</p>
 
                     
                 </div>
@@ -530,7 +561,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B3%A6%E5%80%BC%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text">賦值運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E8%A1%93%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">2.</span> <span class="nav-text">算術運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">3.</span> <span class="nav-text">比較運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">4.</span> <span class="nav-text">邏輯運算子</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B3%A6%E5%80%BC%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text">賦值運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E8%A1%93%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">2.</span> <span class="nav-text">算術運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%9E%E5%A2%9E-%E9%81%9E%E6%B8%9B%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">3.</span> <span class="nav-text">遞增&amp;遞減運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">4.</span> <span class="nav-text">比較運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">5.</span> <span class="nav-text">邏輯運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A2%9D%E4%BB%B6%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">6.</span> <span class="nav-text">條件運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9E%8B%E5%88%A5%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">7.</span> <span class="nav-text">型別運算子</span></a></li></ol>
     </div>
 </div>
 
@@ -717,7 +748,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B3%A6%E5%80%BC%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text">賦值運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E8%A1%93%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">2.</span> <span class="nav-text">算術運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">3.</span> <span class="nav-text">比較運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">4.</span> <span class="nav-text">邏輯運算子</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B3%A6%E5%80%BC%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text">賦值運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E8%A1%93%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">2.</span> <span class="nav-text">算術運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%81%9E%E5%A2%9E-%E9%81%9E%E6%B8%9B%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">3.</span> <span class="nav-text">遞增&amp;遞減運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">4.</span> <span class="nav-text">比較運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%82%8F%E8%BC%AF%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">5.</span> <span class="nav-text">邏輯運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A2%9D%E4%BB%B6%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">6.</span> <span class="nav-text">條件運算子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9E%8B%E5%88%A5%E9%81%8B%E7%AE%97%E5%AD%90"><span class="nav-number">7.</span> <span class="nav-text">型別運算子</span></a></li></ol>
     </div>
 </div>
 

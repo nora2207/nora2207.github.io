@@ -9,7 +9,7 @@
     
     <title>
         
-            把選單列固定在網頁最上方 |
+            資料型別 |
         
         Nora&#39;s 小筆記
     </title>
@@ -235,7 +235,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        把選單列固定在網頁最上方
+                        資料型別
                     </div>
                 
 
@@ -261,12 +261,12 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2023-08-25 11:26:59</span>
+                <span class="datetime">2023-07-19 19:39:00</span>
             </span>
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Wed Apr 24 2024 21:43:56 GMT+0800">2024-04-24 21:43:56</span>
+                <span class="datetime" data-updated="Mon Aug 26 2024 22:23:14 GMT+0800">2024-08-26 22:23:14</span>
             </span>
         
 
@@ -274,25 +274,13 @@
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
                     
                 </ul>
             </span>
         
 
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/position/">position</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/fixed/">fixed</a></li>
-                        
-                    
-                </ul>
-            </span>
         
 
         
@@ -317,20 +305,64 @@
                     
 
                     
-                         <p>有些時候會希望不管滑鼠滑到哪裡，選單一直都會在網頁的最上方</p>
-<p>這個時候就可以用到這個語法 <code>position: fixed</code></p>
-<p>把這個加到選單的 <code>CSS</code> 中就可以了</p>
+                         <p>如果要查型別，可以用 <code>typeof</code> (後面放上要查的東西)</p>
+<p>像是 typeof 1 就會出現 ‘number’</p>
 <br>
 
-<p>不過可能會有下面的內容被擋住的情形</p>
-<p>這個時候在內容區塊加上 <code>padding-top</code> ，讓內容區往下推就不會被擋住了</p>
+<p>資料型別分成基本型別、物件型別兩種</p>
+<h2 id="基本型別-primitives-types"><a href="#基本型別-primitives-types" class="headerlink" title="基本型別(primitives types)"></a>基本型別(primitives types)</h2><h3 id="數值-Number"><a href="#數值-Number" class="headerlink" title="數值 (Number)"></a>數值 (Number)</h3><p>像是 1 2 3 之類的數字</p>
+<p>數字可以拿來計算</p>
+<ul>
+<li><p>如果沒有()就是先乘除後加減</p>
+</li>
+<li><p>Number 型別可以為負數</p>
+</li>
+<li><p>Number 型別可以有小數點</p>
+</li>
+</ul>
+<p>常用的方法有下面這些</p>
+<p><code>+</code> 加 2+3&#x3D;5</p>
+<p><code>-</code> 減 3-1&#x3D;2</p>
+<p><code>*</code> 乘 2*3&#x3D;6</p>
+<p><code>/</code> 除 6&#x2F;2&#x3D;3</p>
+<p><code>%</code> 取餘數 20%3&#x3D;2</p>
+<p><code>**</code> 次方  2<strong>2&#x3D;2*2&#x3D;4   2</strong>3&#x3D;2<em>2</em>2&#x3D;8</p>
 <br>
 
-<iframe src="https://codepen.io/Nora2207/embed/bGzwxrO?height=265&theme-id=default&default-tab=css,result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+<div class="keep-note info"><p>例：<br>小明去買蘋果，小明的錢包有200元，蘋果一顆30元，他買了6顆，付完錢還剩下多少錢？</p>
+<hr>
+<p>let wallet &#x3D; 200;<br>let applePrice &#x3D; 30;<br>let appleNum &#x3D; 6;<br>let total &#x3D; wallet - applePrice * appleNum;<br>最後輸入 total 就會出現剩下 20 元了</p>
+</div>
 
 <br>
 
+<h3 id="字串-String"><a href="#字串-String" class="headerlink" title="字串 (String)"></a>字串 (String)</h3><p>由字母、數字、文字或符號所組成的單字、片語或句子</p>
+<p>用 “” 或 ‘’ 包起來</p>
+<p>像是 “你好”</p>
 <br>
+
+<h3 id="布林-Boolean"><a href="#布林-Boolean" class="headerlink" title="布林 (Boolean)"></a>布林 (Boolean)</h3><p>true false</p>
+<br>
+
+<h3 id="未定義-undefined"><a href="#未定義-undefined" class="headerlink" title="未定義 (undefined)"></a>未定義 (undefined)</h3><p>有變數名稱，但是還沒被賦予任何值</p>
+<p>預設就會是 undefined</p>
+<br>
+
+<h3 id="空值-null"><a href="#空值-null" class="headerlink" title="空值 (null)"></a>空值 (null)</h3><br>
+
+<h2 id="物件型別"><a href="#物件型別" class="headerlink" title="物件型別"></a>物件型別</h2><h3 id="陣列-array"><a href="#陣列-array" class="headerlink" title="陣列(array)"></a>陣列(array)</h3><p>一組相同類型的資料集合</p>
+<p>寫法是 <code>[&quot;蛋餅&quot;,&quot;饅頭&quot;,&quot;吐司&quot;]</code></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://nora2207.github.io/2023/10/21/20231021-2030/" >另一篇<i class="fas fa-external-link-alt"></i></a>有比較仔細的介紹</p>
+<br>
+
+<h3 id="物件-object"><a href="#物件-object" class="headerlink" title="物件(object)"></a>物件(object)</h3><p>一批資料內容</p>
+<p>寫在 <code>&#123;&#125;</code> 中</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://nora2207.github.io/2023/10/21/20231021-2030/#%E7%89%A9%E4%BB%B6-Object" >另一篇<i class="fas fa-external-link-alt"></i></a>有比較仔細的介紹</p>
+<br>
+
+<h3 id="函式-function"><a href="#函式-function" class="headerlink" title="函式(function)"></a>函式(function)</h3><p>執行 JavaScript 程序的語法</p>
+<p>寫法是 <code>function 名稱()&#123;&#125;</code></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://nora2207.github.io/2023/11/19/20231119-1927/" >另一篇<i class="fas fa-external-link-alt"></i></a>有比較仔細的介紹</p>
 
                     
                 </div>
@@ -339,18 +371,6 @@
 
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
-                        
-                            <ul class="post-tags-box border-box">
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/position/">position</a>
-                                    </li>
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/fixed/">fixed</a>
-                                    </li>
-                                
-                            </ul>
                         
                     </div>
                     <div>
@@ -366,14 +386,14 @@
                             <div class="prev-post">
                                 <a class="prev"
                                    rel="prev"
-                                   href="/2023/09/01/20230901-1011/"
-                                   title="用 SASS 來提升寫網頁語法的效率"
+                                   href="/2023/07/26/20230726-1929/"
+                                   title="CSS 的 Media Query 斷點"
                                 >
                                     <span class="left arrow-icon flex-center">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">用 SASS 來提升寫網頁語法的效率</span>
+                                        <span class="post-nav-title-item text-ellipsis">CSS 的 Media Query 斷點</span>
                                         <span class="post-nav-item">Prev posts</span>
                                     </span>
                                 </a>
@@ -383,11 +403,11 @@
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/2023/08/20/20230820-1842/"
-                                   title="運算子 (operator)"
+                                   href="/2023/07/14/20230714-1737/"
+                                   title="變數"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">運算子 (operator)</span>
+                                        <span class="post-nav-title-item text-ellipsis">變數</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
@@ -516,7 +536,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%9E%8B%E5%88%A5-primitives-types"><span class="nav-number">1.</span> <span class="nav-text">基本型別(primitives types)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B8%E5%80%BC-Number"><span class="nav-number">1.1.</span> <span class="nav-text">數值 (Number)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E4%B8%B2-String"><span class="nav-number">1.2.</span> <span class="nav-text">字串 (String)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E6%9E%97-Boolean"><span class="nav-number">1.3.</span> <span class="nav-text">布林 (Boolean)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AA%E5%AE%9A%E7%BE%A9-undefined"><span class="nav-number">1.4.</span> <span class="nav-text">未定義 (undefined)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A9%BA%E5%80%BC-null"><span class="nav-number">1.5.</span> <span class="nav-text">空值 (null)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E4%BB%B6%E5%9E%8B%E5%88%A5"><span class="nav-number">2.</span> <span class="nav-text">物件型別</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%99%A3%E5%88%97-array"><span class="nav-number">2.1.</span> <span class="nav-text">陣列(array)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E4%BB%B6-object"><span class="nav-number">2.2.</span> <span class="nav-text">物件(object)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E5%BC%8F-function"><span class="nav-number">2.3.</span> <span class="nav-text">函式(function)</span></a></li></ol></li></ol>
     </div>
 </div>
 
@@ -703,7 +723,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%9E%8B%E5%88%A5-primitives-types"><span class="nav-number">1.</span> <span class="nav-text">基本型別(primitives types)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B8%E5%80%BC-Number"><span class="nav-number">1.1.</span> <span class="nav-text">數值 (Number)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E4%B8%B2-String"><span class="nav-number">1.2.</span> <span class="nav-text">字串 (String)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E6%9E%97-Boolean"><span class="nav-number">1.3.</span> <span class="nav-text">布林 (Boolean)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AA%E5%AE%9A%E7%BE%A9-undefined"><span class="nav-number">1.4.</span> <span class="nav-text">未定義 (undefined)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A9%BA%E5%80%BC-null"><span class="nav-number">1.5.</span> <span class="nav-text">空值 (null)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E4%BB%B6%E5%9E%8B%E5%88%A5"><span class="nav-number">2.</span> <span class="nav-text">物件型別</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%99%A3%E5%88%97-array"><span class="nav-number">2.1.</span> <span class="nav-text">陣列(array)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%A9%E4%BB%B6-object"><span class="nav-number">2.2.</span> <span class="nav-text">物件(object)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E5%BC%8F-function"><span class="nav-number">2.3.</span> <span class="nav-text">函式(function)</span></a></li></ol></li></ol>
     </div>
 </div>
 
