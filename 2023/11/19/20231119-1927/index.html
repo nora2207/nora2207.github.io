@@ -266,7 +266,7 @@
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Wed Apr 24 2024 21:41:24 GMT+0800">2024-04-24 21:41:24</span>
+                <span class="datetime" data-updated="Wed Aug 28 2024 23:56:27 GMT+0800">2024-08-28 23:56:27</span>
             </span>
         
 
@@ -320,7 +320,10 @@
                     
 
                     
-                         <h2 id="函式寫法"><a href="#函式寫法" class="headerlink" title="函式寫法"></a>函式寫法</h2><p>前面的 <code>function</code> 是宣告函式，後面的 <code>hungry()</code> 是函式的名稱</p>
+                         <h2 id="函式寫法"><a href="#函式寫法" class="headerlink" title="函式寫法"></a>函式寫法</h2><p>function 自訂名稱 (){<br>函式主要執行程式碼<br>} </p>
+<br>
+
+<p>前面的 <code>function</code> 是宣告函式，後面的 <code>hungry()</code> 是函式的名稱</p>
 <p>宣告完之後並不會執行，要呼叫時才會執行</p>
 <p>最下面的 <code>hungry();</code> 是執行函式，也就是呼叫函式，這樣才會執行</p>
 <p>要呼叫很多次也是可以的</p>
@@ -385,7 +388,6 @@
 <p>Amy 消費 500 元，所以沒有贈品</p>
 <p>David 消費 1800 元，所以有贈品</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">checkGift</span>(<span class="params">total</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (total &gt;= <span class="number">1000</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;您有滿額贈&#x27;</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;您沒有贈品&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="title class_">AmyTotal</span> = <span class="title function_">checkGift</span>(<span class="number">500</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">AmyTotal</span>); <span class="comment">// &quot;您沒有贈品&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="title class_">DavidTotal</span> = <span class="title function_">checkGift</span>(<span class="number">1800</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">DavidTotal</span>); <span class="comment">// &quot;您有滿額贈&quot;</span></span><br></pre></td></tr></table></figure>
-
                     
                 </div>
 

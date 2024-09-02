@@ -261,12 +261,12 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2023-01-05 14:30:04</span>
+                <span class="datetime">2023-01-05 14:30:00</span>
             </span>
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Wed Oct 25 2023 20:52:50 GMT+0800">2023-10-25 20:52:50</span>
+                <span class="datetime" data-updated="Mon Sep 02 2024 22:10:43 GMT+0800">2024-09-02 22:10:43</span>
             </span>
         
 
@@ -320,19 +320,35 @@
                          <p>CSS 中關於文字的排版，比較常會用到的設定大概有下面這些：</p>
 <h2 id="字體"><a href="#字體" class="headerlink" title="字體"></a>字體</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-family: Verdana;</span><br></pre></td></tr></table></figure>
 
+<br>
+
 <h2 id="字體加粗"><a href="#字體加粗" class="headerlink" title="字體加粗"></a>字體加粗</h2><p style="font-weight: bold;">
 這些字體變粗了
 </p>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-weight: bold;</span><br></pre></td></tr></table></figure>
 
+<br>
+
 <h2 id="行距"><a href="#行距" class="headerlink" title="行距"></a>行距</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">line-height: 1.5;</span><br></pre></td></tr></table></figure>
 
-<h2 id="字距"><a href="#字距" class="headerlink" title="字距"></a>字距</h2><p style="letter-spacing: 3px;">
-改變字和字之間的距離
+<br>
+
+<h2 id="字距"><a href="#字距" class="headerlink" title="字距"></a>字距</h2><p style="letter-spacing: 8px;">
+改變字和字之間的距離 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 </p>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letter-spacing: 3px;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letter-spacing: 8px;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p style="word-spacing: 8px;">
+改變字和字之間的距離 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</p>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">word-spacing: 8px;</span><br></pre></td></tr></table></figure>
+
+<br>
 
 <h2 id="文字對齊方式"><a href="#文字對齊方式" class="headerlink" title="文字對齊方式"></a>文字對齊方式</h2><p>一般預設是靠左，所以不寫的話就是靠左</p>
 <p style="text-align: right;">
@@ -353,6 +369,8 @@ justify 文字左右對齊(類似分散對齊)
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-align: justify;</span><br></pre></td></tr></table></figure>
 
+<br>
+
 <h2 id="首行縮排"><a href="#首行縮排" class="headerlink" title="首行縮排"></a>首行縮排</h2><p style="text-indent: 32px;">
 假設文字大小是16px，text-indent: 32px 就是空2格，<br>
 這段話的首行空了二格，第二行就沒有縮排了。
@@ -360,24 +378,70 @@ justify 文字左右對齊(類似分散對齊)
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-indent: 32px;</span><br></pre></td></tr></table></figure>
 
-<h2 id="文字加上下底線"><a href="#文字加上下底線" class="headerlink" title="文字加上下底線"></a>文字加上下底線</h2><p style="text-decoration: underline;">
-文字加上下底線
+<br>
+
+<h2 id="文字上面加線"><a href="#文字上面加線" class="headerlink" title="文字上面加線"></a>文字上面加線</h2><p style="text-decoration: overline;">
+文字上面有線
+</p>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-decoration: overline;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="文字加下底線"><a href="#文字加下底線" class="headerlink" title="文字加下底線"></a>文字加下底線</h2><p style="text-decoration: underline;">
+文字下面有線
 </p>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-decoration: underline;</span><br></pre></td></tr></table></figure>
 
+<br>
+
 <h2 id="文字刪除下底線"><a href="#文字刪除下底線" class="headerlink" title="文字刪除下底線"></a>文字刪除下底線</h2><p>連結常常會有下底線要刪除，就可以用這個</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-decoration: none;</span><br></pre></td></tr></table></figure>
 
-<h2 id="文字加上刪除線"><a href="#文字加上刪除線" class="headerlink" title="文字加上刪除線"></a>文字加上刪除線</h2><p style="text-decoration: line-through;">
+<br>
+
+<h2 id="文字加刪除線"><a href="#文字加刪除線" class="headerlink" title="文字加刪除線"></a>文字加刪除線</h2><p style="text-decoration: line-through;">
 文字的中間有一條刪除線
 </p>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-decoration: line-through;</span><br></pre></td></tr></table></figure>
 
+<br>
+
+<h2 id="英文字母變大寫"><a href="#英文字母變大寫" class="headerlink" title="英文字母變大寫"></a>英文字母變大寫</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-transform: uppercase;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="英文字母變小寫"><a href="#英文字母變小寫" class="headerlink" title="英文字母變小寫"></a>英文字母變小寫</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-transform: lowercase;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="英文字首變大寫"><a href="#英文字首變大寫" class="headerlink" title="英文字首變大寫"></a>英文字首變大寫</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-transform: capitalize;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="文字超出範圍部分隱藏"><a href="#文字超出範圍部分隱藏" class="headerlink" title="文字超出範圍部分隱藏"></a>文字超出範圍部分隱藏</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-overflow: clip;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="文字超出範圍部分改…"><a href="#文字超出範圍部分改…" class="headerlink" title="文字超出範圍部分改…"></a>文字超出範圍部分改…</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-overflow: ellipsis;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>舉例：<br>可以加入 <code>hover&#123;overflow: visible;&#125;</code> 在滑鼠移過去時顯示所有文字</p>
+</blockquote>
+<br>
+
+<h2 id="文字強制斷行"><a href="#文字強制斷行" class="headerlink" title="文字強制斷行"></a>文字強制斷行</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">word-break: break-all;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="保留完整字，位置不夠換到下一行"><a href="#保留完整字，位置不夠換到下一行" class="headerlink" title="保留完整字，位置不夠換到下一行"></a>保留完整字，位置不夠換到下一行</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">word-break: keep-all;</span><br></pre></td></tr></table></figure>
+
+<br>
+
 <h2 id="漸變效果"><a href="#漸變效果" class="headerlink" title="漸變效果"></a>漸變效果</h2><p>搭配opacity 0透明 1不透明</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">transition: all 3s;</span><br></pre></td></tr></table></figure>
-
                     
                 </div>
 
@@ -412,14 +476,14 @@ justify 文字左右對齊(類似分散對齊)
                             <div class="prev-post">
                                 <a class="prev"
                                    rel="prev"
-                                   href="/2023/01/20/20230120-1929/"
-                                   title="CSS border 的用法"
+                                   href="/2023/01/12/20230112-1830/"
+                                   title="HTML 標籤"
                                 >
                                     <span class="left arrow-icon flex-center">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">CSS border 的用法</span>
+                                        <span class="post-nav-title-item text-ellipsis">HTML 標籤</span>
                                         <span class="post-nav-item">Prev posts</span>
                                     </span>
                                 </a>
@@ -429,11 +493,11 @@ justify 文字左右對齊(類似分散對齊)
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/2023/01/03/20230103-1747/"
-                                   title="Hexo 常用指令"
+                                   href="/2023/01/04/20230104-1455/"
+                                   title="CSS 引用"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">Hexo 常用指令</span>
+                                        <span class="post-nav-title-item text-ellipsis">CSS 引用</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
@@ -562,7 +626,7 @@ justify 文字左右對齊(類似分散對齊)
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E9%AB%94"><span class="nav-number">1.</span> <span class="nav-text">字體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E9%AB%94%E5%8A%A0%E7%B2%97"><span class="nav-number">2.</span> <span class="nav-text">字體加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%8C%E8%B7%9D"><span class="nav-number">3.</span> <span class="nav-text">行距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E8%B7%9D"><span class="nav-number">4.</span> <span class="nav-text">字距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%B0%8D%E9%BD%8A%E6%96%B9%E5%BC%8F"><span class="nav-number">5.</span> <span class="nav-text">文字對齊方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A6%96%E8%A1%8C%E7%B8%AE%E6%8E%92"><span class="nav-number">6.</span> <span class="nav-text">首行縮排</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%8A%A0%E4%B8%8A%E4%B8%8B%E5%BA%95%E7%B7%9A"><span class="nav-number">7.</span> <span class="nav-text">文字加上下底線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%88%AA%E9%99%A4%E4%B8%8B%E5%BA%95%E7%B7%9A"><span class="nav-number">8.</span> <span class="nav-text">文字刪除下底線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%8A%A0%E4%B8%8A%E5%88%AA%E9%99%A4%E7%B7%9A"><span class="nav-number">9.</span> <span class="nav-text">文字加上刪除線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BC%B8%E8%AE%8A%E6%95%88%E6%9E%9C"><span class="nav-number">10.</span> <span class="nav-text">漸變效果</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E9%AB%94"><span class="nav-number">1.</span> <span class="nav-text">字體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E9%AB%94%E5%8A%A0%E7%B2%97"><span class="nav-number">2.</span> <span class="nav-text">字體加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%8C%E8%B7%9D"><span class="nav-number">3.</span> <span class="nav-text">行距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E8%B7%9D"><span class="nav-number">4.</span> <span class="nav-text">字距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%B0%8D%E9%BD%8A%E6%96%B9%E5%BC%8F"><span class="nav-number">5.</span> <span class="nav-text">文字對齊方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A6%96%E8%A1%8C%E7%B8%AE%E6%8E%92"><span class="nav-number">6.</span> <span class="nav-text">首行縮排</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E4%B8%8A%E9%9D%A2%E5%8A%A0%E7%B7%9A"><span class="nav-number">7.</span> <span class="nav-text">文字上面加線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%8A%A0%E4%B8%8B%E5%BA%95%E7%B7%9A"><span class="nav-number">8.</span> <span class="nav-text">文字加下底線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%88%AA%E9%99%A4%E4%B8%8B%E5%BA%95%E7%B7%9A"><span class="nav-number">9.</span> <span class="nav-text">文字刪除下底線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%8A%A0%E5%88%AA%E9%99%A4%E7%B7%9A"><span class="nav-number">10.</span> <span class="nav-text">文字加刪除線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8B%B1%E6%96%87%E5%AD%97%E6%AF%8D%E8%AE%8A%E5%A4%A7%E5%AF%AB"><span class="nav-number">11.</span> <span class="nav-text">英文字母變大寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8B%B1%E6%96%87%E5%AD%97%E6%AF%8D%E8%AE%8A%E5%B0%8F%E5%AF%AB"><span class="nav-number">12.</span> <span class="nav-text">英文字母變小寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8B%B1%E6%96%87%E5%AD%97%E9%A6%96%E8%AE%8A%E5%A4%A7%E5%AF%AB"><span class="nav-number">13.</span> <span class="nav-text">英文字首變大寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E7%AF%84%E5%9C%8D%E9%83%A8%E5%88%86%E9%9A%B1%E8%97%8F"><span class="nav-number">14.</span> <span class="nav-text">文字超出範圍部分隱藏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E7%AF%84%E5%9C%8D%E9%83%A8%E5%88%86%E6%94%B9%E2%80%A6"><span class="nav-number">15.</span> <span class="nav-text">文字超出範圍部分改…</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%BC%B7%E5%88%B6%E6%96%B7%E8%A1%8C"><span class="nav-number">16.</span> <span class="nav-text">文字強制斷行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%9D%E7%95%99%E5%AE%8C%E6%95%B4%E5%AD%97%EF%BC%8C%E4%BD%8D%E7%BD%AE%E4%B8%8D%E5%A4%A0%E6%8F%9B%E5%88%B0%E4%B8%8B%E4%B8%80%E8%A1%8C"><span class="nav-number">17.</span> <span class="nav-text">保留完整字，位置不夠換到下一行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BC%B8%E8%AE%8A%E6%95%88%E6%9E%9C"><span class="nav-number">18.</span> <span class="nav-text">漸變效果</span></a></li></ol>
     </div>
 </div>
 
@@ -749,7 +813,7 @@ justify 文字左右對齊(類似分散對齊)
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E9%AB%94"><span class="nav-number">1.</span> <span class="nav-text">字體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E9%AB%94%E5%8A%A0%E7%B2%97"><span class="nav-number">2.</span> <span class="nav-text">字體加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%8C%E8%B7%9D"><span class="nav-number">3.</span> <span class="nav-text">行距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E8%B7%9D"><span class="nav-number">4.</span> <span class="nav-text">字距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%B0%8D%E9%BD%8A%E6%96%B9%E5%BC%8F"><span class="nav-number">5.</span> <span class="nav-text">文字對齊方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A6%96%E8%A1%8C%E7%B8%AE%E6%8E%92"><span class="nav-number">6.</span> <span class="nav-text">首行縮排</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%8A%A0%E4%B8%8A%E4%B8%8B%E5%BA%95%E7%B7%9A"><span class="nav-number">7.</span> <span class="nav-text">文字加上下底線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%88%AA%E9%99%A4%E4%B8%8B%E5%BA%95%E7%B7%9A"><span class="nav-number">8.</span> <span class="nav-text">文字刪除下底線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%8A%A0%E4%B8%8A%E5%88%AA%E9%99%A4%E7%B7%9A"><span class="nav-number">9.</span> <span class="nav-text">文字加上刪除線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BC%B8%E8%AE%8A%E6%95%88%E6%9E%9C"><span class="nav-number">10.</span> <span class="nav-text">漸變效果</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E9%AB%94"><span class="nav-number">1.</span> <span class="nav-text">字體</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E9%AB%94%E5%8A%A0%E7%B2%97"><span class="nav-number">2.</span> <span class="nav-text">字體加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%8C%E8%B7%9D"><span class="nav-number">3.</span> <span class="nav-text">行距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E8%B7%9D"><span class="nav-number">4.</span> <span class="nav-text">字距</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%B0%8D%E9%BD%8A%E6%96%B9%E5%BC%8F"><span class="nav-number">5.</span> <span class="nav-text">文字對齊方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A6%96%E8%A1%8C%E7%B8%AE%E6%8E%92"><span class="nav-number">6.</span> <span class="nav-text">首行縮排</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E4%B8%8A%E9%9D%A2%E5%8A%A0%E7%B7%9A"><span class="nav-number">7.</span> <span class="nav-text">文字上面加線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%8A%A0%E4%B8%8B%E5%BA%95%E7%B7%9A"><span class="nav-number">8.</span> <span class="nav-text">文字加下底線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%88%AA%E9%99%A4%E4%B8%8B%E5%BA%95%E7%B7%9A"><span class="nav-number">9.</span> <span class="nav-text">文字刪除下底線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%8A%A0%E5%88%AA%E9%99%A4%E7%B7%9A"><span class="nav-number">10.</span> <span class="nav-text">文字加刪除線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8B%B1%E6%96%87%E5%AD%97%E6%AF%8D%E8%AE%8A%E5%A4%A7%E5%AF%AB"><span class="nav-number">11.</span> <span class="nav-text">英文字母變大寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8B%B1%E6%96%87%E5%AD%97%E6%AF%8D%E8%AE%8A%E5%B0%8F%E5%AF%AB"><span class="nav-number">12.</span> <span class="nav-text">英文字母變小寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8B%B1%E6%96%87%E5%AD%97%E9%A6%96%E8%AE%8A%E5%A4%A7%E5%AF%AB"><span class="nav-number">13.</span> <span class="nav-text">英文字首變大寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E7%AF%84%E5%9C%8D%E9%83%A8%E5%88%86%E9%9A%B1%E8%97%8F"><span class="nav-number">14.</span> <span class="nav-text">文字超出範圍部分隱藏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E8%B6%85%E5%87%BA%E7%AF%84%E5%9C%8D%E9%83%A8%E5%88%86%E6%94%B9%E2%80%A6"><span class="nav-number">15.</span> <span class="nav-text">文字超出範圍部分改…</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%BC%B7%E5%88%B6%E6%96%B7%E8%A1%8C"><span class="nav-number">16.</span> <span class="nav-text">文字強制斷行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%9D%E7%95%99%E5%AE%8C%E6%95%B4%E5%AD%97%EF%BC%8C%E4%BD%8D%E7%BD%AE%E4%B8%8D%E5%A4%A0%E6%8F%9B%E5%88%B0%E4%B8%8B%E4%B8%80%E8%A1%8C"><span class="nav-number">17.</span> <span class="nav-text">保留完整字，位置不夠換到下一行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BC%B8%E8%AE%8A%E6%95%88%E6%9E%9C"><span class="nav-number">18.</span> <span class="nav-text">漸變效果</span></a></li></ol>
     </div>
 </div>
 

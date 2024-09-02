@@ -9,7 +9,7 @@
     
     <title>
         
-            處理字串的常用方法及轉型 |
+            處理字串的方法及轉型 |
         
         Nora&#39;s 小筆記
     </title>
@@ -235,7 +235,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        處理字串的常用方法及轉型
+                        處理字串的方法及轉型
                     </div>
                 
 
@@ -261,12 +261,12 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2023-09-18 13:47:39</span>
+                <span class="datetime">2023-09-18 13:47:00</span>
             </span>
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Wed Apr 24 2024 21:42:55 GMT+0800">2024-04-24 21:42:55</span>
+                <span class="datetime" data-updated="Mon Sep 02 2024 23:15:08 GMT+0800">2024-09-02 23:15:08</span>
             </span>
         
 
@@ -320,13 +320,8 @@
                     
 
                     
-                         <h2 id="trim-去除空白"><a href="#trim-去除空白" class="headerlink" title="trim() 去除空白"></a>trim() 去除空白</h2><p>可以清除字串兩端的空白</p>
-<p>用法是 <code>a.trim()</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> price = <span class="string">&quot;  100    &quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(price); <span class="comment">// &quot;  100     &quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(price.<span class="title function_">trim</span>()); <span class="comment">// &quot;100&quot;</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-<h2 id="concat-合併"><a href="#concat-合併" class="headerlink" title="concat() 合併"></a>concat() 合併</h2><p>可以把字串連接在一起</p>
+                         <h2 id="concat-合併"><a href="#concat-合併" class="headerlink" title="concat() 合併"></a>concat() 合併</h2><p>合併多個字串並傳回新的合併後字串</p>
+<p>也就是可以把字串連接在一起</p>
 <p>用法是 <code>a.concat(&#39;字串1&#39;,&#39;字串2&#39;...)</code></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> today = <span class="string">&quot;今天&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(today.<span class="title function_">concat</span>(<span class="string">&quot;是&quot;</span>,<span class="string">&quot;星期一&quot;</span>)); <span class="comment">// &quot;今天是星期一&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -337,6 +332,13 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> hello = <span class="string">&quot;Hello 你好&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(hello.<span class="title function_">split</span>(<span class="string">&quot;&quot;</span>)); <span class="comment">// [&quot;H&quot;,&quot;e&quot;,&quot;l&quot;,&quot;l&quot;,&quot;o&quot;,&quot; &quot;,&quot;你&quot;,&quot;好&quot;]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(hello.<span class="title function_">split</span>(<span class="string">&quot; &quot;</span>)); <span class="comment">// [&quot;Hello&quot;,&quot;你好&quot;]</span></span><br></pre></td></tr></table></figure>
 
 <br>
+
+<h2 id="trim-去除空白"><a href="#trim-去除空白" class="headerlink" title="trim() 去除空白"></a>trim() 去除空白</h2><p>可以清除字串兩端的空白</p>
+<p>用法是 <code>a.trim()</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> price = <span class="string">&quot;  100    &quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(price); <span class="comment">// &quot;  100     &quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(price.<span class="title function_">trim</span>()); <span class="comment">// &quot;100&quot;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
 
 <h2 id="toUpperCase-將字串轉為大寫"><a href="#toUpperCase-將字串轉為大寫" class="headerlink" title="toUpperCase() 將字串轉為大寫"></a>toUpperCase() 將字串轉為大寫</h2><p>可以將字串全部轉成大寫</p>
 <p>用法是<code>a.toUpperCase()</code></p>
@@ -367,6 +369,43 @@
 
 <p>用 toString() 轉為字串</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">3</span>;</span><br><span class="line">a = a.<span class="title function_">toString</span>();</span><br><span class="line">b = b.<span class="title function_">toString</span>();</span><br><span class="line"><span class="keyword">let</span> c = a + b;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(c, <span class="keyword">typeof</span> c); <span class="comment">// &quot;23&quot; &quot;string&quot;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<blockquote>
+<p>其他關於數字常見的方法<br><code>valueOf()</code> 回傳物件的原始值<br><code>toFixed()</code> 四捨五入到指定的小數位數<br><code>toExponential()</code> 將數字改為科學記號表示法(小數點後的位數)<br><code>toPrecision()</code> 將數字改為指定的長度或小數點後的位數</p>
+</blockquote>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><code>anchor()</code>  建立一個 HTML 的錨點</p>
+<p><code>big()</code>  用大字型來顯示字串</p>
+<p><code>blink()</code>  用閃爍的字型來顯示字串(IE無效)</p>
+<p><code>bold()</code>  用粗體字來顯示字串</p>
+<p><code>fixed()</code>  用等寬字型(fixed-pitch)來顯示字串</p>
+<p><code>fontcolor()</code> 用指定顏色顯示字串</p>
+<p><code>fontsize()</code>  用指定字型大小來顯示字串</p>
+<p><code>italics()</code>  用斜體字來顯示字串</p>
+<p><code>link()</code>  把字串變成有超連結的字串</p>
+<p><code>small()</code>  用小字型來顯示字串</p>
+<p><code>strike()</code>  顯示加上删除線的字串</p>
+<p><code>sub()</code>  用下標來顯示字串</p>
+<p><code>sup()</code>  用上標來顯示字串</p>
+<p><code>charAt()</code>  傳回索引值位置的字元</p>
+<p><code>charCodeAt()</code>  傳回索引值位置的 unicode 編碼</p>
+<p><code>fromCharCode()</code>  把多個 unicode 轉成字串</p>
+<p><code>indexOf()</code>  搜尋並傳回指定子字串在字串中第一次出現的位置</p>
+<p><code>lastIndexOf()</code>  由後往前搜尋並傳回指定子字串在字串中第一次出現的位置</p>
+<p><code>match()</code>  使用正規表達式來搜尋字串，傳回匹配的字串陣列</p>
+<p><code>replace()</code>  比對並替換字串</p>
+<p><code>search()</code>  搜尋字串，傳回字串所在位置的索引值</p>
+<p><code>slice()</code>  依起始索引與結束索引取得字串中的子字串</p>
+<p><code>substr()</code>  依起始索引與長度取得字串中的子字串</p>
+<p><code>substring()</code>  取得字串中的子字串</p>
+<p><code>valueOf()</code>  傳回物件原始值(primitive value)</p>
+<br>
+
+<p>reference</p>
+<ul>
+<li>數發部 JavaScript 網頁應用課程</li>
+</ul>
 
                     
                 </div>
@@ -406,14 +445,14 @@
                             <div class="prev-post">
                                 <a class="prev"
                                    rel="prev"
-                                   href="/2023/10/07/20231007-2155/"
-                                   title="控制判斷 - if、else if、switch"
+                                   href="/2023/09/25/20230925-1257/"
+                                   title="type 的屬性值"
                                 >
                                     <span class="left arrow-icon flex-center">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">控制判斷 - if、else if、switch</span>
+                                        <span class="post-nav-title-item text-ellipsis">type 的屬性值</span>
                                         <span class="post-nav-item">Prev posts</span>
                                     </span>
                                 </a>
@@ -556,7 +595,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#trim-%E5%8E%BB%E9%99%A4%E7%A9%BA%E7%99%BD"><span class="nav-number">1.</span> <span class="nav-text">trim() 去除空白</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#concat-%E5%90%88%E4%BD%B5"><span class="nav-number">2.</span> <span class="nav-text">concat() 合併</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#split-%E5%88%86%E5%89%B2"><span class="nav-number">3.</span> <span class="nav-text">split() 分割</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toUpperCase-%E5%B0%87%E5%AD%97%E4%B8%B2%E8%BD%89%E7%82%BA%E5%A4%A7%E5%AF%AB"><span class="nav-number">4.</span> <span class="nav-text">toUpperCase() 將字串轉為大寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toLowerCase-%E5%B0%87%E5%AD%97%E4%B8%B2%E8%BD%89%E7%82%BA%E5%B0%8F%E5%AF%AB"><span class="nav-number">5.</span> <span class="nav-text">toLowerCase() 將字串轉為小寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#parseInt-%E5%AD%97%E4%B8%B2%E8%BD%89%E6%95%B8%E5%AD%97"><span class="nav-number">6.</span> <span class="nav-text">parseInt() 字串轉數字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-%E6%95%B8%E5%AD%97%E8%BD%89%E5%AD%97%E4%B8%B2"><span class="nav-number">7.</span> <span class="nav-text">toString() 數字轉字串</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#concat-%E5%90%88%E4%BD%B5"><span class="nav-number">1.</span> <span class="nav-text">concat() 合併</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#split-%E5%88%86%E5%89%B2"><span class="nav-number">2.</span> <span class="nav-text">split() 分割</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#trim-%E5%8E%BB%E9%99%A4%E7%A9%BA%E7%99%BD"><span class="nav-number">3.</span> <span class="nav-text">trim() 去除空白</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toUpperCase-%E5%B0%87%E5%AD%97%E4%B8%B2%E8%BD%89%E7%82%BA%E5%A4%A7%E5%AF%AB"><span class="nav-number">4.</span> <span class="nav-text">toUpperCase() 將字串轉為大寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toLowerCase-%E5%B0%87%E5%AD%97%E4%B8%B2%E8%BD%89%E7%82%BA%E5%B0%8F%E5%AF%AB"><span class="nav-number">5.</span> <span class="nav-text">toLowerCase() 將字串轉為小寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#parseInt-%E5%AD%97%E4%B8%B2%E8%BD%89%E6%95%B8%E5%AD%97"><span class="nav-number">6.</span> <span class="nav-text">parseInt() 字串轉數字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-%E6%95%B8%E5%AD%97%E8%BD%89%E5%AD%97%E4%B8%B2"><span class="nav-number">7.</span> <span class="nav-text">toString() 數字轉字串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">8.</span> <span class="nav-text">其他</span></a></li></ol>
     </div>
 </div>
 
@@ -743,7 +782,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#trim-%E5%8E%BB%E9%99%A4%E7%A9%BA%E7%99%BD"><span class="nav-number">1.</span> <span class="nav-text">trim() 去除空白</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#concat-%E5%90%88%E4%BD%B5"><span class="nav-number">2.</span> <span class="nav-text">concat() 合併</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#split-%E5%88%86%E5%89%B2"><span class="nav-number">3.</span> <span class="nav-text">split() 分割</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toUpperCase-%E5%B0%87%E5%AD%97%E4%B8%B2%E8%BD%89%E7%82%BA%E5%A4%A7%E5%AF%AB"><span class="nav-number">4.</span> <span class="nav-text">toUpperCase() 將字串轉為大寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toLowerCase-%E5%B0%87%E5%AD%97%E4%B8%B2%E8%BD%89%E7%82%BA%E5%B0%8F%E5%AF%AB"><span class="nav-number">5.</span> <span class="nav-text">toLowerCase() 將字串轉為小寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#parseInt-%E5%AD%97%E4%B8%B2%E8%BD%89%E6%95%B8%E5%AD%97"><span class="nav-number">6.</span> <span class="nav-text">parseInt() 字串轉數字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-%E6%95%B8%E5%AD%97%E8%BD%89%E5%AD%97%E4%B8%B2"><span class="nav-number">7.</span> <span class="nav-text">toString() 數字轉字串</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#concat-%E5%90%88%E4%BD%B5"><span class="nav-number">1.</span> <span class="nav-text">concat() 合併</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#split-%E5%88%86%E5%89%B2"><span class="nav-number">2.</span> <span class="nav-text">split() 分割</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#trim-%E5%8E%BB%E9%99%A4%E7%A9%BA%E7%99%BD"><span class="nav-number">3.</span> <span class="nav-text">trim() 去除空白</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toUpperCase-%E5%B0%87%E5%AD%97%E4%B8%B2%E8%BD%89%E7%82%BA%E5%A4%A7%E5%AF%AB"><span class="nav-number">4.</span> <span class="nav-text">toUpperCase() 將字串轉為大寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toLowerCase-%E5%B0%87%E5%AD%97%E4%B8%B2%E8%BD%89%E7%82%BA%E5%B0%8F%E5%AF%AB"><span class="nav-number">5.</span> <span class="nav-text">toLowerCase() 將字串轉為小寫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#parseInt-%E5%AD%97%E4%B8%B2%E8%BD%89%E6%95%B8%E5%AD%97"><span class="nav-number">6.</span> <span class="nav-text">parseInt() 字串轉數字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#toString-%E6%95%B8%E5%AD%97%E8%BD%89%E5%AD%97%E4%B8%B2"><span class="nav-number">7.</span> <span class="nav-text">toString() 數字轉字串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">8.</span> <span class="nav-text">其他</span></a></li></ol>
     </div>
 </div>
 
