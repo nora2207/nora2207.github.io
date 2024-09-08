@@ -235,23 +235,16 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/12/05/20231205-2233/">
-                            DOM 網頁元素
+                        <a href="/2024/03/03/20240303-1537/">
+                            實作 axios 註冊、登入功能
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            querySelector 選擇單一元素可以選取網頁元素
-
-
-選取 html 元素
-1const el = document.querySelector(&#x27;h1&#x27;);
-
-
-
-選取 class 元素
-1const el = docu...
+                            用前面學過的 axios post 來實作帳號的註冊及登入功能
+註冊先在 HTML 上設定帳號和密碼的輸入欄位還有註冊的按鈕
+123456&lt;h2&gt;註冊&lt;/h2&gt;帳號：&lt;input type=&quot;email&quo...
                         
                     </div>
 
@@ -262,8 +255,8 @@
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Mon Sep 02 2024 23:56:46 GMT+0800"
-                >2024-09-02 23:56:46</span>
+                                                                                data-updated="Wed Apr 24 2024 21:36:19 GMT+0800"
+                >2024-04-24 21:36:19</span>
             </span>
         
 
@@ -289,7 +282,7 @@
     </div>
 
     
-        <a class="home-read-more" href="/2023/12/05/20231205-2233/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/03/03/20240303-1537/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -303,19 +296,15 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/11/19/20231119-1927/">
-                            函式 (function)
+                        <a href="/2024/02/25/20240225-1804/">
+                            透過 axios 註冊 post 網路請求
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            函式寫法function 自訂名稱 (){函式主要執行程式碼} 
-
-
-前面的 function 是宣告函式，後面的 hungry() 是函式的名稱
-宣告完之後並不會執行，要呼叫時才會執行
-最下面的 hungry(); 是執行函式，也就是呼叫函式，這樣...
+                            axios 的 post 範例
+12345678910axios.post(&#x27;/user&#x27;, &#123;    firstName: &#x27;Fred&#x27;,    lastName: &#x27;Flintstone...
                         
                     </div>
 
@@ -326,8 +315,8 @@
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Aug 28 2024 23:56:27 GMT+0800"
-                >2024-08-28 23:56:27</span>
+                                                                                data-updated="Sun Sep 08 2024 21:13:17 GMT+0800"
+                >2024-09-08 21:13:17</span>
             </span>
         
 
@@ -345,21 +334,6 @@
         
 
         
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/if/">if</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E8%A8%88%E7%AE%97%E6%A9%9F/">計算機</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/return/">return</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
 
         
         
@@ -368,7 +342,7 @@
     </div>
 
     
-        <a class="home-read-more" href="/2023/11/19/20231119-1927/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/02/25/20240225-1804/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -382,21 +356,26 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/11/15/20231115-1148/">
-                            撈取 JSON 格式裡的資料
+                        <a href="/2024/02/21/20240221-1919/">
+                            使用 JavaScript 製作即時放大和縮小字體的按鈕
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            首先，找一個 JSON 格式的資料
-我找了政府資料開放平台的 國立自然科學博物館特展 的資料
-就用裡面的第一筆資料來練習吧
+                            原本的文字大小設定 16px ，也就是預設值的字體大小
+點按鈕之後可以讓字體變大、變小或回復為預設值的大小
 
 
-會用到的資料有展覽名稱、地點、和期間
-也就是 title、location 和 dateStart 及 dateEnd
-1...
+
+
+
+
+
+
+定義這三個字體大小的 function
+以放大字體為例
+改變網頁中的 body 元素的 style 屬性中的 fontSize...
                         
                     </div>
 
@@ -407,8 +386,8 @@
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Mon Sep 02 2024 23:35:54 GMT+0800"
-                >2024-09-02 23:35:54</span>
+                                                                                data-updated="Sun Sep 08 2024 21:25:41 GMT+0800"
+                >2024-09-08 21:25:41</span>
             </span>
         
 
@@ -426,18 +405,6 @@
         
 
         
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/JSON/">JSON</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/textContent/">textContent</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
 
         
         
@@ -446,7 +413,7 @@
     </div>
 
     
-        <a class="home-read-more" href="/2023/11/15/20231115-1148/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/02/21/20240221-1919/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -460,30 +427,27 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/11/10/20231110-1124/">
-                            display 和 visibility 的差別
+                        <a href="/2024/02/16/20240216-2012/">
+                            設計切換背景色彩的按鈕
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            displaydisplay 是用來設定要不要顯示
-
-
-不要顯示可以用
-1display: none;
+                            點按鈕時可以跟著隨機切換背景的顏色
 
 
 
-如果要顯示可以用
-1display: block;
 
 
 
-visibilityvisibility 是用來設定要不要隱藏
 
 
-如果 visi...
+先定義顏色列表
+這裡放了五個顏色(橘、紅、黃、粉紅和藍)在陣列裡
+也可以用 push() 的方式把顏色放進陣列裡
+另外一個綠色就是用 push() 的方式
+所以現在 colorList 這個陣列裡有...
                         
                     </div>
 
@@ -494,8 +458,8 @@ visibilityvisibility 是用來設定要不要隱藏
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Mon Sep 02 2024 23:37:38 GMT+0800"
-                >2024-09-02 23:37:38</span>
+                                                                                data-updated="Sun Sep 08 2024 21:05:33 GMT+0800"
+                >2024-09-08 21:05:33</span>
             </span>
         
 
@@ -505,7 +469,7 @@ visibilityvisibility 是用來設定要不要隱藏
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
                     
                 </ul>
@@ -521,7 +485,7 @@ visibilityvisibility 是用來設定要不要隱藏
     </div>
 
     
-        <a class="home-read-more" href="/2023/11/10/20231110-1124/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/02/16/20240216-2012/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -535,21 +499,24 @@ visibilityvisibility 是用來設定要不要隱藏
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/10/21/20231021-2030/">
-                            陣列 (Array) 和物件 (Object)
+                        <a href="/2024/02/05/20240205-1922/">
+                            用 axios 串接 get 外部資料
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            陣列 (Array)寫法陣列的寫法
-外面用 [] 包起來，裡面用逗號區隔
-1let array = [&quot;麵包&quot;,&quot;蛋糕&quot;,&quot;餅乾&quot;];
+                            這裡用農業部林業及自然保育署-最新活動來練習一下
 
 
 
-讀取方法陣列的讀取方法，是從零開始
-所以陣列裡的...
+
+
+
+
+
+html 的地方記得載入 axios 的 CDN (也可以用 NPM 的方式)
+12&lt;script src=&quot;https://cdn.jsdelivr.net/npm/...
                         
                     </div>
 
@@ -560,8 +527,8 @@ visibilityvisibility 是用來設定要不要隱藏
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Sep 01 2024 21:27:35 GMT+0800"
-                >2024-09-01 21:27:35</span>
+                                                                                data-updated="Sun Sep 08 2024 20:12:56 GMT+0800"
+                >2024-09-08 20:12:56</span>
             </span>
         
 
@@ -582,16 +549,13 @@ visibilityvisibility 是用來設定要不要隱藏
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E9%99%A3%E5%88%97/">陣列</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/axios/">axios</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%89%A9%E4%BB%B6/">物件</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/innerHTML/">innerHTML</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E8%AE%80%E5%8F%96/">讀取</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%96%B0%E5%A2%9E/">新增</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E9%9D%9E%E5%90%8C%E6%AD%A5/">非同步</a></li>
                         
                     
                 </ul>
@@ -605,7 +569,7 @@ visibilityvisibility 是用來設定要不要隱藏
     </div>
 
     
-        <a class="home-read-more" href="/2023/10/21/20231021-2030/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/02/05/20240205-1922/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -619,19 +583,24 @@ visibilityvisibility 是用來設定要不要隱藏
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/10/12/20231012-1314/">
-                            迴圈 (Loop)
+                        <a href="/2024/01/28/20240128-2039/">
+                            網路請求的種類
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            迴圈可以重複執行程式碼
-forfor 迴圈可以控制要執行的次數
-let i=0; 宣告變數
-i&lt;3; 設定條件
-i++ 每加1就執行一次
-123456for(let i=0;i&lt;3;i++)&#123;  document.write(&...
+                            HTTP 請求方法比較常用的有下面幾種
+GET使用 GET 的方式來請求取得資料
+像是輸入網址後瀏覽器會顯示相關的資訊
+
+
+POST把資料傳送給對方
+像是傳送帳號密碼到伺服器看看有沒有吻合的
+有就回傳正確，沒有就回傳錯誤
+
+
+請求資料格式 reque...
                         
                     </div>
 
@@ -642,8 +611,8 @@ i++ 每加1就執行一次
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat Aug 31 2024 16:55:15 GMT+0800"
-                >2024-08-31 16:55:15</span>
+                                                                                data-updated="Wed Apr 24 2024 21:38:11 GMT+0800"
+                >2024-04-24 21:38:11</span>
             </span>
         
 
@@ -669,7 +638,7 @@ i++ 每加1就執行一次
     </div>
 
     
-        <a class="home-read-more" href="/2023/10/12/20231012-1314/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/01/28/20240128-2039/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -683,19 +652,18 @@ i++ 每加1就執行一次
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/10/07/20231007-2155/">
-                            控制判斷 - if、else if、switch
+                        <a href="/2024/01/20/20240120-1348/">
+                            發出網路請求的 JS 寫法
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            if123if (hungry == &#x27;肚子餓&#x27;) &#123;  eat();&#125;
+                            第一種是 JavaScript 的原生寫法，有 XMLHttpResquest 和 Fetch
+另一種是用套件，需要額外載入 JS 的 axios
 
-if () 是判斷式
-eat(); 是陳述式
-如果判斷式()裡面的內容成立，就會跑&#123;&#125;裡面的內容
-所以這裡就是如果...
+
+XMLHttpResquest12345678function reqListener() &#1...
                         
                     </div>
 
@@ -706,189 +674,8 @@ eat(); 是陳述式
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat Aug 31 2024 18:15:13 GMT+0800"
-                >2024-08-31 18:15:13</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/if/">if</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/else-if/">else if</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/else/">else</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/switch/">switch</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2023/10/07/20231007-2155/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2023/09/25/20230925-1257/">
-                            type 的屬性值
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            寫法像是這樣
-1&lt;input type=&quot;text&quot;&gt;
-
-
-
-
-text 文字
-
-
-
-
-
-
-
-
-password 密碼，隱藏字
-
-
-
-
-
-
-
-
-button 按鈕
-
-
-
-
-
-
-
-
-submit 送出
-
-
-
-
-
-
-
-
-r...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Mon Sep 02 2024 23:27:14 GMT+0800"
-                >2024-09-02 23:27:14</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/HTML/">HTML</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2023/09/25/20230925-1257/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2023/09/18/20230918-1347/">
-                            處理字串的方法及轉型
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            concat() 合併合併多個字串並傳回新的合併後字串
-也就是可以把字串連接在一起
-用法是 a.concat(&#39;字串1&#39;,&#39;字串2&#39;...)
-12let today = &quot;今天&quot;;console.l...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Mon Sep 02 2024 23:15:08 GMT+0800"
-                >2024-09-02 23:15:08</span>
+                                                                                data-updated="Wed Apr 24 2024 21:38:58 GMT+0800"
+                >2024-04-24 21:38:58</span>
             </span>
         
 
@@ -909,13 +696,13 @@ r...
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%AD%97%E4%B8%B2/">字串</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/XMLHttpResquest/">XMLHttpResquest</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%95%B8%E5%AD%97/">數字</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Fetch/">Fetch</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E8%BD%89%E5%9E%8B/">轉型</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/axios/">axios</a></li>
                         
                     
                 </ul>
@@ -929,7 +716,7 @@ r...
     </div>
 
     
-        <a class="home-read-more" href="/2023/09/18/20230918-1347/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/01/20/20240120-1348/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -943,25 +730,21 @@ r...
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/09/12/20230912-1911/">
-                            用 AOS 製作視差滾動特效
+                        <a href="/2024/01/06/20240106-1644/">
+                            網頁請求狀態碼
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            這種視差滾動的特效是滑鼠滾到一定的位置後會出現的效果
-用 AOS 可以很容易就做出來了
+                            從 Google Chrome 的網頁瀏覽器按右鍵檢查
+然後選 Network，裡面的 Status 就可以查看了
+比較常見的有下面這幾個
 
 
 
-
-
-
-
-
-首先是先載入 CSS 和 JS
-1&lt;link rel=&quot;stylesheet&quot; href=&quot;https://u...
+資訊回應：100~199
+101 Switching Protocol：伺服器收到請求，正在切換到所要求...
                         
                     </div>
 
@@ -972,8 +755,62 @@ r...
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Apr 24 2024 21:43:22 GMT+0800"
-                >2024-04-24 21:43:22</span>
+                                                                                data-updated="Wed Apr 24 2024 21:39:27 GMT+0800"
+                >2024-04-24 21:39:27</span>
+            </span>
+        
+
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/01/06/20240106-1644/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2023/12/29/20231229-2050/">
+                            陣列的處理方法
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            forEach會遍歷陣列裡的每一個值，把陣列內的物件或值都跑一遍
+1forEach(function(item,index,array)&#123;&#125;)
+
+forEach() 裡面可以帶入三個參數，參數名稱可以自定義
+這三個參數分別是物件、...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Wed Apr 24 2024 21:39:55 GMT+0800"
+                >2024-04-24 21:39:55</span>
             </span>
         
 
@@ -991,17 +828,70 @@ r...
         
 
         
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2023/12/29/20231229-2050/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Scrolling/">Scrolling</a></li>
+                    <h3 class="home-post-title border-box">
+                        <a href="/2023/12/17/20231217-2129/">
+                            event (事件)
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
                         
+                            event 物件可以知道當下的元素資訊
+使用 function(e) 就可以了解這個事件的詳細資訊
+
+
+value取值使用 .value 來取出元素，取出來的值為字串
+以 input 欄位說明
+1&lt;input type=&quot;text&q...
+                        
+                    </div>
+
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%BB%BE%E5%8B%95%E8%A6%96%E5%B7%AE/">滾動視差</a></li>
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sat Jun 01 2024 16:29:32 GMT+0800"
+                >2024-06-01 16:29:32</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
                     
                 </ul>
             </span>
+        
+
         
 
         
@@ -1011,7 +901,7 @@ r...
     </div>
 
     
-        <a class="home-read-more" href="/2023/09/12/20230912-1911/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/12/17/20231217-2129/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -1037,8 +927,8 @@ r...
                    type="number"
                    value="4"
                    min="1"
-                   max="10"
-            /><span class="delimiter base-style">/</span><span class="base-style">10</span>
+                   max="11"
+            /><span class="delimiter base-style">/</span><span class="base-style">11</span>
         </div>
 
 

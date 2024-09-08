@@ -235,23 +235,19 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/07/05/20230705-2001/">
-                            用 lightbox 來製作圖片燈箱效果
+                        <a href="/2023/09/01/20230901-1011/">
+                            用 SASS 來提升寫網頁語法的效率
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            lightbox 是一個很方便的 jQuery 套件
-分成單張和多張的方式
-單張就是每張圖片要分開點
-看完一張要看下一張時要先關掉這張圖片再點下一張
-而多張是點了一張圖片後，會有左右的箭頭可以直接點到下一張或前一張圖片
-做出來的效果像這樣 ↓
+                            寫法SASS 有兩種寫法
+一種是比較常見的 (.scss) ，另一種是用縮排方式的 (.sass)
 
 
-
-...
+一般的 CSS 寫法是這樣，每一個項目都會通通寫出來
+123456789101112.header &#123;  height: 50px;&#...
                         
                     </div>
 
@@ -262,8 +258,8 @@
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Sep 01 2024 21:37:54 GMT+0800"
-                >2024-09-01 21:37:54</span>
+                                                                                data-updated="Sun Sep 08 2024 21:43:47 GMT+0800"
+                >2024-09-08 21:43:47</span>
             </span>
         
 
@@ -273,7 +269,7 @@
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/jQuery/">jQuery</a></li>
+                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
                         
                     
                 </ul>
@@ -284,10 +280,10 @@
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/jQuery/">jQuery</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/SASS/">SASS</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%87%88%E7%AE%B1/">燈箱</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/SCSS/">SCSS</a></li>
                         
                     
                 </ul>
@@ -301,7 +297,7 @@
     </div>
 
     
-        <a class="home-read-more" href="/2023/07/05/20230705-2001/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/09/01/20230901-1011/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -315,23 +311,20 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/07/01/20230701-1145/">
-                            宣告 let、const、var
+                        <a href="/2023/08/25/20230825-1126/">
+                            把選單列固定在網頁最上方
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            未宣告的變數會變成全域 (window) 屬性，這樣別的函式也能呼叫它
-會造成全域環境的作用域汙染，之後除錯會變得很困難
+                            有些時候會希望不管滑鼠滑到哪裡，選單一直都會在網頁的最上方
+這個時候就可以用到這個語法 position: fixed
+把這個加到選單的 CSS 中就可以了
 
 
-宣告的變數會被限制它的作用域
-宣告的方法有 let 、 const 和 var
-
-
-作用域因宣告的語法而有不同
-var 為函...
+不過可能會有下面的內容被擋住的情形
+這個時候在內容區塊加上 padding-top ，讓...
                         
                     </div>
 
@@ -342,8 +335,86 @@ var 為函...
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat Aug 31 2024 18:37:01 GMT+0800"
-                >2024-08-31 18:37:01</span>
+                                                                                data-updated="Wed Apr 24 2024 21:43:56 GMT+0800"
+                >2024-04-24 21:43:56</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/position/">position</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/fixed/">fixed</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2023/08/25/20230825-1126/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2023/08/20/20230820-1842/">
+                            運算子 (operator)
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            運算子可以針對一個或多個元素進行運算
+運算子進行運算的元素稱為運算元
+運算子像是 +-*/ 之類的
+前後方的數字則為運算元
+像是 1+2 中間的 + 就是運算子，1 2 則是運算元
+賦值運算子+=
+假設
+let a = 10;  定義變數 a 為 1...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Tue Aug 27 2024 22:13:53 GMT+0800"
+                >2024-08-27 22:13:53</span>
             </span>
         
 
@@ -361,21 +432,6 @@ var 為函...
         
 
         
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/let/">let</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/const/">const</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/var/">var</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
 
         
         
@@ -384,7 +440,7 @@ var 為函...
     </div>
 
     
-        <a class="home-read-more" href="/2023/07/01/20230701-1145/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/08/20/20230820-1842/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -398,15 +454,16 @@ var 為函...
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/06/28/20230628-2208/">
-                            一鍵回到網頁最上方的 Go To Top 效果
+                        <a href="/2023/08/11/20230811-1018/">
+                            用 parallax.js 來製作視差滾動特效
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            網頁的右下角常常都會有個 Go To Top 按鈕
-只要按一下就會回到網頁的最上方
+                            視差效果是利用各種元素間不同的移動速度造成的
+使用 parallax.js 就可以很簡單的做出視差滾動的特效
+像是下面這個，滑鼠在滑動時，會覺得背景圖也跟著一起動
 
 
 
@@ -415,8 +472,8 @@ var 為函...
 
 
 
-html 裡面放了一個fontawesome的箭頭圖示
-123&lt;div class=&quot;top&quot;&gt;  &lt;a hre...
+首先要載入 jQuery 和 parallax.min.js
+然後在 ...
                         
                     </div>
 
@@ -427,8 +484,8 @@ html 裡面放了一個fontawesome的箭頭圖示
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Oct 31 2023 17:07:48 GMT+0800"
-                >2023-10-31 17:07:48</span>
+                                                                                data-updated="Sat Aug 31 2024 19:26:14 GMT+0800"
+                >2024-08-31 19:26:14</span>
             </span>
         
 
@@ -449,13 +506,13 @@ html 裡面放了一個fontawesome的箭頭圖示
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/top/">top</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/jQuery/">jQuery</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/GoTop/">GoTop</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/parallax/">parallax</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%9B%9E%E5%88%B0%E9%A0%82%E7%AB%AF/">回到頂端</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Scrolling/">Scrolling</a></li>
                         
                     
                 </ul>
@@ -469,7 +526,7 @@ html 裡面放了一個fontawesome的箭頭圖示
     </div>
 
     
-        <a class="home-read-more" href="/2023/06/28/20230628-2208/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/08/11/20230811-1018/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -483,22 +540,25 @@ html 裡面放了一個fontawesome的箭頭圖示
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/06/23/20230623-2106/">
-                            jQuery - click() 和 on()
+                        <a href="/2023/08/07/20230807-1910/">
+                            三條線的漢堡選單設計
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            click() 和 on() 這兩個有點像，但其實不太一樣
-像是在使用 html() 時的順序會有差別
+                            漢堡選單就是在行動版時會有三條線長得很像漢堡的選單
+像是這樣 ↓
 
 
-因為 jQuery 跑程式時是從第一行開始往下跑
 
 
-所以如果是用 click() 搭配動態載入 html 的方式
-就必須把動態載入 html...
+
+
+
+
+html 除了原本的選單外，再加入一個漢堡圖示的 a 連結
+1&lt;a href=&quot;#&quot; class=&quot;showmenu&quot;&g...
                         
                     </div>
 
@@ -509,8 +569,8 @@ html 裡面放了一個fontawesome的箭頭圖示
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Oct 31 2023 13:15:19 GMT+0800"
-                >2023-10-31 13:15:19</span>
+                                                                                data-updated="Wed Apr 24 2024 21:45:12 GMT+0800"
+                >2024-04-24 21:45:12</span>
             </span>
         
 
@@ -520,7 +580,7 @@ html 裡面放了一個fontawesome的箭頭圖示
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/jQuery/">jQuery</a></li>
+                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
                         
                     
                 </ul>
@@ -545,7 +605,7 @@ html 裡面放了一個fontawesome的箭頭圖示
     </div>
 
     
-        <a class="home-read-more" href="/2023/06/23/20230623-2106/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/08/07/20230807-1910/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -559,15 +619,16 @@ html 裡面放了一個fontawesome的箭頭圖示
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/06/20/20230620-1556/">
-                            jQuery - 動態載入的 html() 和 text()
+                        <a href="/2023/08/04/20230804-1825/">
+                            一欄固定，另一欄響應式版型設計
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            html() 可以動態載入 html 標籤
-text() 可以動態載入文字內容
+                            這種是二欄的響應式版型設計
+左側的選單式固定的尺寸，右側的內容寬度則會隨著視窗的大小變化
+769px 以上時是二欄，小於 768px 就變成單欄了
 
 
 
@@ -576,12 +637,9 @@ text() 可以動態載入文字內容
 
 
 
-html()像是這個 box1 裡面什麼也沒有
-1&lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
-
-
-
-但是...
+左側選單是固定的大小
+並且使用 float: left 讓它在網頁左邊
+1234.me...
                         
                     </div>
 
@@ -592,8 +650,8 @@ html()像是這個 box1 裡面什麼也沒有
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Oct 31 2023 12:57:30 GMT+0800"
-                >2023-10-31 12:57:30</span>
+                                                                                data-updated="Wed Apr 24 2024 21:45:31 GMT+0800"
+                >2024-04-24 21:45:31</span>
             </span>
         
 
@@ -603,7 +661,7 @@ html()像是這個 box1 裡面什麼也沒有
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/jQuery/">jQuery</a></li>
+                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
                         
                     
                 </ul>
@@ -614,7 +672,13 @@ html()像是這個 box1 裡面什麼也沒有
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%8B%95%E6%85%8B%E8%BC%89%E5%85%A5/">動態載入</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%B5%81%E9%AB%94%E5%BC%8F%E8%A8%AD%E8%A8%88/">流體式設計</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/RWD/">RWD</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E4%BA%8C%E6%AC%84%E5%BC%8F/">二欄式</a></li>
                         
                     
                 </ul>
@@ -628,7 +692,7 @@ html()像是這個 box1 裡面什麼也沒有
     </div>
 
     
-        <a class="home-read-more" href="/2023/06/20/20230620-1556/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/08/04/20230804-1825/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -642,15 +706,17 @@ html()像是這個 box1 裡面什麼也沒有
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/06/16/20230616-1259/">
-                            二層式的摺疊選單設計
+                        <a href="/2023/07/31/20230731-2009/">
+                            三欄的響應式設計版型
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            這裡要來做二層式的摺疊選單
-就是選單裡面還有一層選單的選單
+                            這種是三欄的響應式版型
+內容的寬度會隨著視窗的大小變化
+768px 以上時是三欄，小於 768px 就變成二欄
+再小於 569px 時變成一欄
 
 
 
@@ -659,8 +725,9 @@ html()像是這個 box1 裡面什麼也沒有
 
 
 
-html 結構部分
-12345678910&lt;ul&gt;  &lt;li class=&quot;list&quot;&gt;    &lt;a href=&quot;...
+裡面的寬度是用 % 來設定的
+這樣就會隨著視窗大小等比例的變化了
+
                         
                     </div>
 
@@ -671,8 +738,8 @@ html 結構部分
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Oct 31 2023 12:14:25 GMT+0800"
-                >2023-10-31 12:14:25</span>
+                                                                                data-updated="Wed Apr 24 2024 21:45:51 GMT+0800"
+                >2024-04-24 21:45:51</span>
             </span>
         
 
@@ -682,7 +749,7 @@ html 結構部分
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/jQuery/">jQuery</a></li>
+                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
                         
                     
                 </ul>
@@ -693,13 +760,13 @@ html 結構部分
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%91%BA%E7%96%8A%E9%81%B8%E5%96%AE/">摺疊選單</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%B5%81%E9%AB%94%E5%BC%8F%E8%A8%AD%E8%A8%88/">流體式設計</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E4%BA%8C%E9%9A%8E%E5%B1%A4/">二階層</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E4%B8%89%E6%AC%84%E5%BC%8F/">三欄式</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%A4%9A%E5%B1%A4/">多層</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/RWD/">RWD</a></li>
                         
                     
                 </ul>
@@ -713,7 +780,7 @@ html 結構部分
     </div>
 
     
-        <a class="home-read-more" href="/2023/06/16/20230616-1259/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/07/31/20230731-2009/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -727,25 +794,19 @@ html 結構部分
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/06/13/20230613-1141/">
-                            設計一個 QA 摺疊選單
+                        <a href="/2023/07/26/20230726-1929/">
+                            CSS 的 Media Query 斷點
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            常見的 QA 摺疊選單
-其實搭配 jQuery 就可以做出來
+                            @media 來設定要套用的斷點大小
 
 
-
-
-
-
-
-
-首先是 html 的結構
-1234&lt;div class=&quot;question&quot;&gt;  &lt;h4&gt;1. 目前提供哪些付款方式？&lt;/...
+max-width，代表這個大小的螢幕解析度以下（包含） 都適用
+max-width: 768px 就表示在 768px 以下時會套用樣式
+例如下面這個就是螢幕大小在768px 以下時，h1的文字顏色會變成紅...
                         
                     </div>
 
@@ -756,8 +817,8 @@ html 結構部分
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Oct 31 2023 10:33:50 GMT+0800"
-                >2023-10-31 10:33:50</span>
+                                                                                data-updated="Wed Apr 24 2024 21:46:07 GMT+0800"
+                >2024-04-24 21:46:07</span>
             </span>
         
 
@@ -767,7 +828,7 @@ html 結構部分
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/jQuery/">jQuery</a></li>
+                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
                         
                     
                 </ul>
@@ -778,10 +839,7 @@ html 結構部分
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Q-A/">Q&amp;A</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%95%8F%E7%AD%94%E9%81%B8%E5%96%AE/">問答選單</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%96%B7%E9%BB%9E/">斷點</a></li>
                         
                     
                 </ul>
@@ -795,7 +853,7 @@ html 結構部分
     </div>
 
     
-        <a class="home-read-more" href="/2023/06/13/20230613-1141/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/07/26/20230726-1929/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -809,27 +867,20 @@ html 結構部分
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/06/09/20230609-2121/">
-                            jQuery - 找到子元素的 find()
+                        <a href="/2023/07/19/20230719-1939/">
+                            資料型別
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            find() 可以找到子元素的內容，讓子元素產生效果
+                            如果要查型別，可以用 typeof (後面放上要查的東西)
+像是 typeof 1 就會出現 ‘number’
 
 
-下面這個麵包列表點選 li 時，標題會變顏色
-
-
-
-
-
-
-
-
-html 的結構是
-1234567&lt;div class=&quot;product&quot;&gt;  &lt;ul&gt...
+資料型別分成基本型別、物件型別兩種
+基本型別(primitives types)數值 (Number)像是 1 2 3 之類的數字
+數...
                         
                     </div>
 
@@ -840,8 +891,8 @@ html 的結構是
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Oct 31 2023 09:59:38 GMT+0800"
-                >2023-10-31 09:59:38</span>
+                                                                                data-updated="Mon Aug 26 2024 22:23:14 GMT+0800"
+                >2024-08-26 22:23:14</span>
             </span>
         
 
@@ -851,25 +902,13 @@ html 的結構是
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/jQuery/">jQuery</a></li>
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
                     
                 </ul>
             </span>
         
 
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E9%81%B8%E5%96%AE/">選單</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/parent/">parent()</a></li>
-                        
-                    
-                </ul>
-            </span>
         
 
         
@@ -879,7 +918,7 @@ html 的結構是
     </div>
 
     
-        <a class="home-read-more" href="/2023/06/09/20230609-2121/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/07/19/20230719-1939/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -893,30 +932,23 @@ html 的結構是
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2023/06/07/20230607-1939/">
-                            jQuery - 指定同層元素的 siblings()
+                        <a href="/2023/07/14/20230714-1737/">
+                            變數
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            siblings() 可以指定同層元素
-讓指定到的那個元素產生效果，而其他元素是另一個效果
+                            變數(Variable)和值(Value)像是這裡寫
+1let a = 1;
+
+a 就是變數，而 1 就是值
 
 
-下面這組選單，每次點擊時只會亮一個選單
-點了選單1時，選單1會變色
-再點選單2時，選單2會變色，選單1會恢復原狀
-一次只會有一個變色而已
+舉例：
+1234var aa=2;var bb;bb=aa+5;console.log(bb); // 7
 
-
-
-
-
-
-
-
-...
+1234const cc=...
                         
                     </div>
 
@@ -927,8 +959,8 @@ html 的結構是
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Tue Oct 31 2023 15:25:52 GMT+0800"
-                >2023-10-31 15:25:52</span>
+                                                                                data-updated="Mon Aug 26 2024 22:45:30 GMT+0800"
+                >2024-08-26 22:45:30</span>
             </span>
         
 
@@ -938,22 +970,13 @@ html 的結構是
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/jQuery/">jQuery</a></li>
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
                         
                     
                 </ul>
             </span>
         
 
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%96%AE%E9%81%B8/">單選</a></li>
-                        
-                    
-                </ul>
-            </span>
         
 
         
@@ -963,96 +986,7 @@ html 的結構是
     </div>
 
     
-        <a class="home-read-more" href="/2023/06/07/20230607-1939/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2023/06/03/20230603-1627/">
-                            jQuery - 找到父階層元素的 parent()
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            parent() 可以找到父階層的元素，讓指定到的那個元素的父元素產生效果
-
-
-像是這個購物車
-點擊加入購物車按鈕時
-會是那個欄位的 li 變顏色，而不是按鈕本身變顏色
-
-
-
-
-
-
-
-
-CSS 設定 li 在 active 時的變色
-背景變紫色、字變...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Aug 28 2024 00:02:38 GMT+0800"
-                >2024-08-28 00:02:38</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/jQuery/">jQuery</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/jQuery/">jQuery</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%8A%A0%E5%85%A5%E8%B3%BC%E7%89%A9%E8%BB%8A/">加入購物車</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/find/">find()</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2023/06/03/20230603-1627/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2023/07/14/20230714-1737/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -1078,8 +1012,8 @@ CSS 設定 li 在 active 時的變色
                    type="number"
                    value="6"
                    min="1"
-                   max="10"
-            /><span class="delimiter base-style">/</span><span class="base-style">10</span>
+                   max="11"
+            /><span class="delimiter base-style">/</span><span class="base-style">11</span>
         </div>
 
 
