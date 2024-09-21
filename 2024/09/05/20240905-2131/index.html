@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Nora">
+    
+    <title>
+        
+            CSS動畫 animation |
+        
+        Nora&#39;s 小筆記
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/flower-icon.ico">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#FF6699","title":"Nora's 小筆記","author":"Nora","avatar":"/images/flower-icon.jpg","logo":"/images/flower-icon.svg","favicon":"/images/flower-icon.ico"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":false,"copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":"nora2207/nora2207.github.io","repo_id":"R_kgDOLyqPRA","category":"Announcements","category_id":"DIC_kwDOLyqPRM4Ch6no","reactions_enabled":false,"theme":"light_high_contrast","lang":"zh-TW","mapping":"title"},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2023,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[["/js/custom-1.js"]]},"root":"","source_data":{},"version":"4.2.2"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/flower-icon.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Nora&#39;s 小筆記
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                CATEGORIES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                ABOUT
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        CSS動畫 animation
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/flower-icon.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Nora</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-09-05 21:31:00</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Sat Sep 21 2024 18:19:47 GMT+0800">2024-09-21 18:19:47</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <p>動畫指元素從一個樣式變化成另一個樣式</p>
+<p>而且會自己動，不需要滑鼠移過去或點擊之類的</p>
+<p>也不需要使用JS就能產生動畫</p>
+<br>
+
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+<li>@keyframes 關鍵影格</li>
+</ul>
+<p>用來指定動畫的開始、結束或是中途某個時間點應該呈現的樣式</p>
+<p>設定的方式可以用百分比(%) 或是 from(0%) 和 to(100%)</p>
+<br>
+
+<ul>
+<li>animation 一次設定多種動畫(簡短語法)</li>
+</ul>
+<br>
+
+<ul>
+<li>animation-delay 被載入到開始播放動畫之間的等待時間</li>
+</ul>
+<p>要延遲多久才開始動畫</p>
+<br>
+
+<ul>
+<li>animation-direction 播放的方向</li>
+</ul>
+<p>動畫播完之後</p>
+<p>要直接重頭開始重複播放還是反方向的播回去</p>
+<br>
+
+<ul>
+<li>animation-duration 播放一次動畫的時間</li>
+</ul>
+<br>
+
+<ul>
+<li>animation-iteration-count 播放次數</li>
+</ul>
+<p>不斷重複播放可設為 infinite</p>
+<br>
+
+<ul>
+<li>animation-name 動畫名稱</li>
+</ul>
+<p>把 @keyframes 定義名稱，其他動畫就可以直接套用這個名稱來使用</p>
+<br>
+
+<ul>
+<li>animation-play-state 暫停或繼續播放動畫</li>
+</ul>
+<br>
+
+<ul>
+<li>animation-timing-function 加速曲線設定動畫播放的速度</li>
+</ul>
+<br>
+
+<h2 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h2><h3 id="背景色-使用-from-to"><a href="#背景色-使用-from-to" class="headerlink" title="背景色-使用 from to"></a>背景色-使用 from to</h3><p>原本的背景色是粉紅色</p>
+<p>設定關鍵影格 @keyframes 是 from 紅色，然後 to 橘色</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> bgAni&#123;</span><br><span class="line">  <span class="selector-tag">from</span>&#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line">  <span class="selector-tag">to</span>&#123;<span class="attribute">background</span>: orange;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>@keyframes 的名稱 bgAni 也要放在要動畫的地方</p>
+<p>然後設定動畫的時間是3秒</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation-name</span>: bgAni;</span><br><span class="line">  <span class="attribute">animation-duration</span>: <span class="number">3s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>這二行也可以簡寫成</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation</span>: bgAni <span class="number">3s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>這樣就可以看到效果是點進網頁後</p>
+<p>方塊會用3秒的時間，由紅色變成橘色</p>
+<p>結束動畫後變回原本設定的粉紅色</p>
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/NWZzLvm?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="背景色-使用"><a href="#背景色-使用" class="headerlink" title="背景色-使用 %"></a>背景色-使用 %</h3><p>使用 % 直接指定要在百分之多少的時候改變</p>
+<p>這裡設定了每20%換一個顏色</p>
+<p>依序是 紅 橘 黃 綠 藍 紫</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> bgAni&#123;</span><br><span class="line"><span class="number">0%</span>&#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line"><span class="number">20%</span>&#123;<span class="attribute">background</span>: orange;&#125;</span><br><span class="line"><span class="number">40%</span>&#123;<span class="attribute">background</span>: yellow;&#125;</span><br><span class="line"><span class="number">60%</span>&#123;<span class="attribute">background</span>: green;&#125;</span><br><span class="line"><span class="number">80%</span>&#123;<span class="attribute">background</span>: blue;&#125;</span><br><span class="line"><span class="number">100%</span>&#123;<span class="attribute">background</span>: purple;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/poXZgym?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="變色-移動"><a href="#變色-移動" class="headerlink" title="變色&amp;移動"></a>變色&amp;移動</h3><p>設定一邊改變背景顏色，一邊移動</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> coPo&#123;</span><br><span class="line">  <span class="number">0%</span>&#123;<span class="attribute">background</span>: crimson; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">top</span>:<span class="number">0px</span>;&#125;</span><br><span class="line">  <span class="number">25%</span>&#123;<span class="attribute">background</span>: coral; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">top</span>:<span class="number">100px</span>;&#125;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">background</span>: darkseagreen; <span class="attribute">left</span>:<span class="number">100px</span>; <span class="attribute">top</span>:<span class="number">100px</span>;&#125;</span><br><span class="line">  <span class="number">75%</span>&#123;<span class="attribute">background</span>: dodgerblue; <span class="attribute">left</span>:<span class="number">100px</span>; <span class="attribute">top</span>:<span class="number">0px</span>;&#125;</span><br><span class="line">  <span class="number">100%</span>&#123;<span class="attribute">background</span>: darkorchid; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">top</span>:<span class="number">0px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>因為需要改變位置</p>
+<p>所以也要記得加上 <code>position: relative</code></p>
+<p>如果沒加就不會動了</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/wvLxMyN?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="變色-移動-反方向"><a href="#變色-移動-反方向" class="headerlink" title="變色&amp;移動-反方向"></a>變色&amp;移動-反方向</h3><p>這裡設定了反方向和3次</p>
+<p>因此跑完第1次動畫之後，第2次會是反方向跑回去</p>
+<p>跑完第3次動畫之後，第4次會是反方向跑回去</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation-direction</span>: alternate;</span><br><span class="line">  <span class="attribute">animation-iteration-count</span>: <span class="number">4</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/jOjpqYV?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="改變邊框-延遲-重複"><a href="#改變邊框-延遲-重複" class="headerlink" title="改變邊框-延遲&amp;重複"></a>改變邊框-延遲&amp;重複</h3><p>改變邊框的顏色和粗細</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> borderC&#123;</span><br><span class="line">  <span class="number">0%</span>&#123;<span class="attribute">border</span>: <span class="number">1px</span> dashed crimson;&#125;</span><br><span class="line">  <span class="number">25%</span>&#123;<span class="attribute">border</span>: <span class="number">10px</span> dashed coral;&#125;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">border</span>: <span class="number">20px</span> dashed darkseagreen;&#125;</span><br><span class="line">  <span class="number">75%</span>&#123;<span class="attribute">border</span>: <span class="number">10px</span> dashed dodgerblue;&#125;</span><br><span class="line">  <span class="number">100%</span>&#123;<span class="attribute">border</span>: <span class="number">1px</span> dashed mediumpurple;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>這裡加上了延遲2秒</p>
+<p>所以會先等2秒後才開始動畫</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation-delay</span>: <span class="number">2s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>也加了重複的次數</p>
+<p>動畫會重複3次才停止</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation-iteration-count</span>: <span class="number">3</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>如果想要一直重複都不停止</p>
+<p>就改成 <code>infinite</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation-iteration-count</span>: infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/ZEdjQjQ?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="改變邊框-縮放"><a href="#改變邊框-縮放" class="headerlink" title="改變邊框-縮放"></a>改變邊框-縮放</h3><p>改變邊框的縮放</p>
+<p>寬度從原本的 2px 變成 20px，再變回 2px</p>
+<p>搭配不一樣的邊框會有不一樣的效果</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span>&#123;</span><br><span class="line">  <span class="attribute">animation</span>: move <span class="number">5s</span> infinite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.pic1</span>&#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> dashed <span class="number">#d05fa2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> move&#123;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">border-width</span>: <span class="number">20px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/OJeqzPG?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="改變邊框-圓角縮放"><a href="#改變邊框-圓角縮放" class="headerlink" title="改變邊框-圓角縮放"></a>改變邊框-圓角縮放</h3><p>改變邊框的四個角進行縮放</p>
+<p>從直角變成 60px 的角度</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span>&#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">10px</span> solid steelblue;</span><br><span class="line">  <span class="attribute">animation</span>: move <span class="number">5s</span> infinite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> move&#123;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">border-radius</span>: <span class="number">60px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/gONEoPE?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="內邊框縮放"><a href="#內邊框縮放" class="headerlink" title="內邊框縮放"></a>內邊框縮放</h3><p>增加減少內邊框 padding 的動畫</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">10px</span> solid steelblue;</span><br><span class="line">  <span class="attribute">animation</span>: move <span class="number">5s</span> infinite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> move&#123;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">padding</span>: <span class="number">50px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/WNqWNLW?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="文字間距"><a href="#文字間距" class="headerlink" title="文字間距"></a>文字間距</h3><p>Merry Christmas！ 是用 <code>letter-spacing</code></p>
+<p>所以會以字母為單位移動</p>
+<br>
+
+<p>而 happy new year！ 是用 <code>word-spacing</code></p>
+<p>所以會以單字為單位移動</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> letter&#123;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">letter-spacing</span>: <span class="number">20px</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> word&#123;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">word-spacing</span>: <span class="number">30px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/gONyOGe?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="文字行距"><a href="#文字行距" class="headerlink" title="文字行距"></a>文字行距</h3><p>利用動畫改變文字的行距</p>
+<p>原本是 16px 變成 50px</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">animation</span>: move <span class="number">5s</span> infinite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> move&#123;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">line-height</span>: <span class="number">50px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/VwJNwVr?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="暫停-繼續"><a href="#暫停-繼續" class="headerlink" title="暫停&amp;繼續"></a>暫停&amp;繼續</h3><p>設定方塊的移動路徑</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> ani&#123;</span><br><span class="line">  <span class="selector-tag">from</span> &#123;<span class="attribute">left</span>: <span class="number">0px</span>;&#125;</span><br><span class="line">  <span class="selector-tag">to</span> &#123;<span class="attribute">left</span>: <span class="number">380px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>在JS分別設定 animation-play-state 繼續和暫停</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">run</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.box&#x27;</span>).<span class="property">style</span>.<span class="property">animationPlayState</span> = <span class="string">&quot;running&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">stop</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;.box&#x27;</span>).<span class="property">style</span>.<span class="property">animationPlayState</span> = <span class="string">&quot;paused&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>按下按鈕就會執行 <code>run()</code> 或 <code>stop()</code> 函式</p>
+<p>就可以移動或暫停動畫了</p>
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/Porydzp?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="角落往中間移動"><a href="#角落往中間移動" class="headerlink" title="角落往中間移動"></a>角落往中間移動</h3><p>藍色的鳥原本在左下，星星原本在左上</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.bird</span>&#123;</span><br><span class="line">  <span class="attribute">background-position</span>: bottom left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.star</span>&#123;</span><br><span class="line">  <span class="attribute">background-position</span>: top left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>設計了5秒重複的動畫</p>
+<p>在 50% 的時間時，圖片的位置會跑到中間</p>
+<p>(藍色鳥的圖片不重複，看的比較清楚)</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation</span>: move <span class="number">5s</span> infinite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> move &#123;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">background-position</span>: center;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/mdZvWeY?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="圖片縮放"><a href="#圖片縮放" class="headerlink" title="圖片縮放"></a>圖片縮放</h3><p>花原本的大小是 40px，狗原本的大小是 200px</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.flower</span>&#123;</span><br><span class="line">  <span class="attribute">background-size</span>: <span class="number">40px</span> <span class="number">40px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.dog</span>&#123;</span><br><span class="line">  <span class="attribute">background-size</span>: <span class="number">200px</span> <span class="number">200px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>設計了5秒重複的動畫</p>
+<p>圖片的尺寸會變成 100px</p>
+<p>因此原本比較小的花會從 40px 變成 100px</p>
+<p>原本比較大的狗會從 200px 變成 100px</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation</span>: move <span class="number">5s</span> infinite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> move &#123;</span><br><span class="line">  <span class="number">50%</span>&#123;<span class="attribute">background-size</span>: <span class="number">100px</span> <span class="number">100px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/zYVeZoW?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h3 id="速度曲線"><a href="#速度曲線" class="headerlink" title="速度曲線"></a>速度曲線</h3><p>不同速度曲線函數的動畫</p>
+<ul>
+<li><p>linear 固定速度</p>
+</li>
+<li><p>ease 慢開始，中間快，慢結束</p>
+</li>
+<li><p>ease-in 慢開始</p>
+</li>
+<li><p>ease-out 慢結束</p>
+</li>
+<li><p>ease-in-out 慢開始，慢結束</p>
+</li>
+</ul>
+<p>總時間是一樣的，但是移動的速度不太一樣</p>
+<br>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: inline-table; <span class="comment">/* 讓每個方塊橫的排成一排 */</span></span><br><span class="line">  <span class="attribute">position</span>: relative; <span class="comment">/* 設定相對位置方塊才會移動 */</span></span><br><span class="line">  <span class="attribute">animation</span>: Ani <span class="number">4s</span> infinite; <span class="comment">/* 總共花4秒的時間移動，無限次數 */</span></span><br><span class="line">  <span class="attribute">animation-direction</span>: alternate; <span class="comment">/* 偶數次動畫反方向回去 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/RwzBamw?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="縮寫"><a href="#縮寫" class="headerlink" title="縮寫"></a>縮寫</h2><p>分開的寫法</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation-name</span>: Ani; <span class="comment">/* 動畫名稱 */</span></span><br><span class="line">  <span class="attribute">animation-duration</span>: <span class="number">3s</span>;<span class="comment">/* 動畫時間 */</span></span><br><span class="line">  <span class="attribute">animation-timing-function</span>: ease;<span class="comment">/* 速度曲線 */</span></span><br><span class="line">  <span class="attribute">animation-delay</span>: <span class="number">1s</span>;<span class="comment">/* 延遲 */</span></span><br><span class="line">  <span class="attribute">animation-iteration-count</span>: infinite;<span class="comment">/* 重複 */</span></span><br><span class="line">  <span class="attribute">animation-direction</span>: alternate;<span class="comment">/* 動畫反方向 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>縮寫的寫法</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">animation</span>: Ani <span class="number">3s</span> ease <span class="number">1s</span> infinite alternate;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>reference</p>
+<ul>
+<li>成為前端設計師：透過HTML＋CSS學習網頁設計課程</li>
+</ul>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2024/09/07/20240907-2131/"
+                                   title="用 JS 設計圖片輪播效果"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">用 JS 設計圖片輪播效果</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/09/03/20240903-2232/"
+                                   title="搜尋時可即時篩選項目的輸入框"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">搜尋時可即時篩選項目的輸入框</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="giscus-comments-container">
+        <div class="giscus" id="giscus"></div>
+        <script 
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          if (!window.KeepCommentPlugin?.getGiscusTheme) {
+            window.KeepCommentPlugin.getGiscusTheme = () => {
+              return document.documentElement.classList.contains('dark-mode') ? 'dark_dimmed' : 'light_tritanopia'
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.changeGiscusTheme) {
+            window.KeepCommentPlugin.changeGiscusTheme = () => {
+              const iframe = document.querySelector('iframe.giscus-frame')
+              iframe && iframe.contentWindow.postMessage({
+                giscus: {
+                  setConfig: {
+                    theme: window.KeepCommentPlugin.getGiscusTheme()
+                  }
+                }
+              }, 'https://giscus.app')
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.initGiscus) {
+            window.KeepCommentPlugin.initGiscus = () => {
+              const script = document.createElement('script')
+              script.async = true
+              script.src = 'https://giscus.app/client.js'
+              script.setAttribute('data-repo', 'nora2207/nora2207.github.io')
+              script.setAttribute('data-repo-id', 'R_kgDOLyqPRA')
+              script.setAttribute('data-category', 'Announcements')
+              script.setAttribute('data-category-id', 'DIC_kwDOLyqPRM4Ch6no')
+              script.setAttribute('data-reactions-enabled', '0')
+              script.setAttribute('data-lang', 'en')
+              script.setAttribute('data-mapping', 'pathname')
+              script.setAttribute('data-strict', '0')
+              script.setAttribute('data-emit-metadata', '0')
+              script.setAttribute('data-input-position', 'top')
+              script.setAttribute('crossorigin', 'anonymous')
+              script.setAttribute('loading', 'lazy')
+              script.setAttribute('data-theme', window.KeepCommentPlugin.getGiscusTheme())
+              document.querySelector('.giscus-comments-container').appendChild(script)
+              script.onerror = () => {
+                window.KeepCommentPlugin.loadFailHandle()
+              }
+              script.onload = () => {
+                window.KeepCommentPlugin.hideLoading()
+              }
+              const toggleThemeBtn = document.querySelector('.tool-toggle-theme-mode')
+              toggleThemeBtn && toggleThemeBtn.addEventListener('click', () => {
+                window.KeepCommentPlugin.changeGiscusTheme()
+              })
+            }
+          }
+
+          if ('false' === "true") {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGiscus()
+            }, 1000)
+          } else {
+            window.addEventListener("DOMContentLoaded", window.KeepCommentPlugin.initGiscus)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AF%84%E4%BE%8B"><span class="nav-number">2.</span> <span class="nav-text">範例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E8%89%B2-%E4%BD%BF%E7%94%A8-from-to"><span class="nav-number">2.1.</span> <span class="nav-text">背景色-使用 from to</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E8%89%B2-%E4%BD%BF%E7%94%A8"><span class="nav-number">2.2.</span> <span class="nav-text">背景色-使用 %</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%8A%E8%89%B2-%E7%A7%BB%E5%8B%95"><span class="nav-number">2.3.</span> <span class="nav-text">變色&amp;移動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%8A%E8%89%B2-%E7%A7%BB%E5%8B%95-%E5%8F%8D%E6%96%B9%E5%90%91"><span class="nav-number">2.4.</span> <span class="nav-text">變色&amp;移動-反方向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B9%E8%AE%8A%E9%82%8A%E6%A1%86-%E5%BB%B6%E9%81%B2-%E9%87%8D%E8%A4%87"><span class="nav-number">2.5.</span> <span class="nav-text">改變邊框-延遲&amp;重複</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B9%E8%AE%8A%E9%82%8A%E6%A1%86-%E7%B8%AE%E6%94%BE"><span class="nav-number">2.6.</span> <span class="nav-text">改變邊框-縮放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B9%E8%AE%8A%E9%82%8A%E6%A1%86-%E5%9C%93%E8%A7%92%E7%B8%AE%E6%94%BE"><span class="nav-number">2.7.</span> <span class="nav-text">改變邊框-圓角縮放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A7%E9%82%8A%E6%A1%86%E7%B8%AE%E6%94%BE"><span class="nav-number">2.8.</span> <span class="nav-text">內邊框縮放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E9%96%93%E8%B7%9D"><span class="nav-number">2.9.</span> <span class="nav-text">文字間距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E8%A1%8C%E8%B7%9D"><span class="nav-number">2.10.</span> <span class="nav-text">文字行距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9A%AB%E5%81%9C-%E7%B9%BC%E7%BA%8C"><span class="nav-number">2.11.</span> <span class="nav-text">暫停&amp;繼續</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%92%E8%90%BD%E5%BE%80%E4%B8%AD%E9%96%93%E7%A7%BB%E5%8B%95"><span class="nav-number">2.12.</span> <span class="nav-text">角落往中間移動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%96%E7%89%87%E7%B8%AE%E6%94%BE"><span class="nav-number">2.13.</span> <span class="nav-text">圖片縮放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9F%E5%BA%A6%E6%9B%B2%E7%B7%9A"><span class="nav-number">2.14.</span> <span class="nav-text">速度曲線</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B8%AE%E5%AF%AB"><span class="nav-number">3.</span> <span class="nav-text">縮寫</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2024
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AF%84%E4%BE%8B"><span class="nav-number">2.</span> <span class="nav-text">範例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E8%89%B2-%E4%BD%BF%E7%94%A8-from-to"><span class="nav-number">2.1.</span> <span class="nav-text">背景色-使用 from to</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E8%89%B2-%E4%BD%BF%E7%94%A8"><span class="nav-number">2.2.</span> <span class="nav-text">背景色-使用 %</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%8A%E8%89%B2-%E7%A7%BB%E5%8B%95"><span class="nav-number">2.3.</span> <span class="nav-text">變色&amp;移動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%8A%E8%89%B2-%E7%A7%BB%E5%8B%95-%E5%8F%8D%E6%96%B9%E5%90%91"><span class="nav-number">2.4.</span> <span class="nav-text">變色&amp;移動-反方向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B9%E8%AE%8A%E9%82%8A%E6%A1%86-%E5%BB%B6%E9%81%B2-%E9%87%8D%E8%A4%87"><span class="nav-number">2.5.</span> <span class="nav-text">改變邊框-延遲&amp;重複</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B9%E8%AE%8A%E9%82%8A%E6%A1%86-%E7%B8%AE%E6%94%BE"><span class="nav-number">2.6.</span> <span class="nav-text">改變邊框-縮放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%B9%E8%AE%8A%E9%82%8A%E6%A1%86-%E5%9C%93%E8%A7%92%E7%B8%AE%E6%94%BE"><span class="nav-number">2.7.</span> <span class="nav-text">改變邊框-圓角縮放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A7%E9%82%8A%E6%A1%86%E7%B8%AE%E6%94%BE"><span class="nav-number">2.8.</span> <span class="nav-text">內邊框縮放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E9%96%93%E8%B7%9D"><span class="nav-number">2.9.</span> <span class="nav-text">文字間距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E8%A1%8C%E8%B7%9D"><span class="nav-number">2.10.</span> <span class="nav-text">文字行距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9A%AB%E5%81%9C-%E7%B9%BC%E7%BA%8C"><span class="nav-number">2.11.</span> <span class="nav-text">暫停&amp;繼續</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%92%E8%90%BD%E5%BE%80%E4%B8%AD%E9%96%93%E7%A7%BB%E5%8B%95"><span class="nav-number">2.12.</span> <span class="nav-text">角落往中間移動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%96%E7%89%87%E7%B8%AE%E6%94%BE"><span class="nav-number">2.13.</span> <span class="nav-text">圖片縮放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9F%E5%BA%A6%E6%9B%B2%E7%B7%9A"><span class="nav-number">2.14.</span> <span class="nav-text">速度曲線</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B8%AE%E5%AF%AB"><span class="nav-number">3.</span> <span class="nav-text">縮寫</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
