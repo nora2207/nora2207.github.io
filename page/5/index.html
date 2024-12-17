@@ -235,21 +235,22 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2024/03/22/20240322-2025/">
-                            data- 屬性
+                        <a href="/2024/07/07/20240707-2011/">
+                            用 setTimeout 設計延遲出現的按鈕
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            data 後面可以加上自定義的名稱
-這樣有需要用到時就可以很方便的呼叫
+                            有些網頁一打開會出現介紹或是公告
+等幾秒後才會出現連結到別的頁面的按鈕
+或是一打開會跳出廣告
+要等幾秒之後，廣告的叉叉按鈕才會出現
+都可以用 setTimeout 來設計
 
 
-像是在製作 TO DO LIST 時
-在每個項目加上編號
-像是 data-num=&quot;1&quot;
-123&lt;li&gt;洗碗  &lt;input class...
+一開始先把按鈕隱藏起來
+1let btn = document.query...
                         
                     </div>
 
@@ -260,8 +261,8 @@
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Apr 24 2024 21:35:44 GMT+0800"
-                >2024-04-24 21:35:44</span>
+                                                                                data-updated="Wed Sep 11 2024 21:53:22 GMT+0800"
+                >2024-09-11 21:53:22</span>
             </span>
         
 
@@ -282,7 +283,10 @@
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E4%BB%A3%E8%BE%A6%E6%B8%85%E5%96%AE/">代辦清單</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/button/">button</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/setTimeout/">setTimeout</a></li>
                         
                     
                 </ul>
@@ -296,7 +300,7 @@
     </div>
 
     
-        <a class="home-read-more" href="/2024/03/22/20240322-2025/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/07/07/20240707-2011/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -310,21 +314,15 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2024/03/21/20240321-1128/">
-                            position 的設定值
+                        <a href="/2024/07/03/20240703-2011/">
+                            利用 CSS 透明度變化產生閃光動畫效果
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            absolute 絕對定位產生在父元素中的絕對位置
-1position: absolute;
-
-
-
-依照設定的位置顯示
-全部一樣設定，所以多個 div 會重疊在一起
-(設定透明度可以看出重疊的部分)
+                            透過修改邊框的透明度產生過渡效果
+就可以完成這個動畫了
 
 
 
@@ -333,7 +331,12 @@
 
 
 
-relative 相對定位產生相對...
+邊框顏色 rgba(0,0,0) 為黑色
+最後一個是透明度，0 為完全透明
+123a&#123;  border-color: rgba(0,0,0,0);  &#125;
+
+
+...
                         
                     </div>
 
@@ -344,584 +347,8 @@ relative 相對定位產生相對...
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Thu Sep 12 2024 23:06:36 GMT+0800"
-                >2024-09-12 23:06:36</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/position/">position</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/fixd/">fixd</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/03/21/20240321-1128/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/03/03/20240303-1537/">
-                            實作 axios 註冊、登入功能
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            用前面學過的 axios post 來實作帳號的註冊及登入功能
-註冊先在 HTML 上設定帳號和密碼的輸入欄位還有註冊的按鈕
-123456&lt;h2&gt;註冊&lt;/h2&gt;帳號：&lt;input type=&quot;email&quo...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Apr 24 2024 21:36:19 GMT+0800"
-                >2024-04-24 21:36:19</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/03/03/20240303-1537/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/02/25/20240225-1804/">
-                            透過 axios 註冊 post 網路請求
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            axios 的 post 範例
-12345678910axios.post(&#x27;/user&#x27;, &#123;    firstName: &#x27;Fred&#x27;,    lastName: &#x27;Flintstone...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Sep 08 2024 21:13:17 GMT+0800"
-                >2024-09-08 21:13:17</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/02/25/20240225-1804/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/02/21/20240221-1919/">
-                            使用 JavaScript 製作即時放大和縮小字體的按鈕
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            原本的文字大小設定 16px ，也就是預設值的字體大小
-點按鈕之後可以讓字體變大、變小或回復為預設值的大小
-
-
-
-
-
-
-
-
-定義這三個字體大小的 function
-以放大字體為例
-改變網頁中的 body 元素的 style 屬性中的 fontSize...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Sep 08 2024 21:25:41 GMT+0800"
-                >2024-09-08 21:25:41</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/02/21/20240221-1919/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/02/16/20240216-2012/">
-                            設計切換背景色彩的按鈕
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            點按鈕時可以跟著隨機切換背景的顏色
-
-
-
-
-
-
-
-
-先定義顏色列表
-這裡放了五個顏色(橘、紅、黃、粉紅和藍)在陣列裡
-也可以用 push() 的方式把顏色放進陣列裡
-另外一個綠色就是用 push() 的方式
-所以現在 colorList 這個陣列裡有...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Sep 08 2024 21:05:33 GMT+0800"
-                >2024-09-08 21:05:33</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/02/16/20240216-2012/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/02/05/20240205-1922/">
-                            用 axios 串接 get 外部資料
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            這裡用農業部林業及自然保育署-最新活動來練習一下
-
-
-
-
-
-
-
-
-html 的地方記得載入 axios 的 CDN (也可以用 NPM 的方式)
-12&lt;script src=&quot;https://cdn.jsdelivr.net/npm/...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Sep 08 2024 20:12:56 GMT+0800"
-                >2024-09-08 20:12:56</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/axios/">axios</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/innerHTML/">innerHTML</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E9%9D%9E%E5%90%8C%E6%AD%A5/">非同步</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/02/05/20240205-1922/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/01/28/20240128-2039/">
-                            網路請求的種類
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            HTTP 請求方法比較常用的有下面幾種
-GET使用 GET 的方式來請求取得資料
-像是輸入網址後瀏覽器會顯示相關的資訊
-
-
-POST把資料傳送給對方
-像是傳送帳號密碼到伺服器看看有沒有吻合的
-有就回傳正確，沒有就回傳錯誤
-
-
-請求資料格式 reque...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Apr 24 2024 21:38:11 GMT+0800"
-                >2024-04-24 21:38:11</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/01/28/20240128-2039/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/01/20/20240120-1348/">
-                            發出網路請求的 JS 寫法
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            第一種是 JavaScript 的原生寫法，有 XMLHttpResquest 和 Fetch
-另一種是用套件，需要額外載入 JS 的 axios
-
-
-XMLHttpResquest12345678function reqListener() &#1...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Apr 24 2024 21:38:58 GMT+0800"
-                >2024-04-24 21:38:58</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/XMLHttpResquest/">XMLHttpResquest</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Fetch/">Fetch</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/axios/">axios</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/01/20/20240120-1348/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/01/11/20240111-1955/">
-                            用 CSS 設計一個立體的按鈕
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            按鈕是立體的，點下去會有壓扁的感覺
-
-
-
-
-
-
-
-
-設定按鈕底層陰影的樣式
-1234button&#123;  box-shadow: 3px 7px 0 #bb9379;  &lt;!-- box-shadow: 水平位移 垂直位移 模糊 顏色 -...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Thu Sep 12 2024 22:26:50 GMT+0800"
-                >2024-09-12 22:26:50</span>
+                                                                                data-updated="Thu Sep 12 2024 22:31:07 GMT+0800"
+                >2024-09-12 22:31:07</span>
             </span>
         
 
@@ -947,7 +374,570 @@ XMLHttpResquest12345678function reqListener() &#1...
     </div>
 
     
-        <a class="home-read-more" href="/2024/01/11/20240111-1955/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/07/03/20240703-2011/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/06/26/20240626-2045/">
+                            用 if 來判斷閏年
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            閏年的條件是
+可被4整除而且不被100整除
+或是可被400整除
+
+
+這裡用 if 來進行判斷
+可被4整除而且不被100整除
+1(year%4==0&amp;&amp;year%100!==0)
+
+
+
+可被400整除
+1(year%400==0)
+
+
+...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sat Aug 31 2024 17:41:28 GMT+0800"
+                >2024-08-31 17:41:28</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/06/26/20240626-2045/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/06/20/20240620-2015/">
+                            用條件判斷找出最大的數字
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            在輸入框分別輸入三個數字後
+使用條件判斷來找出最大的數字
+
+
+先定義輸入的三個數字
+1let n1=prompt(&quot;請輸入第一個數字&quot;),n2=prompt(&quot;請輸入第二個數字&quot;),n3=prompt(&quo...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Fri Aug 30 2024 23:14:04 GMT+0800"
+                >2024-08-30 23:14:04</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/06/20/20240620-2015/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/06/16/20240616-1515/">
+                            判斷奇數還是偶數
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            輸入數字會判斷是奇數還是偶數
+
+
+輸入框的部分
+使用 prompt() 提示輸入一個數字
+1let a=prompt(&quot;請輸入一個數字&quot;);
+
+
+
+用 a%2===0 來判斷能不能整除
+如果餘數是0代表可以整除，這個數字是偶數
+有...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Fri Aug 30 2024 23:14:20 GMT+0800"
+                >2024-08-30 23:14:20</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/06/16/20240616-1515/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/06/12/20240612-2044/">
+                            拍立得照片效果
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            調整照片大小並加上白色的邊
+然後旋轉角度就可以了
+其實不會很複雜
+
+
+首先是調整照片的大小
+把每張照片都設定一樣的大小
+接著加上白色的 padding (下面的部分要比較多一些)
+還有拍立得的陰影
+這樣效果比較好
+12345.basic&#123; ...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sat Sep 21 2024 17:59:52 GMT+0800"
+                >2024-09-21 17:59:52</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/06/12/20240612-2044/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/06/08/20240608-2021/">
+                            點按鈕隨機出現訊息
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            點進頁面時會先隨機出現一個問候語
+之後按按鈕也會隨機出現一個問候語
+
+
+首先要宣告一個 sayHello() 函式
+設定問候語的陣列
+然後用 Math.random() 隨機產生0~3之間的數字
+用 Math.floor() 取整數
+1let a=M...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Fri Aug 30 2024 23:14:31 GMT+0800"
+                >2024-08-30 23:14:31</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/06/08/20240608-2021/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/06/02/20240602-1921/">
+                            依輸入內容顯示對應結果在頁面上
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            首先設計輸入框
+提示可輸入的數字
+1const fruit=prompt(&quot;請輸入輸入水果代號：\n1:Apple 2:Orange 3:Banana&quot;);
+
+
+
+接著使用 switch
+當 case 等於 1~3 時，會有相對應...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Fri Aug 30 2024 23:14:42 GMT+0800"
+                >2024-08-30 23:14:42</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/switch/">switch</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/write/">write</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/prompt/">prompt</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/06/02/20240602-1921/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/05/26/20240526-1236/">
+                            計算 BMI
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            輸入身高與體重之後，會顯示BMI是多少
+
+
+首先，設計輸入框，可以輸入身高和體重
+12tall=prompt(&quot;請輸入身高(公分)&quot;);weight=prompt(&quot;請輸入體重(公斤)&quot;);
+
+
+
+BMI的計算...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Fri Aug 30 2024 23:14:52 GMT+0800"
+                >2024-08-30 23:14:52</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/05/26/20240526-1236/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/05/18/20240518-1325/">
+                            closest() 選取到最近的目標
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            可以用 closest 直接選取到自己想要的元素
+像是下面這個例子
+
+
+
+
+
+
+
+
+如果單純使用 e.target
+點 input 時會顯示 &lt;input type=&quot;text&quot;&gt;
+點按鈕會顯示 &lt;button ...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sat Jun 01 2024 16:32:22 GMT+0800"
+                >2024-06-01 16:32:22</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/05/18/20240518-1325/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -973,8 +963,8 @@ XMLHttpResquest12345678function reqListener() &#1...
                    type="number"
                    value="5"
                    min="1"
-                   max="12"
-            /><span class="delimiter base-style">/</span><span class="base-style">12</span>
+                   max="14"
+            /><span class="delimiter base-style">/</span><span class="base-style">14</span>
         </div>
 
 

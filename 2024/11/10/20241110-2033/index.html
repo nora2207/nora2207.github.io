@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Nora">
+    
+    <title>
+        
+            用 vue 來製作飲料點餐的工具-上 |
+        
+        Nora&#39;s 小筆記
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/flower-icon.ico">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#FF6699","title":"Nora's 小筆記","author":"Nora","avatar":"/images/flower-icon.jpg","logo":"/images/flower-icon.svg","favicon":"/images/flower-icon.ico"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":false,"copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":"nora2207/nora2207.github.io","repo_id":"R_kgDOLyqPRA","category":"Announcements","category_id":"DIC_kwDOLyqPRM4Ch6no","reactions_enabled":false,"theme":"light_high_contrast","lang":"zh-TW","mapping":"title"},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2023,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[["/js/custom-1.js"]]},"root":"","source_data":{},"version":"4.2.2"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/flower-icon.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Nora&#39;s 小筆記
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                CATEGORIES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                ABOUT
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        用 vue 來製作飲料點餐的工具-上
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/flower-icon.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Nora</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-11-10 20:33:00</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Sun Dec 08 2024 19:56:04 GMT+0800">2024-12-08 19:56:04</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/Vue/">Vue</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <p>基礎版本的飲料點餐工具，分成左、右上、右下三個區塊</p>
+<p>左邊是飲料的品項</p>
+<p>選擇品項之後，右上區塊可以選擇數量、冰塊和甜度</p>
+<p>然後可以加到清單(右下)中，同時也會計算金額</p>
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/ExqBpvy?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<p>首先先來看一下原始框架的部分</p>
+<p>這個是左邊的飲料品項欄位</p>
+<p>(這邊都先把 class 的部分刪掉，比較簡潔)</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h6</span>&gt;</span>鮮奶茶<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">small</span>&gt;</span>Milk Tea<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">small</span>&gt;</span>NT$ 40<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>這裡是資料的部分</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">data</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="attr">iceType</span>: [<span class="string">&#x27;正常冰&#x27;</span>, <span class="string">&#x27;少冰&#x27;</span>, <span class="string">&#x27;微冰&#x27;</span>, <span class="string">&#x27;去冰&#x27;</span>, <span class="string">&#x27;熱&#x27;</span>],</span><br><span class="line">    <span class="attr">sugarType</span>: [<span class="string">&#x27;全糖&#x27;</span>, <span class="string">&#x27;七分&#x27;</span>, <span class="string">&#x27;半糖&#x27;</span>, <span class="string">&#x27;三分&#x27;</span>, <span class="string">&#x27;無糖&#x27;</span>],</span><br><span class="line">    <span class="attr">toppingsType</span>: [<span class="string">&#x27;珍珠&#x27;</span>, <span class="string">&#x27;粉條&#x27;</span>, <span class="string">&#x27;小粉圓&#x27;</span>, <span class="string">&#x27;椰果&#x27;</span>, <span class="string">&#x27;芋頭&#x27;</span>],</span><br><span class="line">&#125;;  </span><br></pre></td></tr></table></figure>
+
+<p>還有所有的飲料品項</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">products</span>: [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;錫蘭紅茶&#x27;</span>,</span><br><span class="line">    <span class="attr">engName</span>: <span class="string">&#x27;Ceylon Black Tea&#x27;</span>,</span><br><span class="line">    <span class="attr">price</span>: <span class="number">35</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;伯爵紅茶&#x27;</span>,</span><br><span class="line">    <span class="attr">engName</span>: <span class="string">&#x27;Earl Grey Black Tea&#x27;</span>,</span><br><span class="line">    <span class="attr">price</span>: <span class="number">35</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  (其他省略)</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>接著來要開始把指令套進去</p>
+<h2 id="左方飲料品項"><a href="#左方飲料品項" class="headerlink" title="左方飲料品項"></a>左方飲料品項</h2><p>先用 v-for 渲染資料，記得要搭配 key</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span> <span class="attr">v-for</span>=<span class="string">&quot;item in products&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.name&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>然後根據項目名稱 name、engName、price</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">products</span>: [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;錫蘭紅茶&#x27;</span>,</span><br><span class="line">    <span class="attr">engName</span>: <span class="string">&#x27;Ceylon Black Tea&#x27;</span>,</span><br><span class="line">    <span class="attr">price</span>: <span class="number">35</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  (其他省略)</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p>用雙大括號把資料渲染到畫面上</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h6</span>&gt;</span>&#123;&#123; item.name &#125;&#125;<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">small</span>&gt;</span>&#123;&#123; item.engName &#125;&#125;<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">small</span>&gt;</span>NT$ &#123;&#123; item.price &#125;&#125;<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>這樣左邊的飲料品項就出現了</p>
+<br>
+
+<h2 id="準備暫存資料"><a href="#準備暫存資料" class="headerlink" title="準備暫存資料"></a>準備暫存資料</h2><p>因為vue是關注點分離，所以需要先定義一個暫存的資料內容</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">itemSelected</span>: &#123;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>然後在 methods 定義一個方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">selectedProduct</span>(<span class="params">product</span>) &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<blockquote>
+<p>設定名稱時<br><code>變數</code>則是名詞寫在前面，像是 itemSelected<br><code>方法</code>會把動詞寫在前面，像是 selectedProduct</p>
+</blockquote>
+<br>
+
+<p>接著在 a 標籤加入 @click 方法，記得加上 prevent 避免原生的 html 事件影響</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span> <span class="attr">v-for</span>=<span class="string">&quot;item in products&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.name&quot;</span> @<span class="attr">click.prevent</span>=<span class="string">&quot;selectedProduct(item)&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>這裡的 selectedProduct(item) 中的 item 和 selectedProduct(product) 中的 product 是一樣的東西</p>
+<br>
+
+<p>然後把資料放進去方法裡</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">selectedProduct</span>(<span class="params">product</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">itemSelected</span> = &#123;</span><br><span class="line">    ...product,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>用 <code>...product</code> 結構的形式避免影響原始資料</p>
+<br>
+
+<p>接著把樣式套回 a 標籤中，並且判斷選擇的品項和迴圈中的品項相同時，會套上 active 的樣式 </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span> <span class="attr">v-for</span>=<span class="string">&quot;item in products&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.name&quot;</span>  @<span class="attr">click.prevent</span>=<span class="string">&quot;selectedProduct(item)&quot;</span> <span class="attr">:class</span>=<span class="string">&quot;&#123; &#x27;active&#x27;: itemSelected.name === item.name&#125;&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>這樣在點飲料品項時，這個飲料 item 會傳到 selectedProduct(product) 的 product 中，然後再暫存於 itemSelected 裡面</p>
+<br>
+
+<h2 id="右方請先選擇飲品"><a href="#右方請先選擇飲品" class="headerlink" title="右方請先選擇飲品"></a>右方請先選擇飲品</h2><p>右方選擇區域一開始是沒有辦法選的</p>
+<p>必須要在左邊先選擇飲料後，右邊才可以選甜度、冰塊等</p>
+<p>所以這裡加上 v-if 判斷式</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">&quot;!itemSelected.name&quot;</span>&gt;</span>請先選擇飲品<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>選擇飲品後，這個半透明黑色的部分才會不見</p>
+<br>
+
+<h2 id="暫存資料轉為訂單內容"><a href="#暫存資料轉為訂單內容" class="headerlink" title="暫存資料轉為訂單內容"></a>暫存資料轉為訂單內容</h2><p>先定義一個購物車列表，一個空的陣列</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">orderList</span>: [],</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>新增一個可以加品項進去的方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">addToOrder</span>(<span class="params">product</span>)&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>這裡的參數 product 就是 itemSelected</p>
+<p>(可以重新自訂一個名稱)</p>
+<br>
+
+<p>在<code>加入</code>按鈕加上 @click</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;addToOrder(itemSelected)&quot;</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span>&gt;</span>加入<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>使用 push 在點<code>加入</code>時會將品項加到購物車中</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">addToOrder</span>(<span class="params">product</span>)&#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">orderList</span>.<span class="title function_">push</span>(product);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>然後是右邊下方的清單表格區</p>
+<p>使用 v-for 渲染購物車 orderList 的資料</p>
+<p>因為沒有適合的 key 值，所以直接使用 key 來作為 key 值，但因為是要唯一值，所以前面再加上 order</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tr</span> <span class="attr">v-for</span>=<span class="string">&quot;(item,key) in orderList&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;&#x27;order&#x27; + key&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>因為 vue 是由資料驅動畫面，所以可以先加入預設值</p>
+<p>這裡加入數量 1</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">selectedProduct</span>(<span class="params">product</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">itemSelected</span> = &#123;</span><br><span class="line">    ...product,</span><br><span class="line">    <span class="attr">count</span>: <span class="number">1</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>接著把目前的項目(品項、數量)代入進去</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">th</span> <span class="attr">scope</span>=<span class="string">&quot;row&quot;</span>&gt;</span>&#123;&#123; item.name &#125;&#125;<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123; item.count &#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="計算金額"><a href="#計算金額" class="headerlink" title="計算金額"></a>計算金額</h2><p>金額小計的部分，在 addToOrder 要重新整理訂單的內容</p>
+<p>所以定義一個當前的(這一杯)飲料訂單內容 order</p>
+<p>這裡也是用 <code>...product</code> 結構的形式把當前的資料拿出來</p>
+<p>金額小計 total 的部分為飲料品項價格 * 數量</p>
+<p>然後再把自訂的訂單內容 order 給 push 進去</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">addToOrder</span>(<span class="params">product</span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> order =&#123;</span><br><span class="line">        ...product,</span><br><span class="line">        <span class="attr">total</span>: product.<span class="property">price</span> * roduct.<span class="property">count</span></span><br><span class="line">      &#125;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">orderList</span>.<span class="title function_">push</span>(order);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>然後是訂單的總價部分</p>
+<p>定義一個訂單總金額變數，預設是 0 元</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">orderTotal</span>: <span class="number">0</span>,</span><br></pre></td></tr></table></figure>
+
+<p>把飲料的品項加進去時會計算總價</p>
+<br>
+
+<p>接著定義計算總金額的方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">countTotal</span>(<span class="params"></span>)&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>每次計算時先把 orderTotal 清空來算</p>
+<p>接著用 forEach 箭頭函式把訂單內容一個一個帶出來</p>
+<p>訂單總價格 &#x3D; 每一個小計相加</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">countTotal</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">orderTotal</span> = <span class="number">0</span>;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">orderList</span>.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">orderTotal</span> += item.<span class="property">total</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>然後再加進去 addToOrder 中</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">addToOrder</span>(<span class="params">product</span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> order =&#123;</span><br><span class="line">    ...product,</span><br><span class="line">    <span class="attr">total</span>: product.<span class="property">price</span> * roduct.<span class="property">count</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">orderList</span>.<span class="title function_">push</span>(order);</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">countTotal</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="客製化選項"><a href="#客製化選項" class="headerlink" title="客製化選項"></a>客製化選項</h2><p>首先是<code>數量</code>的部分</p>
+<p>v-model 綁定選擇的飲料數量</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;number&quot;</span> <span class="attr">id</span>=<span class="string">&quot;productNum&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;itemSelected.count&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;數量&quot;</span> <span class="attr">min</span>=<span class="string">&quot;0&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>取消、加入按鈕點擊後需要清空表單的欄位內容</p>
+<p>新增一個清空欄位的方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">resetOrder</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">itemSelected</span> = &#123;&#125;;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>把 resetOrder 加進 addToOrder 中</p>
+<p>每次增加品項時，會把該筆的 itemSelected 內容清空</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">addToOrder</span>(<span class="params">product</span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> order =&#123;</span><br><span class="line">    ...product,</span><br><span class="line">    <span class="attr">total</span>: product.<span class="property">price</span> * roduct.<span class="property">count</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">orderList</span>.<span class="title function_">push</span>(order);</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">countTotal</span>();</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">resetOrder</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>也把 resetOrder 加到取消按鈕中</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;resetOrder()&quot;</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span>&gt;</span>取消<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>然後是<code>加料</code>的部分</p>
+<p>用 v-for 把加料的選項帶出來，搭配 key 值</p>
+<p>key 值則是用字串加上 key 去產生唯一值</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-for</span>=<span class="string">&quot;(topping,key) in toppingsType&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;&#x27;topping&#x27; + key&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>接著就可以用雙大括號把其他的名稱替換過去</p>
+<p>input 的 id 和 label 的 for 相同就可以綁定同一個選項，這裡就使用剛剛的 key 值</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">:id</span>=<span class="string">&quot;&#x27;topping&#x27;+ key&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">:for</span>=<span class="string">&quot;&#x27;topping&#x27;+ key&quot;</span>&gt;</span>&#123;&#123; topping &#125;&#125;<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>然後要和資料做綁定，所以新增一個 toppings 陣列，選擇的加料都會放到這個陣列裡面</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">selectedProduct</span>(<span class="params">product</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">itemSelected</span> = &#123;</span><br><span class="line">    ...product,</span><br><span class="line">    <span class="attr">count</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">toppings</span>: [],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>每個加料選項的 value 會對應到 topping</p>
+<p>v-model 綁定選擇的加料</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">:id</span>=<span class="string">&quot;&#x27;topping&#x27;+ key&quot;</span> <span class="attr">:value</span>=<span class="string">&quot;topping&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;itemSelected.toppings&quot;</span> &gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>下方的清單表格也加入加料選項</p>
+<p>但是加入的內容會是陣列，所以要轉成字串</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123; item.toppings.toString() &#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>加料的價格要需要修改一下</p>
+<p>這裡假設每個加料品項是加10元</p>
+<p>所以 total 就會變成飲料價格加上飲料的加料數量(length) 乘以10之後再乘以飲料杯數</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">addToOrder</span>(<span class="params">product</span>)&#123;</span><br><span class="line">  <span class="keyword">const</span> order =&#123;</span><br><span class="line">    ...product,</span><br><span class="line">    <span class="attr">total</span>: (product.<span class="property">price</span> + product.<span class="property">toppings</span>.<span class="property">length</span> *<span class="number">10</span>) * product.<span class="property">count</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">orderList</span>.<span class="title function_">push</span>(order);</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">countTotal</span>();</span><br><span class="line">  <span class="variable language_">this</span>.<span class="title function_">resetOrder</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>單價的部分為飲料價格加上加料的價格</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123; item.price + item.toppings.length *10 &#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>再來是<code>冰塊</code>和<code>甜度</code>的部分</p>
+<p>和剛剛的加料差不多</p>
+<p>也是一樣用 v-for 帶入冰塊的選項，</p>
+<p>key 值是前面 ice 加上 key 去產生唯一值</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 冰塊 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-for</span>=<span class="string">&quot;(ice,key) in iceType&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;&#x27;ice&#x27; + key&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 甜度 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-for</span>=<span class="string">&quot;(sugar,key) in sugarType&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;&#x27;sugar&#x27; + key&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>id 和 for 一樣也是用剛剛的 key 值</p>
+<p>然後設定 value 對應到 ice</p>
+<p>也綁定 v-model</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 冰塊 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;iceType&quot;</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> </span></span><br><span class="line"><span class="tag"><span class="attr">:id</span>=<span class="string">&quot;&#x27;ice&#x27; + key&quot;</span> <span class="attr">:value</span>=<span class="string">&quot;ice&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;itemSelected.ice&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">:for</span>=<span class="string">&quot;&#x27;ice&#x27; + key&quot;</span>&gt;</span>&#123;&#123; ice &#125;&#125;<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 甜度 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">&quot;sugarType&quot;</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">:id</span>=<span class="string">&quot;&#x27;sugar&#x27; + key&quot;</span> <span class="attr">:value</span>=<span class="string">&quot;sugar&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;itemSelected.sugar&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">:for</span>=<span class="string">&quot;&#x27;sugar&#x27; + key&quot;</span>&gt;</span>&#123;&#123; sugar &#125;&#125;<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>預設冰塊為正常冰，甜度為全糖</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">selectedProduct</span>(<span class="params">product</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">itemSelected</span> = &#123;</span><br><span class="line">    ...product,</span><br><span class="line">    <span class="attr">count</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">toppings</span>: [],</span><br><span class="line">    <span class="attr">ice</span>: <span class="string">&#x27;正常冰&#x27;</span>,</span><br><span class="line">    <span class="attr">sugar</span>: <span class="string">&#x27;全糖&#x27;</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>最後一樣是使用雙大括號把內容顯示在畫面上</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 冰塊 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123; item.ice &#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 甜度 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">td</span>&gt;</span>&#123;&#123; item.sugar &#125;&#125;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>然後是<code>備註</code>的部分，新增一個 notice</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">selectedProduct</span>(<span class="params">product</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">itemSelected</span> = &#123;</span><br><span class="line">    ...product,</span><br><span class="line">    <span class="attr">count</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">toppings</span>: [],</span><br><span class="line">    <span class="attr">ice</span>: <span class="string">&#x27;正常冰&#x27;</span>,</span><br><span class="line">    <span class="attr">sugar</span>: <span class="string">&#x27;全糖&#x27;</span>,</span><br><span class="line">    <span class="attr">notice</span>: <span class="string">&#x27;&#x27;</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>v-model 綁定 itemSelected 的 notice</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;itemSelected.notice&quot;</span> <span class="attr">id</span>=<span class="string">&quot;productNotice&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>如果備註不是空白的，就顯示這個欄位</p>
+<p>然後也是用雙大括號的方式顯示</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">small</span> <span class="attr">v-if</span>=<span class="string">&quot;item.notice !== &#x27;&#x27; &quot;</span>&gt;</span>備註：&#123;&#123; item.notice &#125;&#125;<span class="tag">&lt;/<span class="name">small</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>這樣就完成了</p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2024/11/12/20241112-1810/"
+                                   title="用 vue 來製作飲料點餐的工具-下"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">用 vue 來製作飲料點餐的工具-下</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/11/08/20241108-1434/"
+                                   title="處理 v-on 的 DOM 事件"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">處理 v-on 的 DOM 事件</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="giscus-comments-container">
+        <div class="giscus" id="giscus"></div>
+        <script 
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          if (!window.KeepCommentPlugin?.getGiscusTheme) {
+            window.KeepCommentPlugin.getGiscusTheme = () => {
+              return document.documentElement.classList.contains('dark-mode') ? 'dark_dimmed' : 'light_tritanopia'
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.changeGiscusTheme) {
+            window.KeepCommentPlugin.changeGiscusTheme = () => {
+              const iframe = document.querySelector('iframe.giscus-frame')
+              iframe && iframe.contentWindow.postMessage({
+                giscus: {
+                  setConfig: {
+                    theme: window.KeepCommentPlugin.getGiscusTheme()
+                  }
+                }
+              }, 'https://giscus.app')
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.initGiscus) {
+            window.KeepCommentPlugin.initGiscus = () => {
+              const script = document.createElement('script')
+              script.async = true
+              script.src = 'https://giscus.app/client.js'
+              script.setAttribute('data-repo', 'nora2207/nora2207.github.io')
+              script.setAttribute('data-repo-id', 'R_kgDOLyqPRA')
+              script.setAttribute('data-category', 'Announcements')
+              script.setAttribute('data-category-id', 'DIC_kwDOLyqPRM4Ch6no')
+              script.setAttribute('data-reactions-enabled', '0')
+              script.setAttribute('data-lang', 'en')
+              script.setAttribute('data-mapping', 'pathname')
+              script.setAttribute('data-strict', '0')
+              script.setAttribute('data-emit-metadata', '0')
+              script.setAttribute('data-input-position', 'top')
+              script.setAttribute('crossorigin', 'anonymous')
+              script.setAttribute('loading', 'lazy')
+              script.setAttribute('data-theme', window.KeepCommentPlugin.getGiscusTheme())
+              document.querySelector('.giscus-comments-container').appendChild(script)
+              script.onerror = () => {
+                window.KeepCommentPlugin.loadFailHandle()
+              }
+              script.onload = () => {
+                window.KeepCommentPlugin.hideLoading()
+              }
+              const toggleThemeBtn = document.querySelector('.tool-toggle-theme-mode')
+              toggleThemeBtn && toggleThemeBtn.addEventListener('click', () => {
+                window.KeepCommentPlugin.changeGiscusTheme()
+              })
+            }
+          }
+
+          if ('false' === "true") {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGiscus()
+            }, 1000)
+          } else {
+            window.addEventListener("DOMContentLoaded", window.KeepCommentPlugin.initGiscus)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A6%E6%96%B9%E9%A3%B2%E6%96%99%E5%93%81%E9%A0%85"><span class="nav-number">1.</span> <span class="nav-text">左方飲料品項</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BA%96%E5%82%99%E6%9A%AB%E5%AD%98%E8%B3%87%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">準備暫存資料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%B3%E6%96%B9%E8%AB%8B%E5%85%88%E9%81%B8%E6%93%87%E9%A3%B2%E5%93%81"><span class="nav-number">3.</span> <span class="nav-text">右方請先選擇飲品</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9A%AB%E5%AD%98%E8%B3%87%E6%96%99%E8%BD%89%E7%82%BA%E8%A8%82%E5%96%AE%E5%85%A7%E5%AE%B9"><span class="nav-number">4.</span> <span class="nav-text">暫存資料轉為訂單內容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%88%E7%AE%97%E9%87%91%E9%A1%8D"><span class="nav-number">5.</span> <span class="nav-text">計算金額</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%A2%E8%A3%BD%E5%8C%96%E9%81%B8%E9%A0%85"><span class="nav-number">6.</span> <span class="nav-text">客製化選項</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2024
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A6%E6%96%B9%E9%A3%B2%E6%96%99%E5%93%81%E9%A0%85"><span class="nav-number">1.</span> <span class="nav-text">左方飲料品項</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BA%96%E5%82%99%E6%9A%AB%E5%AD%98%E8%B3%87%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">準備暫存資料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%B3%E6%96%B9%E8%AB%8B%E5%85%88%E9%81%B8%E6%93%87%E9%A3%B2%E5%93%81"><span class="nav-number">3.</span> <span class="nav-text">右方請先選擇飲品</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9A%AB%E5%AD%98%E8%B3%87%E6%96%99%E8%BD%89%E7%82%BA%E8%A8%82%E5%96%AE%E5%85%A7%E5%AE%B9"><span class="nav-number">4.</span> <span class="nav-text">暫存資料轉為訂單內容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A8%88%E7%AE%97%E9%87%91%E9%A1%8D"><span class="nav-number">5.</span> <span class="nav-text">計算金額</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%A2%E8%A3%BD%E5%8C%96%E9%81%B8%E9%A0%85"><span class="nav-number">6.</span> <span class="nav-text">客製化選項</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
