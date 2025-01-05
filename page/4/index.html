@@ -235,23 +235,20 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2024/08/23/20240823-2132/">
-                            CSS動畫效果-轉換-3D transform
+                        <a href="/2024/09/10/20240910-1835/">
+                            CSS 的選擇器
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            除了2D的轉換效果外，還有3D的轉換
-除了X軸和Y軸外，還多了Z軸的部分
-變成立體的概念
+                            元素名稱HTML 的元素名稱直接設定像是 div p h1 之類的
+123p&#123;  background: pink;&#125;
 
 
-特性transform-style 2D或3D指定元素為2D(flat)或是3D
 
-
-perspective 視覺距離這個元素離我們的視覺距離是多少 px
-...
+一次選取好幾個 HTML 的元素名稱套用相同的樣式像是 div 和 h1 一起套用背景變成粉紅色
+123...
                         
                     </div>
 
@@ -262,8 +259,8 @@ perspective 視覺距離這個元素離我們的視覺距離是多少 px
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat Sep 21 2024 18:01:57 GMT+0800"
-                >2024-09-21 18:01:57</span>
+                                                                                data-updated="Sat Sep 21 2024 19:04:38 GMT+0800"
+                >2024-09-21 19:04:38</span>
             </span>
         
 
@@ -289,7 +286,7 @@ perspective 視覺距離這個元素離我們的視覺距離是多少 px
     </div>
 
     
-        <a class="home-read-more" href="/2024/08/23/20240823-2132/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/09/10/20240910-1835/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -303,17 +300,19 @@ perspective 視覺距離這個元素離我們的視覺距離是多少 px
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2024/08/21/20240821-2112/">
-                            使用for迴圈動態置入影像
+                        <a href="/2024/09/09/20240909-2011/">
+                            this 的指向觀念
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            先設定六張圖片，檔名分別為 p1.jpg ~ p6.jpg
-使用 for 迴圈來動態載入這些圖片
-因為是六張照片，所以 j &lt; 7
-123for(let j=1;j&lt;7;j++)&#123;  document.write(&quot;&...
+                            this 的指向跟怎麼定義沒關係
+只跟調用的方式有關
+
+
+simple callsimple call 這種呼叫形式會指向全域變數
+12345var someone = &#x27;全域&#x27;;function callSomeone() &#...
                         
                     </div>
 
@@ -324,8 +323,8 @@ perspective 視覺距離這個元素離我們的視覺距離是多少 px
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Sep 11 2024 21:51:34 GMT+0800"
-                >2024-09-11 21:51:34</span>
+                                                                                data-updated="Mon Oct 21 2024 11:50:16 GMT+0800"
+                >2024-10-21 11:50:16</span>
             </span>
         
 
@@ -351,7 +350,7 @@ perspective 視覺距離這個元素離我們的視覺距離是多少 px
     </div>
 
     
-        <a class="home-read-more" href="/2024/08/21/20240821-2112/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/09/09/20240909-2011/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -365,24 +364,26 @@ perspective 視覺距離這個元素離我們的視覺距離是多少 px
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2024/08/18/20240818-1828/">
-                            在頁面上顯示目前的時間
+                        <a href="/2024/09/07/20240907-2131/">
+                            用 JS 設計圖片輪播效果
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            將目前的時間顯示在頁面上
-而且秒數會隨著時間慢慢增加
-
-
-顯示目前時間首先，先設定時間區域的 div
-1&lt;div id=&quot;timeArea&quot;&gt;&lt;/div&gt;
+                            點按鈕時，圖片會跟著切換上一張或下一張圖片
+實現圖片輪播的效果
 
 
 
-接著是 JS 的部分
-建立 showTime...
+
+
+
+
+
+HTML 部分
+一開始有預設顯示一張圖片
+1234&lt;img  id=&quot;image&quot;  src=&quot;圖片位置&quot; &gt;&lt;...
                         
                     </div>
 
@@ -393,8 +394,8 @@ perspective 視覺距離這個元素離我們的視覺距離是多少 px
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat Sep 07 2024 23:12:52 GMT+0800"
-                >2024-09-07 23:12:52</span>
+                                                                                data-updated="Wed Sep 11 2024 00:12:07 GMT+0800"
+                >2024-09-11 00:12:07</span>
             </span>
         
 
@@ -420,7 +421,7 @@ perspective 視覺距離這個元素離我們的視覺距離是多少 px
     </div>
 
     
-        <a class="home-read-more" href="/2024/08/18/20240818-1828/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/09/07/20240907-2131/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -434,21 +435,23 @@ perspective 視覺距離這個元素離我們的視覺距離是多少 px
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2024/08/16/20240816-1822/">
-                            location 物件的屬性及方法
+                        <a href="/2024/09/05/20240905-2131/">
+                            CSS動畫 animation
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            屬性hash  URL 中有 # 的部份，例如 #test
-host  網域名稱與埠號
-hostname  網域名稱
-href  URL 網址
-pathname  路徑名稱
-port  埠號
-protocol  網路傳輸協定
-search  URL ...
+                            動畫指元素從一個樣式變化成另一個樣式
+而且會自己動，不需要滑鼠移過去或點擊之類的
+也不需要使用JS就能產生動畫
+
+
+特性
+@keyframes 關鍵影格
+
+用來指定動畫的開始、結束或是中途某個時間點應該呈現的樣式
+設定的方式可以用百分比(%) 或是 ...
                         
                     </div>
 
@@ -459,137 +462,8 @@ search  URL ...
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat Sep 07 2024 12:30:52 GMT+0800"
-                >2024-09-07 12:30:52</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/08/16/20240816-1822/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/08/15/20240815-1955/">
-                            Windows 物件的屬性及方法
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            屬性window.closed  回傳 window 視窗是否被關閉
-window.document  回傳網頁文件的 document 物件
-window.frameElement  回傳內嵌元素的參考物件
-window.frames  回傳網頁中...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Sep 01 2024 23:29:42 GMT+0800"
-                >2024-09-01 23:29:42</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/08/15/20240815-1955/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/08/11/20240811-1114/">
-                            CSS動畫效果-轉換-2D transform
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            轉換可以進行這幾種轉換
-座標轉置、角度旋轉、大小縮放、偏斜
-
-
-方法translate(x,y) 沿著X軸和Y軸移動
-translateX(n) 沿著X軸移動
-translateY(n) 沿著Y軸移動
-scale(x,y) 縮放改變寬、高
-scale...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat Sep 21 2024 17:56:13 GMT+0800"
-                >2024-09-21 17:56:13</span>
+                                                                                data-updated="Sat Sep 21 2024 18:19:47 GMT+0800"
+                >2024-09-21 18:19:47</span>
             </span>
         
 
@@ -615,7 +489,7 @@ scale...
     </div>
 
     
-        <a class="home-read-more" href="/2024/08/11/20240811-1114/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/09/05/20240905-2131/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -629,16 +503,16 @@ scale...
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2024/08/04/20240804-1001/">
-                            checkbox 的篩選按鈕功能
+                        <a href="/2024/09/03/20240903-2232/">
+                            搜尋時可即時篩選項目的輸入框
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            將 checkbox 篩選分類
-點擊按鈕只會顯示那個類別的項目
-其他類別的項目會隱藏起來
+                            在搜尋框中輸入文字，下面的項目就會進行過濾
+並且即時更新顯示結果
+只會顯示那些包含搜尋文字的項目
 
 
 
@@ -647,9 +521,9 @@ scale...
 
 
 
-將每個選項都設定 name 屬性
-總共有 spring、summer、fall 和 winter 四種
-1&lt;p name=&quot;sp...
+設定搜尋框的 id 為 searchInput
+每個項目的 class 為 info
+12&lt;input type=&quot;te...
                         
                     </div>
 
@@ -660,8 +534,8 @@ scale...
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Sep 04 2024 22:45:29 GMT+0800"
-                >2024-09-04 22:45:29</span>
+                                                                                data-updated="Tue Sep 10 2024 23:12:13 GMT+0800"
+                >2024-09-10 23:12:13</span>
             </span>
         
 
@@ -687,7 +561,7 @@ scale...
     </div>
 
     
-        <a class="home-read-more" href="/2024/08/04/20240804-1001/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/09/03/20240903-2232/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -701,18 +575,23 @@ scale...
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2024/08/02/20240802-2034/">
-                            CSS動畫效果-過渡 transition
+                        <a href="/2024/09/02/20240902-2022/">
+                            JavaScript ES6 縮寫
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            特性transition 有四個特性可以設定，分別是
-transition-property 進行過渡的 CSS 特性名稱
-transition-duration 過渡時間
-transition-timing-function 速度曲線函數
-tran...
+                            縮寫可以讓 JavaScript 語法看起來更簡潔
+下面來介紹一些縮寫方法
+
+
+物件字面值 Object literals針對原有的大括號形式定義物件的方式
+
+
+物件內的函式可以直接把 :function 省略掉
+省略後的運行方式也是一樣的
+不會影響...
                         
                     </div>
 
@@ -723,69 +602,8 @@ tran...
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat Sep 21 2024 17:53:27 GMT+0800"
-                >2024-09-21 17:53:27</span>
-            </span>
-        
-
-        
-
-        
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/CSS/">CSS</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2024/08/02/20240802-2034/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2024/07/25/20240725-2225/">
-                            checkbox 的全選及全不選功能
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            首先是取得全部 name 是 cf 的元素
-也就是全部的選項
-12345678910&lt;input type=&quot;checkbox&quot; name=&quot;cf&quot; value=&quot;蘋果&quot;&gt;蘋果&...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Wed Sep 04 2024 20:52:41 GMT+0800"
-                >2024-09-04 20:52:41</span>
+                                                                                data-updated="Mon Oct 21 2024 11:30:46 GMT+0800"
+                >2024-10-21 11:30:46</span>
             </span>
         
 
@@ -811,7 +629,7 @@ tran...
     </div>
 
     
-        <a class="home-read-more" href="/2024/07/25/20240725-2225/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/09/02/20240902-2022/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -825,21 +643,19 @@ tran...
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2024/07/17/20240717-2241/">
-                            JavaScript 事件
+                        <a href="/2024/09/01/20240901-1136/">
+                            使用 JavaScript 設定表單驗證條件
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            可以使用在 HTML 元素上
-讓這些元素可以被 JavaScript 控制
-HTML 事件可以是使用者的操作或是瀏覽器執行的操作
+                            送出表單時進行簡單的表單驗證
+並且在驗證失敗的時候會顯示錯誤訊息
 
 
-位置放在 HTML 元素標籤內
-像是
-1&lt;button onclick=&quot;hello()&quot;...
+html 設定了 Email 和 Password 的欄位
+1234567&lt;form&gt;  &lt;label for=&quot;email&quot;&gt;Emai...
                         
                     </div>
 
@@ -850,8 +666,8 @@ HTML 事件可以是使用者的操作或是瀏覽器執行的操作
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sun Sep 01 2024 23:23:03 GMT+0800"
-                >2024-09-01 23:23:03</span>
+                                                                                data-updated="Sun Sep 08 2024 22:02:27 GMT+0800"
+                >2024-09-08 22:02:27</span>
             </span>
         
 
@@ -877,7 +693,230 @@ HTML 事件可以是使用者的操作或是瀏覽器執行的操作
     </div>
 
     
-        <a class="home-read-more" href="/2024/07/17/20240717-2241/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2024/09/01/20240901-1136/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/08/28/20240828-1941/">
+                            設計簡易型的計數按鈕
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            按下按鈕時，可以加一或減一
+
+
+
+
+
+
+
+
+先設計計數器和加減按鈕
+123&lt;p id=&quot;counter&quot;&gt;0&lt;/p&gt;&lt;button&gt;減少&lt;/button&gt;&lt;button&gt;...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sun Sep 08 2024 20:07:23 GMT+0800"
+                >2024-09-08 20:07:23</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/08/28/20240828-1941/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/08/27/20240827-1808/">
+                            點按鈕產生中英文景點介紹
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            設定點擊按鈕之後，會出現相關文字說明
+這裡的範例是景點介紹
+點了中文解說按鈕會產生中文介紹
+點英文解說會產生英文介紹
+
+
+
+
+
+
+
+
+下方文字介紹的欄位是用 textarea
+123&lt;form action=&quot;&quot; name=...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sun Sep 08 2024 16:29:37 GMT+0800"
+                >2024-09-08 16:29:37</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/08/27/20240827-1808/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+    
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-post-item">
+
+                
+
+                <div class="home-post-item-bottom border-box">
+                    
+                    <h3 class="home-post-title border-box">
+                        <a href="/2024/08/24/20240824-1142/">
+                            製作隨機產生的開獎號碼
+                        </a>
+                    </h3>
+
+                    <div class="home-post-content keep-markdown-body">
+                        
+                            上面設計一個按鈕
+按下按鈕可以隨機產生 1~49 之間的任一個數字
+下面則是開獎號碼的欄位
+
+
+隨機產生數字開獎號碼的部分設計了六個
+是將 input 放在 form 裡面
+這六個 input 的 name 分別是 n1 ~ n6
+12345678&...
+                        
+                    </div>
+
+                    
+
+<div class="post-meta-info-container border-box home">
+    <div class="post-meta-info border-box">
+        
+            <span class="meta-info-item border-box">
+                <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
+                                                                                data-updated="Sun Sep 08 2024 19:57:24 GMT+0800"
+                >2024-09-08 19:57:24</span>
+            </span>
+        
+
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/JavaScript/">JavaScript</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/random/">random</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/round/">round</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E4%BA%82%E6%95%B8/">亂數</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+        <a class="home-read-more" href="/2024/08/24/20240824-1142/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
@@ -903,8 +942,8 @@ HTML 事件可以是使用者的操作或是瀏覽器執行的操作
                    type="number"
                    value="4"
                    min="1"
-                   max="14"
-            /><span class="delimiter base-style">/</span><span class="base-style">14</span>
+                   max="15"
+            /><span class="delimiter base-style">/</span><span class="base-style">15</span>
         </div>
 
 
@@ -933,7 +972,7 @@ HTML 事件可以是使用者的操作或是瀏覽器執行的操作
             
 <footer class="footer border-box">
     <div class="copyright-info info-item">
-        &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2024
+        &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2025
         
             &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
         

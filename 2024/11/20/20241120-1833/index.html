@@ -266,7 +266,7 @@
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Mon Dec 16 2024 22:45:43 GMT+0800">2024-12-16 22:45:43</span>
+                <span class="datetime" data-updated="Mon Dec 23 2024 21:40:47 GMT+0800">2024-12-23 21:40:47</span>
             </span>
         
 
@@ -305,14 +305,8 @@
                     
 
                     
-                         <p>使用 methods 來處理資料</p>
+                         <p>分別使用 methods 和 Computed 來處理資料</p>
 <p>將產品加入購物車並計算總金額</p>
-<br>
-
-<iframe src="https://codepen.io/Nora2207/embed/wBwgWXy?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
-
-<br>
-
 <br>
 
 <p>這個是產品的清單</p>
@@ -324,6 +318,15 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;product in products&quot;</span>&gt;</span></span><br><span class="line"> &#123;&#123; product.name &#125;&#125; / &#123;&#123; product.price &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> @<span class="attr">click</span>=<span class="string">&quot;addToCart(product)&quot;</span>&gt;</span>加入購物車<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>點了加入購物車的按鈕會把產品帶入到 <code>addToCart()</code> 中</p>
+<br>
+
+<h2 id="使用-methods"><a href="#使用-methods" class="headerlink" title="使用 methods"></a>使用 methods</h2><p>用 methods 的方式來處理</p>
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/wBwgWXy?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
 <br>
 
 <p><code>addToCart()</code> 會把產品加到購物車裡面</p>
@@ -349,6 +352,32 @@
 <p>接著在 HTML 把參數傳到函式中</p>
 <p>總金額就會以這個格式顯示出來了</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; convertToAmount(sum) &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="使用-Computed"><a href="#使用-Computed" class="headerlink" title="使用 Computed"></a>使用 Computed</h2><p>用 Computed 的方式來處理</p>
+<br>
+
+<iframe src="https://codepen.io/Nora2207/embed/ByBZjxJ?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<p><code>addToCart()</code> 會把產品加到購物車裡面</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">addToCart</span>(<span class="params">product</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">carts</span>.<span class="title function_">push</span>(product);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<p>接著在 computed 建立一個 <code>total()</code> 函式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">total</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> total = <span class="number">0</span>;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">carts</span>.<span class="title function_">forEach</span>(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    total += item.<span class="property">price</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> total;</span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>先產生 total 的空值，計算之後再把結果回傳出來</p>
+<br>
+
+<p>computed 的運作模式就是當 <code>this.carts</code> 有變動時</p>
+<p>就會觸發 computed 裡面的 <code>total()</code> 函式</p>
+<p>然後更新後就會把值回傳到畫面上</p>
 
                     
                 </div>
@@ -522,7 +551,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-methods"><span class="nav-number">1.</span> <span class="nav-text">使用 methods</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-Computed"><span class="nav-number">2.</span> <span class="nav-text">使用 Computed</span></a></li></ol>
     </div>
 </div>
 
@@ -540,7 +569,7 @@
             
 <footer class="footer border-box">
     <div class="copyright-info info-item">
-        &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2024
+        &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2025
         
             &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
         
@@ -709,7 +738,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-methods"><span class="nav-number">1.</span> <span class="nav-text">使用 methods</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-Computed"><span class="nav-number">2.</span> <span class="nav-text">使用 Computed</span></a></li></ol>
     </div>
 </div>
 
