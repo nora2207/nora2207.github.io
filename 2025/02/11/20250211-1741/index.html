@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Nora">
+    
+    <title>
+        
+            Bootstrap 元件 |
+        
+        Nora&#39;s 小筆記
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/flower-icon.ico">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#FF6699","title":"Nora's 小筆記","author":"Nora","avatar":"/images/flower-icon.jpg","logo":"/images/flower-icon.svg","favicon":"/images/flower-icon.ico"},"menu":{"home":"/","archives":"/archives","tags":"/tags","categories":"/categories","about":"/about"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":true,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":false,"copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":true,"use":"giscus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":"nora2207/nora2207.github.io","repo_id":"R_kgDOLyqPRA","category":"Announcements","category_id":"DIC_kwDOLyqPRM4Ch6no","reactions_enabled":false,"theme":"light_high_contrast","lang":"zh-TW","mapping":"title"},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2023,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[["/js/custom-1.js"]]},"root":"","source_data":{},"version":"4.2.2"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/flower-icon.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Nora&#39;s 小筆記
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                CATEGORIES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                ABOUT
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        Bootstrap 元件
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/flower-icon.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Nora</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2025-02-11 17:41:00</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Tue Feb 11 2025 17:42:32 GMT+0800">2025-02-11 17:42:32</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/Bootstrap/">Bootstrap</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h2 id="Buttons-按鈕"><a href="#Buttons-按鈕" class="headerlink" title="Buttons 按鈕"></a>Buttons 按鈕</h2><p><img   src="https://i.imgur.com/mQYU35P.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/3MgPHIl.jpeg" ></p>
+<br>
+
+<h2 id="Cards-卡片"><a href="#Cards-卡片" class="headerlink" title="Cards 卡片"></a>Cards 卡片</h2><p><img   src="https://i.imgur.com/DfRowvE.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/Uk1jgEm.jpeg" ></p>
+<br>
+
+<h2 id="Collapse-折疊"><a href="#Collapse-折疊" class="headerlink" title="Collapse 折疊"></a>Collapse 折疊</h2><p>點按鈕展開下面內容</p>
+<p><img   src="https://i.imgur.com/cwcPcEG.jpeg" ></p>
+<br>
+
+<h2 id="Modal-互動視窗"><a href="#Modal-互動視窗" class="headerlink" title="Modal 互動視窗"></a>Modal 互動視窗</h2><p><img   src="https://i.imgur.com/uXBK5VF.jpeg" ></p>
+<br>
+
+<h2 id="Navbar-導覽列"><a href="#Navbar-導覽列" class="headerlink" title="Navbar 導覽列"></a>Navbar 導覽列</h2><p><img   src="https://i.imgur.com/ivh8Gub.jpeg" ></p>
+<br>
+
+<h2 id="Spinners-讀取圖示"><a href="#Spinners-讀取圖示" class="headerlink" title="Spinners 讀取圖示"></a>Spinners 讀取圖示</h2><br>
+
+<iframe src="https://codepen.io/Nora2207/embed/GgKVPwr?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="Toasts-吐司"><a href="#Toasts-吐司" class="headerlink" title="Toasts 吐司"></a>Toasts 吐司</h2><p><img   src="https://i.imgur.com/Kn74bVT.jpeg" ></p>
+<br>
+
+<h2 id="Alerts-警報"><a href="#Alerts-警報" class="headerlink" title="Alerts 警報"></a>Alerts 警報</h2><p><img   src="https://i.imgur.com/9xkAMBV.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/Nv527k1.jpeg" ></p>
+<br>
+
+<h2 id="Badges-標籤"><a href="#Badges-標籤" class="headerlink" title="Badges 標籤"></a>Badges 標籤</h2><p><img   src="https://i.imgur.com/UlGqO9c.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/biEye5d.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/hD5gevL.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/4qYx3sf.jpeg" ></p>
+<br>
+
+<h2 id="Breadcrumb-麵包屑"><a href="#Breadcrumb-麵包屑" class="headerlink" title="Breadcrumb 麵包屑"></a>Breadcrumb 麵包屑</h2><p><img   src="https://i.imgur.com/wTnIrHU.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/Zs6r53y.jpeg" ></p>
+<br>
+
+<h2 id="Close-button-關閉按鈕"><a href="#Close-button-關閉按鈕" class="headerlink" title="Close button 關閉按鈕"></a>Close button 關閉按鈕</h2><p><img   src="https://i.imgur.com/wliSunO.jpeg" ></p>
+<br>
+
+<h2 id="Dropdowns-下拉選單"><a href="#Dropdowns-下拉選單" class="headerlink" title="Dropdowns 下拉選單"></a>Dropdowns 下拉選單</h2><p><img   src="https://i.imgur.com/RmdGvI6.jpeg" ></p>
+<br>
+
+<h2 id="List-group-列表群組"><a href="#List-group-列表群組" class="headerlink" title="List group 列表群組"></a>List group 列表群組</h2><p><img   src="https://i.imgur.com/bAS7l9J.jpeg" ></p>
+<br>
+
+<h2 id="Offcanvas-側欄滑動導覽"><a href="#Offcanvas-側欄滑動導覽" class="headerlink" title="Offcanvas 側欄滑動導覽"></a>Offcanvas 側欄滑動導覽</h2><br>
+
+<iframe src="https://codepen.io/Nora2207/embed/RNwbyrz?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="Pagination-分頁"><a href="#Pagination-分頁" class="headerlink" title="Pagination 分頁"></a>Pagination 分頁</h2><p><img   src="https://i.imgur.com/m4GcHvh.jpeg" ></p>
+<br>
+
+
+<h2 id="Progress-進度條"><a href="#Progress-進度條" class="headerlink" title="Progress 進度條"></a>Progress 進度條</h2><p><img   src="https://i.imgur.com/PWGisif.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/dq2YRtQ.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/jAVjzUD.jpeg" ></p>
+<br>
+
+<h2 id="Tooltips-工具提示框"><a href="#Tooltips-工具提示框" class="headerlink" title="Tooltips 工具提示框"></a>Tooltips 工具提示框</h2><br>
+
+<iframe src="https://codepen.io/Nora2207/embed/gbOYzVg?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="Accordion-手風琴"><a href="#Accordion-手風琴" class="headerlink" title="Accordion 手風琴"></a>Accordion 手風琴</h2><br>
+
+<iframe src="https://codepen.io/Nora2207/embed/EaxYLqJ?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="Carousel-輪播"><a href="#Carousel-輪播" class="headerlink" title="Carousel 輪播"></a>Carousel 輪播</h2><br>
+
+<iframe src="https://codepen.io/Nora2207/embed/ogNvyNX?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="Navs-and-tabs-導覽與頁籤"><a href="#Navs-and-tabs-導覽與頁籤" class="headerlink" title="Navs and tabs 導覽與頁籤"></a>Navs and tabs 導覽與頁籤</h2><p><img   src="https://i.imgur.com/k7O5qBm.jpeg" ></p>
+<br>
+
+<p><img   src="https://i.imgur.com/zOfMPiJ.jpeg" ></p>
+<br>
+
+<h2 id="Popovers-彈出提示框"><a href="#Popovers-彈出提示框" class="headerlink" title="Popovers 彈出提示框"></a>Popovers 彈出提示框</h2><br>
+
+<iframe src="https://codepen.io/Nora2207/embed/XJWrYbQ?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+<h2 id="Scrollspy-滾動監控"><a href="#Scrollspy-滾動監控" class="headerlink" title="Scrollspy 滾動監控"></a>Scrollspy 滾動監控</h2><br>
+
+<iframe src="https://codepen.io/Nora2207/embed/YPzKvwW?height=265&theme-id=default&default-tab=result" width="100%" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<br>
+
+<br>
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2025/02/08/20250208-1940/"
+                                   title="Bootstrap 表單"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Bootstrap 表單</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="giscus-comments-container">
+        <div class="giscus" id="giscus"></div>
+        <script 
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          if (!window.KeepCommentPlugin?.getGiscusTheme) {
+            window.KeepCommentPlugin.getGiscusTheme = () => {
+              return document.documentElement.classList.contains('dark-mode') ? 'dark_dimmed' : 'light_tritanopia'
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.changeGiscusTheme) {
+            window.KeepCommentPlugin.changeGiscusTheme = () => {
+              const iframe = document.querySelector('iframe.giscus-frame')
+              iframe && iframe.contentWindow.postMessage({
+                giscus: {
+                  setConfig: {
+                    theme: window.KeepCommentPlugin.getGiscusTheme()
+                  }
+                }
+              }, 'https://giscus.app')
+            }
+          }
+
+          if (!window.KeepCommentPlugin?.initGiscus) {
+            window.KeepCommentPlugin.initGiscus = () => {
+              const script = document.createElement('script')
+              script.async = true
+              script.src = 'https://giscus.app/client.js'
+              script.setAttribute('data-repo', 'nora2207/nora2207.github.io')
+              script.setAttribute('data-repo-id', 'R_kgDOLyqPRA')
+              script.setAttribute('data-category', 'Announcements')
+              script.setAttribute('data-category-id', 'DIC_kwDOLyqPRM4Ch6no')
+              script.setAttribute('data-reactions-enabled', '0')
+              script.setAttribute('data-lang', 'en')
+              script.setAttribute('data-mapping', 'pathname')
+              script.setAttribute('data-strict', '0')
+              script.setAttribute('data-emit-metadata', '0')
+              script.setAttribute('data-input-position', 'top')
+              script.setAttribute('crossorigin', 'anonymous')
+              script.setAttribute('loading', 'lazy')
+              script.setAttribute('data-theme', window.KeepCommentPlugin.getGiscusTheme())
+              document.querySelector('.giscus-comments-container').appendChild(script)
+              script.onerror = () => {
+                window.KeepCommentPlugin.loadFailHandle()
+              }
+              script.onload = () => {
+                window.KeepCommentPlugin.hideLoading()
+              }
+              const toggleThemeBtn = document.querySelector('.tool-toggle-theme-mode')
+              toggleThemeBtn && toggleThemeBtn.addEventListener('click', () => {
+                window.KeepCommentPlugin.changeGiscusTheme()
+              })
+            }
+          }
+
+          if ('false' === "true") {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initGiscus()
+            }, 1000)
+          } else {
+            window.addEventListener("DOMContentLoaded", window.KeepCommentPlugin.initGiscus)
+          }
+        </script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Buttons-%E6%8C%89%E9%88%95"><span class="nav-number">1.</span> <span class="nav-text">Buttons 按鈕</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cards-%E5%8D%A1%E7%89%87"><span class="nav-number">2.</span> <span class="nav-text">Cards 卡片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Collapse-%E6%8A%98%E7%96%8A"><span class="nav-number">3.</span> <span class="nav-text">Collapse 折疊</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Modal-%E4%BA%92%E5%8B%95%E8%A6%96%E7%AA%97"><span class="nav-number">4.</span> <span class="nav-text">Modal 互動視窗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Navbar-%E5%B0%8E%E8%A6%BD%E5%88%97"><span class="nav-number">5.</span> <span class="nav-text">Navbar 導覽列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spinners-%E8%AE%80%E5%8F%96%E5%9C%96%E7%A4%BA"><span class="nav-number">6.</span> <span class="nav-text">Spinners 讀取圖示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Toasts-%E5%90%90%E5%8F%B8"><span class="nav-number">7.</span> <span class="nav-text">Toasts 吐司</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Alerts-%E8%AD%A6%E5%A0%B1"><span class="nav-number">8.</span> <span class="nav-text">Alerts 警報</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Badges-%E6%A8%99%E7%B1%A4"><span class="nav-number">9.</span> <span class="nav-text">Badges 標籤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Breadcrumb-%E9%BA%B5%E5%8C%85%E5%B1%91"><span class="nav-number">10.</span> <span class="nav-text">Breadcrumb 麵包屑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Close-button-%E9%97%9C%E9%96%89%E6%8C%89%E9%88%95"><span class="nav-number">11.</span> <span class="nav-text">Close button 關閉按鈕</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dropdowns-%E4%B8%8B%E6%8B%89%E9%81%B8%E5%96%AE"><span class="nav-number">12.</span> <span class="nav-text">Dropdowns 下拉選單</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#List-group-%E5%88%97%E8%A1%A8%E7%BE%A4%E7%B5%84"><span class="nav-number">13.</span> <span class="nav-text">List group 列表群組</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Offcanvas-%E5%81%B4%E6%AC%84%E6%BB%91%E5%8B%95%E5%B0%8E%E8%A6%BD"><span class="nav-number">14.</span> <span class="nav-text">Offcanvas 側欄滑動導覽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pagination-%E5%88%86%E9%A0%81"><span class="nav-number">15.</span> <span class="nav-text">Pagination 分頁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Progress-%E9%80%B2%E5%BA%A6%E6%A2%9D"><span class="nav-number">16.</span> <span class="nav-text">Progress 進度條</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tooltips-%E5%B7%A5%E5%85%B7%E6%8F%90%E7%A4%BA%E6%A1%86"><span class="nav-number">17.</span> <span class="nav-text">Tooltips 工具提示框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Accordion-%E6%89%8B%E9%A2%A8%E7%90%B4"><span class="nav-number">18.</span> <span class="nav-text">Accordion 手風琴</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Carousel-%E8%BC%AA%E6%92%AD"><span class="nav-number">19.</span> <span class="nav-text">Carousel 輪播</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Navs-and-tabs-%E5%B0%8E%E8%A6%BD%E8%88%87%E9%A0%81%E7%B1%A4"><span class="nav-number">20.</span> <span class="nav-text">Navs and tabs 導覽與頁籤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Popovers-%E5%BD%88%E5%87%BA%E6%8F%90%E7%A4%BA%E6%A1%86"><span class="nav-number">21.</span> <span class="nav-text">Popovers 彈出提示框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Scrollspy-%E6%BB%BE%E5%8B%95%E7%9B%A3%E6%8E%A7"><span class="nav-number">22.</span> <span class="nav-text">Scrollspy 滾動監控</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2023</span>&nbsp;-&nbsp;2025
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Nora</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Buttons-%E6%8C%89%E9%88%95"><span class="nav-number">1.</span> <span class="nav-text">Buttons 按鈕</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cards-%E5%8D%A1%E7%89%87"><span class="nav-number">2.</span> <span class="nav-text">Cards 卡片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Collapse-%E6%8A%98%E7%96%8A"><span class="nav-number">3.</span> <span class="nav-text">Collapse 折疊</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Modal-%E4%BA%92%E5%8B%95%E8%A6%96%E7%AA%97"><span class="nav-number">4.</span> <span class="nav-text">Modal 互動視窗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Navbar-%E5%B0%8E%E8%A6%BD%E5%88%97"><span class="nav-number">5.</span> <span class="nav-text">Navbar 導覽列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spinners-%E8%AE%80%E5%8F%96%E5%9C%96%E7%A4%BA"><span class="nav-number">6.</span> <span class="nav-text">Spinners 讀取圖示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Toasts-%E5%90%90%E5%8F%B8"><span class="nav-number">7.</span> <span class="nav-text">Toasts 吐司</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Alerts-%E8%AD%A6%E5%A0%B1"><span class="nav-number">8.</span> <span class="nav-text">Alerts 警報</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Badges-%E6%A8%99%E7%B1%A4"><span class="nav-number">9.</span> <span class="nav-text">Badges 標籤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Breadcrumb-%E9%BA%B5%E5%8C%85%E5%B1%91"><span class="nav-number">10.</span> <span class="nav-text">Breadcrumb 麵包屑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Close-button-%E9%97%9C%E9%96%89%E6%8C%89%E9%88%95"><span class="nav-number">11.</span> <span class="nav-text">Close button 關閉按鈕</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dropdowns-%E4%B8%8B%E6%8B%89%E9%81%B8%E5%96%AE"><span class="nav-number">12.</span> <span class="nav-text">Dropdowns 下拉選單</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#List-group-%E5%88%97%E8%A1%A8%E7%BE%A4%E7%B5%84"><span class="nav-number">13.</span> <span class="nav-text">List group 列表群組</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Offcanvas-%E5%81%B4%E6%AC%84%E6%BB%91%E5%8B%95%E5%B0%8E%E8%A6%BD"><span class="nav-number">14.</span> <span class="nav-text">Offcanvas 側欄滑動導覽</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pagination-%E5%88%86%E9%A0%81"><span class="nav-number">15.</span> <span class="nav-text">Pagination 分頁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Progress-%E9%80%B2%E5%BA%A6%E6%A2%9D"><span class="nav-number">16.</span> <span class="nav-text">Progress 進度條</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tooltips-%E5%B7%A5%E5%85%B7%E6%8F%90%E7%A4%BA%E6%A1%86"><span class="nav-number">17.</span> <span class="nav-text">Tooltips 工具提示框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Accordion-%E6%89%8B%E9%A2%A8%E7%90%B4"><span class="nav-number">18.</span> <span class="nav-text">Accordion 手風琴</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Carousel-%E8%BC%AA%E6%92%AD"><span class="nav-number">19.</span> <span class="nav-text">Carousel 輪播</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Navs-and-tabs-%E5%B0%8E%E8%A6%BD%E8%88%87%E9%A0%81%E7%B1%A4"><span class="nav-number">20.</span> <span class="nav-text">Navs and tabs 導覽與頁籤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Popovers-%E5%BD%88%E5%87%BA%E6%8F%90%E7%A4%BA%E6%A1%86"><span class="nav-number">21.</span> <span class="nav-text">Popovers 彈出提示框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Scrollspy-%E6%BB%BE%E5%8B%95%E7%9B%A3%E6%8E%A7"><span class="nav-number">22.</span> <span class="nav-text">Scrollspy 滾動監控</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
