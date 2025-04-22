@@ -266,7 +266,7 @@
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Tue Dec 17 2024 22:59:08 GMT+0800">2024-12-17 22:59:08</span>
+                <span class="datetime" data-updated="Tue Apr 22 2025 22:53:02 GMT+0800">2025-04-22 22:53:02</span>
             </span>
         
 
@@ -309,13 +309,19 @@
 <p>有方便使用的網格系統、響應式設計還有 JS 插件</p>
 <p>可以幫助我們快速的開發網頁</p>
 <p>下面這個是 Bootstrap 的官方網站以及六角學院翻譯的中文版</p>
-<p>Bootstrap 的<a class="link"   target="_blank" rel="noopener" href="https://getbootstrap.com/" >官方網站<i class="fas fa-external-link-alt"></i></a></p>
-<p>六角學院的<a class="link"   target="_blank" rel="noopener" href="https://bootstrap5.hexschool.com/" >繁體中文版<i class="fas fa-external-link-alt"></i></a></p>
-<p>下面來介紹 Bootstrap 5 的相關內容</p>
+<p>Bootstrap 的<a class="link"   target="_blank" rel="noopener" href="https://getbootstrap.com/" >英文官方網站<i class="fas fa-external-link-alt"></i></a></p>
+<p>六角學院翻譯的<a class="link"   target="_blank" rel="noopener" href="https://bootstrap5.hexschool.com/" >繁體中文版<i class="fas fa-external-link-alt"></i></a></p>
+<p>下面來介紹在專案要使用 Bootstrap 5 的幾個方法</p>
 <br>
 
-<p>要在專案中引入 Bootstrap 有幾個方法</p>
-<h2 id="CDN-連結"><a href="#CDN-連結" class="headerlink" title="CDN 連結"></a>CDN 連結</h2><p>複製 CSS <code>link</code> 和 JS <code>script</code> 貼到 html 中</p>
+<p>用 <code>CDN 連結載入</code> 是比較簡單可以直接使用的方法</p>
+<p>但是如果要使用 SASS 的話，就要用 <code>下載原始碼</code> 或是 <code>NPM</code> 的方式</p>
+<br>
+
+<h2 id="CDN-連結載入"><a href="#CDN-連結載入" class="headerlink" title="CDN 連結載入"></a>CDN 連結載入</h2><p>這個是最簡單、直接的方式</p>
+<p>首先先到 Bootstrap 的官方網站首頁</p>
+<p>往下滑一點可以看到 <code>Include via CDN</code></p>
+<p>然後直接複製 CSS <code>link</code> 和 JS <code>script</code> 貼到 html 中</p>
 <p>像是下面這樣</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Bootstrap demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">integrity</span>=<span class="string">&quot;sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, world!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">integrity</span>=<span class="string">&quot;sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -323,16 +329,81 @@
 <p>然後就可以開始使用了</p>
 <br>
 
-<h2 id="NPM-安裝"><a href="#NPM-安裝" class="headerlink" title="NPM 安裝"></a>NPM 安裝</h2><p>以 Windows 系統的部分來介紹</p>
+<h2 id="下載原始碼"><a href="#下載原始碼" class="headerlink" title="下載原始碼"></a>下載原始碼</h2><p>先進到 Bootstrap 的官方網站</p>
+<p>選上方的「Docs」然後再找到「Getting started」裡面的「Download」</p>
+<p>接著找到頁面裡的 <code>Source files</code> 來下載 Bootstrap 原始碼</p>
+<p>(要注意是要下載 <code>SCSS</code> ，不要下載到 <code>CSS</code> 的檔案)</p>
+<br>
+
+<h3 id="使用-SASS-客製化"><a href="#使用-SASS-客製化" class="headerlink" title="使用 SASS 客製化"></a>使用 SASS 客製化</h3><p>使用 SASS 客製化流程如下</p>
+<p>1.在專案資料夾裡面新增 <code>scss 資料夾</code> 及 <code>index.html</code></p>
+<p>2.在 <code>scss 資料夾</code> 裡面新增 <code>all.scss</code> 和 <code>_index.scss</code></p>
+<p>3.在 <code>all.scss</code> 內容新增 <code>@import“index”</code></p>
+<p>4.剛剛下載的 Boorstrap 原始碼檔案裡面找到 <code>SCSS 資料夾</code>，修改為 boorstrap 後放到專案中的 <code>scss資料夾</code> 裡</p>
+<p>5.<code>index.html</code> 內容增加 link <code>all.css</code> 檔案</p>
+<p>6.<code>all.scss</code> 內容新增 <code>@import“boorstrap/boorstrap”</code></p>
+<p>7.修改 <code>_variable.scss</code> (在boorstrap資料夾內)</p>
+<p>比較常修改的項目(從上到下順序)</p>
+<ul>
+<li>色系，像是修改主色、輔助色(大概在81行 $theme-colors)，例如主色修改 <code>”primary”: #FFDF65,</code>，新的顏色可以直接新增在後面，例如darkGray、lightGray、gray-100、gray-700(通常是用100~900)</li>
+<li>Option(預設樣式，圓角.陰影)</li>
+<li>Spacing(間隔，也可以新增)</li>
+<li>Body(背景文字色)</li>
+<li>Link(連結)</li>
+<li>breakpoints斷點</li>
+</ul>
+<p>8.修改按鈕文字顏色可以新增客製化SCSS</p>
+<p>9.載入需要使用的 Google font</p>
+<br>
+
+<h2 id="NPM-安裝"><a href="#NPM-安裝" class="headerlink" title="NPM 安裝"></a>NPM 安裝</h2><p>先到 Bootstrap 的官方網站首頁</p>
+<p>複製 <code>npm i bootstrap(後面會有版本數字)</code></p>
+<p>接著有兩個方法可以安裝</p>
+<br>
+
+<h3 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h3><p>在 VS Code 開啟專案的資料夾</p>
+<p>然後上方「終端機」選擇「新增終端」</p>
+<p>接著在下面的終端機輸入 <code>npm init</code>，然後幾個項目都按 <code>Enter</code></p>
+<p>好了之後貼上剛剛複製的 <code>npm i bootstrap</code> 就會安裝 Bootstrap 了</p>
+<p>完成之後就可以開始使用 Bootstrap 了</p>
+<br>
+
+<h3 id="命令提示字元"><a href="#命令提示字元" class="headerlink" title="命令提示字元"></a>命令提示字元</h3><p>另一個方法是叫出電腦的終端機來安裝</p>
+<p>以 Windows 系統的部分來介紹</p>
 <p>先點「開始」，搜尋的地方輸入「命令提示字元」</p>
 <p>接著在終端機輸入 cd 後空一格</p>
 <p>然後把專案的資料夾路徑拖過去之後按 Enter</p>
 <p>路徑就會變成專案的位置了</p>
-<p>輸入下面這段文字後按 Enter，就會開始安裝了</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i bootstrap@5.3.3</span><br></pre></td></tr></table></figure>
+<p>接著貼上剛剛複製的 <code>npm i bootstrap</code> 就會安裝 Bootstrap 了</p>
+<p>完成之後就可以開始使用 Bootstrap 了</p>
+<br>
 
-<p>完成之後就成功載入 Bootstrap</p>
-<p>接著就可以開始使用了</p>
+<h4 id="使用-SASS-客製化-1"><a href="#使用-SASS-客製化-1" class="headerlink" title="使用 SASS 客製化"></a>使用 SASS 客製化</h4><p>使用 SASS 客製化流程如下</p>
+<p>1.在專案資料夾裡面新增 <code>stylesheets 資料夾</code>及 <code>index.html</code></p>
+<p>2.在 <code>stylesheets 資料夾</code> 裡面新增 <code>all.scss</code> 和 <code>_index.scss</code></p>
+<p>3.進到 Bootstrap 的官網選上方的「Docs」然後再找到「Customize」裡面的「Sass」，複製下面三個項目貼到 <code>all.scss</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;../node_modules/bootstrap/scss/bootstrap&quot;;</span><br><span class="line">@import &quot;../node_modules/bootstrap/scss/functions&quot;;</span><br><span class="line">@import &quot;../node_modules/bootstrap/scss/variables&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>4.<code>index.html</code> 內容增加 link <code>all.css</code> 檔案</p>
+<p>(如果是 VS Code 記得要點 Watch Sass 來編譯檔案)</p>
+<p>5.在 <code>stylesheets 資料夾</code> 裡面新增 <code>helpers 資料夾</code></p>
+<p>6.依照這個路徑 <code>node_modules/bootstrap/scss/variables</code> 找到 <code>variables</code> 和 <code>variables-dark</code> 複製到 helpers 資料夾</p>
+<p>7.把剛剛 <code>all.scss</code> 裡面的 <code>@import &quot;../node_modules/bootstrap/scss/variables&quot;;</code> 路徑修改為在 <code>helpers 資料夾</code> 中的 <code>variables</code></p>
+<p>(接下來要修改變數都是在 <code>helpers 資料夾</code> 的 <code>variables</code> 中修改)</p>
+<p>8.載入需要使用的 Google font</p>
+<br>
+
+<p>流程大概是這樣</p>
+<p>如果覺得直接載入全部檔案太大或是有些元件不會用到</p>
+<p>也可以把 <code>all.css</code> 檔案中的下面這段刪掉，改成載入需要的東西就好</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;../node_modules/bootstrap/scss/bootstrap&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>步驟如下</p>
+<p>1.Bootstrap 的官網選上方的「Docs」然後再找到「Customize」裡面的優化「Optimize」，這裡有列出很多項目</p>
+<p>後面有標注的是需要載入的，其他則依自己的需要載入</p>
+<p>路徑要記得修改為專案檔案的路徑</p>
+<p>(像是 <code>../node_modules/bootstrap/scss/functions</code>)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">// Configuration</span><br><span class="line">@import &quot;functions&quot;;       // 前面步驟已載入</span><br><span class="line">@import &quot;variables&quot;;       // 前面步驟已載入</span><br><span class="line">@import &quot;variables-dark&quot;;  // `variables` 裡面有載入了</span><br><span class="line">@import &quot;maps&quot;;</span><br><span class="line">@import &quot;mixins&quot;;</span><br><span class="line">@import &quot;utilities&quot;;</span><br><span class="line"></span><br><span class="line">// Layout &amp; components</span><br><span class="line">@import &quot;root&quot;;            // 需要</span><br><span class="line">@import &quot;reboot&quot;;          // 需要</span><br><span class="line">@import &quot;type&quot;;            // 需要</span><br><span class="line">@import &quot;images&quot;;          // 需要</span><br><span class="line">@import &quot;containers&quot;;      // 需要</span><br><span class="line">@import &quot;grid&quot;;            // 需要</span><br><span class="line">@import &quot;tables&quot;;          // 常用</span><br><span class="line">@import &quot;forms&quot;;           // 常用</span><br><span class="line">@import &quot;buttons&quot;;         // 常用</span><br><span class="line">@import &quot;transitions&quot;;</span><br><span class="line">@import &quot;dropdown&quot;;</span><br><span class="line">@import &quot;button-group&quot;;</span><br><span class="line">@import &quot;nav&quot;;</span><br><span class="line">@import &quot;navbar&quot;;</span><br><span class="line">@import &quot;card&quot;;</span><br><span class="line">@import &quot;accordion&quot;;</span><br><span class="line">@import &quot;breadcrumb&quot;;</span><br><span class="line">@import &quot;pagination&quot;;</span><br><span class="line">@import &quot;badge&quot;;</span><br><span class="line">@import &quot;alert&quot;;</span><br><span class="line">@import &quot;progress&quot;;</span><br><span class="line">@import &quot;list-group&quot;;</span><br><span class="line">@import &quot;close&quot;;</span><br><span class="line">@import &quot;toasts&quot;;</span><br><span class="line">@import &quot;modal&quot;;</span><br><span class="line">@import &quot;tooltip&quot;;</span><br><span class="line">@import &quot;popover&quot;;</span><br><span class="line">@import &quot;carousel&quot;;</span><br><span class="line">@import &quot;spinners&quot;;</span><br><span class="line">@import &quot;offcanvas&quot;;</span><br><span class="line">@import &quot;placeholders&quot;;</span><br><span class="line"></span><br><span class="line">// Helpers</span><br><span class="line">@import &quot;helpers&quot;;          // 常用</span><br><span class="line"></span><br><span class="line">// Utilities</span><br><span class="line">@import &quot;utilities/api&quot;;    // 常用</span><br></pre></td></tr></table></figure>
 
                     
                 </div>
@@ -506,7 +577,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CDN-%E9%80%A3%E7%B5%90"><span class="nav-number">1.</span> <span class="nav-text">CDN 連結</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NPM-%E5%AE%89%E8%A3%9D"><span class="nav-number">2.</span> <span class="nav-text">NPM 安裝</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CDN-%E9%80%A3%E7%B5%90%E8%BC%89%E5%85%A5"><span class="nav-number">1.</span> <span class="nav-text">CDN 連結載入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BC%89%E5%8E%9F%E5%A7%8B%E7%A2%BC"><span class="nav-number">2.</span> <span class="nav-text">下載原始碼</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-SASS-%E5%AE%A2%E8%A3%BD%E5%8C%96"><span class="nav-number">2.1.</span> <span class="nav-text">使用 SASS 客製化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NPM-%E5%AE%89%E8%A3%9D"><span class="nav-number">3.</span> <span class="nav-text">NPM 安裝</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VS-Code"><span class="nav-number">3.1.</span> <span class="nav-text">VS Code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E5%AD%97%E5%85%83"><span class="nav-number">3.2.</span> <span class="nav-text">命令提示字元</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-SASS-%E5%AE%A2%E8%A3%BD%E5%8C%96-1"><span class="nav-number">3.2.1.</span> <span class="nav-text">使用 SASS 客製化</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
@@ -693,7 +764,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CDN-%E9%80%A3%E7%B5%90"><span class="nav-number">1.</span> <span class="nav-text">CDN 連結</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NPM-%E5%AE%89%E8%A3%9D"><span class="nav-number">2.</span> <span class="nav-text">NPM 安裝</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CDN-%E9%80%A3%E7%B5%90%E8%BC%89%E5%85%A5"><span class="nav-number">1.</span> <span class="nav-text">CDN 連結載入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BC%89%E5%8E%9F%E5%A7%8B%E7%A2%BC"><span class="nav-number">2.</span> <span class="nav-text">下載原始碼</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-SASS-%E5%AE%A2%E8%A3%BD%E5%8C%96"><span class="nav-number">2.1.</span> <span class="nav-text">使用 SASS 客製化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NPM-%E5%AE%89%E8%A3%9D"><span class="nav-number">3.</span> <span class="nav-text">NPM 安裝</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VS-Code"><span class="nav-number">3.1.</span> <span class="nav-text">VS Code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E5%AD%97%E5%85%83"><span class="nav-number">3.2.</span> <span class="nav-text">命令提示字元</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-SASS-%E5%AE%A2%E8%A3%BD%E5%8C%96-1"><span class="nav-number">3.2.1.</span> <span class="nav-text">使用 SASS 客製化</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
 
